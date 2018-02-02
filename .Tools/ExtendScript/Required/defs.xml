@@ -1,0 +1,1098 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+***************************************************************************
+*
+*  @@@BUILDINFO@@@ defs-2.xml 3.5.0.7		08-December-2008
+*  Copyright 2007 Adobe Systems Incorporated
+*  All Rights Reserved.
+*
+* NOTICE:  All information contained herein is, and remains the property of
+* Adobe Systems Incorporated  and its suppliers,  if any.  The intellectual
+* and technical concepts contained herein are proprietary to  Adobe Systems
+* Incorporated  and its suppliers  and may be  covered by U.S.  and Foreign
+* Patents,patents in process,and are protected by trade secret or copyright
+* law.  Dissemination of this  information or reproduction of this material
+* is strictly  forbidden  unless prior written permission is  obtained from
+* Adobe Systems Incorporated.
+***************************************************************************
+-->
+
+<defaults version="2">
+  <cmp>
+    <CS3>false</CS3>
+    <CS4>false</CS4>
+  </cmp>
+  <altscripts>extensions</altscripts>
+  <resolveTargetVersionWildcard>false</resolveTargetVersionWildcard>
+  <UIBrightness>
+    <win>67</win>
+    <mac>67</mac>
+  </UIBrightness>
+  <document>
+		<autoReload>false</autoReload>
+		<wrap>false</wrap>
+		<language>js</language>
+		<lineNumbers>true</lineNumbers>
+		<folding>true</folding>
+		<tabs>4</tabs>
+		<caretBackground>false</caretBackground>
+		<backupDelay>0</backupDelay>
+    <tabs2spaces>true</tabs2spaces>
+    <floatingAppFrame>false</floatingAppFrame>
+		<floatingNoAppFrame>false</floatingNoAppFrame>
+	<autoIndent>2</autoIndent>
+	<BOM>1</BOM>
+	</document>
+	<startup>
+		<newDoc>true</newDoc>
+		<oldDocs>false</oldDocs>
+		<noDocs>false</noDocs>
+		<hideWS>false</hideWS>
+	</startup>
+	<recent>
+	<remunres>true</remunres>
+	<max>10</max>
+	</recent>
+	<autocompletion>true</autocompletion>
+	<autotime>0.5</autotime>
+	<omv>
+		<confirmLoad>false</confirmLoad>
+    <win>floating</win>
+    <searchDesc>false</searchDesc>
+    <UI>275§false§false§false§0</UI>
+  </omv>
+  <autolaunch>false</autolaunch>
+  <toFront>true</toFront>
+  <debug>
+		<dontBreakOnErrors>true</dontBreakOnErrors>
+		<saveBeforeDebug>false</saveBeforeDebug>
+    <printResult>true</printResult>
+	</debug>
+	<databrowser>
+		<showUndefined>false</showUndefined>
+		<showCore>false</showCore>
+		<showFunctions>true</showFunctions>
+		<showPrototype>false</showPrototype>
+		<maxArrayElements>20</maxArrayElements>
+    <maxStringLength>64</maxStringLength>
+    <collectData>true</collectData>
+    <displayData>true</displayData>
+	</databrowser>
+	<functionList>
+	<sortByAlpha>true</sortByAlpha>
+	<sortByPos>false</sortByPos>
+	<shortName>true</shortName>
+	<longName>false</longName>
+	</functionList>
+	<scripts>
+		<favorite>Default</favorite>
+	</scripts>
+	<profiling>
+		<profileLevel>0</profileLevel>
+		<profDisplayMode>0</profDisplayMode>
+		<profileTiming>false</profileTiming>
+	</profiling>
+	<preferencesDialogPrefs>
+	<fontPrefs>
+	  <allDisplayItems>true</allDisplayItems>
+	</fontPrefs>
+	</preferencesDialogPrefs>
+	<findReplacePrefs>
+		<searchString> </searchString>
+		<replaceString> </replaceString>
+		<matchCase>false</matchCase>
+		<wholeWord>false</wholeWord>
+		<matchRegExp>false</matchRegExp>
+		<clearresults>true</clearresults>
+	</findReplacePrefs>
+	<shortcutkeys>
+		<file_new>OSCmnd+N</file_new>
+		<file_open>OSCmnd+O</file_open>
+		<file_save>OSCmnd+S</file_save>
+		<file_saveAs>Shift+OSCmnd+S</file_saveAs>
+		<file_saveAll>Shift+OSCmnd+Alt+S</file_saveAll>
+		<file_exportAs>Shift+OSCmnd+E</file_exportAs>
+		<file_close>OSCmnd+W</file_close>
+		<file_closeAll>OSCmnd+Alt+W</file_closeAll>
+		<file_page>Shift+OSCmnd+P</file_page>
+		<file_print>OSCmnd+P</file_print>
+		<file_quit>OSCmnd+Q</file_quit>
+		<edit_undo>OSCmnd+Z</edit_undo>
+		<edit_redo>Shift+OSCmnd+Z</edit_redo>
+		<edit_cut>OSCmnd+X</edit_cut>
+		<edit_copy>OSCmnd+C</edit_copy>
+		<edit_paste>OSCmnd+V</edit_paste>
+		<edit_selectAll>OSCmnd+A</edit_selectAll>
+		<edit_selectMatchingBrace>OSCmnd+0</edit_selectMatchingBrace>
+		<edit_selectToMatchingBrace>Shift+OSCmnd+0</edit_selectToMatchingBrace>
+		<edit_checkSyntax>
+			<win>F7</win>
+			<mac>OSCmnd+Alt+K</mac>
+		</edit_checkSyntax>
+		<edit_version>Shift+OSCmnd+V</edit_version>
+		<edit_blockcomment>Shift+OSCmnd+K</edit_blockcomment>
+		<edit_findReplace>OSCmnd+F</edit_findReplace>
+		<edit_findNext>
+			<win>F3</win>
+			<mac>OSCmnd+G</mac>
+		</edit_findNext>
+		<edit_gotoline>
+			<win>OSCmnd+G</win>
+			<mac>OSCmnd+L</mac>
+		</edit_gotoline>
+    <edit_clearConsole>Shift+OSCmnd+C</edit_clearConsole>
+		<edit_bookmarks_toggleBM>OSCmnd+F2</edit_bookmarks_toggleBM>
+		<edit_bookmarks_remAllBM>Shift+OSCmnd+F2</edit_bookmarks_remAllBM>
+		<edit_bookmarks_gotoNextBM>F2</edit_bookmarks_gotoNextBM>
+		<edit_bookmarks_gotoPrevBM>Shift+F2</edit_bookmarks_gotoPrevBM>
+		<tools_preferences>OSCmnd+K</tools_preferences>
+		<view_wrap>Shift+OSCmnd+W</view_wrap>
+		<view_lineNum>Shift+OSCmnd+L</view_lineNum>
+		<view_collapse>OSCmnd+M</view_collapse>
+		<debug_run>
+			<win>F5</win>
+			<mac>OSCmnd+R</mac>
+		</debug_run>
+		<debug_break>
+			<win>Ctrl+F5</win>
+			<mac>OSCmnd+.</mac>
+		</debug_break>
+		<debug_stop>
+			<win>Shift+F5</win>
+			<mac>Ctrl+K</mac>
+		</debug_stop>
+		<debug_into>
+			<win>F11</win>
+			<mac>Shift+OSCmnd+I</mac>
+		</debug_into>
+		<debug_over>
+			<win>F10</win>
+			<mac>Shift+OSCmnd+O</mac>
+		</debug_over>
+		<debug_out>
+			<win>Shift+F11</win>
+			<mac>Shift+OSCmnd+U</mac>
+		</debug_out>
+		<debug_bptoggle>
+			<win>F9</win>
+			<mac>Ctrl+B</mac>
+		</debug_bptoggle>
+		<debug_bpclearall>
+			<win>Shift+OSCmnd+F9</win>
+			<mac>Shift+Ctrl+B</mac>
+		</debug_bpclearall>
+		<window_pane0>
+			<win>Ctrl+Alt+J</win>
+			<mac>Ctrl+J</mac>
+		</window_pane0>
+		<window_pane1>
+			<win>Ctrl+Alt+P</win>
+			<mac>Ctrl+P</mac>
+		</window_pane1>
+		<window_pane2>
+			<win>Ctrl+Alt+C</win>
+			<mac>Ctrl+C</mac>
+		</window_pane2>
+		<window_pane3>
+			<win>Ctrl+Alt+S</win>
+			<mac>Ctrl+S</mac>
+		</window_pane3>
+		<window_pane4>
+			<win>Ctrl+Alt+D</win>
+			<mac>Ctrl+D</mac>
+		</window_pane4>
+		<window_pane5>
+			<win>Ctrl+Alt+F</win>
+			<mac>Ctrl+F</mac>
+		</window_pane5>
+		<window_toggle>F4</window_toggle>
+		<window_next>
+			<win>F6</win>
+			<mac>F6</mac>
+		</window_next>
+		<window_previous>
+			<win>Shift+F6</win>
+			<mac>Shift+F6</mac>
+		</window_previous>
+    <help_omv>
+      <win>F1</win>
+      <mac>OSCmnd+?</mac>
+    </help_omv>
+	</shortcutkeys>
+	<syntaxdefs>
+	<defaults os="Windows">
+	  <font id="base" name="Tahoma" size="10"/>
+	  <font id="comment" name="Microsoft Sans Serif" size="9"/>
+	  <font id="codeCommentBox" name="Microsoft Sans Serif" size="9"/>
+	  <font id="codeCommentDoc" name="Microsoft Sans Serif" size="9"/>
+	  <font id="codeCommentLine" name="Microsoft Sans Serif" size="9"/>
+	  <font id="js" name="Microsoft Sans Serif" size="9"/>
+	  <font id="monospace" name="Courier New" size="10"/>
+	  <font id="small" name="Tahoma" size="8"/>
+	  <font id="textComment" name="Tahoma" size="9"/>
+	  <font id="text" name="Times New Roman" size="11"/>
+	  <font id="notused" name="Times New Roman" size="11"/>
+	  <color id="chars" fore="Purple"/>
+	  <color id="codeCommentBox" fore="Green"/>
+	  <color id="codeCommentDoc" fore="Green"/>
+	  <color id="codeCommentLine" fore="Green"/>
+	  <color id="js" back="AliceBlue"/>
+	  <color id="error" back="Red" fore="Yellow"/>
+	  <color id="Keywords" fore="Blue"/>
+	  <color id="notused" back="Red"/>
+	  <color id="Numbers" fore="Green"/>
+	  <color id="operator" fore="Black"/>
+	  <color id="preproc" fore="Olive"/>
+	  <color id="string" fore="Brown"/>
+	  <color id="textComment" back="Gainsboro" fore="Blue"/>
+	  <style title="Others" index="32" font="base"/>
+	  <style title="Line number" index="33" back="Silver" font="base"/>
+	  <style title="Brace highlight" index="34" bold="true" fore="Blue"/>
+	  <style title="Brace incomplete highlight" index="35" bold="true" fore="Red"/>
+	  <style title="Control characters" index="36"/>
+	  <style title="Indentation guides" index="37" back="White" fore="Silver"/>
+	</defaults>
+	<defaults os="Macintosh">
+	  <font id="base" name="Verdana" size="10"/>
+	  <font id="comment" name="Comic Sans MS" size="9"/>
+	  <font id="codeCommentBox" name="Comic Sans MS" size="9"/>
+	  <font id="codeCommentDoc" name="Comic Sans MS" size="9"/>
+	  <font id="codeCommentLine" name="Comic Sans MS" size="9"/>
+	  <font id="js" name="Comic Sans MS" size="9"/>
+	  <font id="monospace" name="Monaco" size="10"/>
+	  <font id="small" name="Verdana" size="8"/>
+	  <font id="textComment" name="Verdana" size="9"/>
+	  <font id="text" name="Times" size="11"/>
+	  <font id="notused" name="Times" size="11"/>
+	  <color id="chars" fore="Purple"/>
+	  <color id="codeCommentBox" fore="Green"/>
+	  <color id="codeCommentDoc" fore="Green"/>
+	  <color id="codeCommentLine" fore="Green"/>
+	  <color id="js" back="AliceBlue"/>
+	  <color id="error" back="Red" fore="Yellow"/>
+	  <color id="Keywords" fore="Blue"/>
+	  <color id="notused" back="Red"/>
+	  <color id="Numbers" fore="Green"/>
+	  <color id="operator" fore="Black"/>
+	  <color id="preproc" fore="Olive"/>
+	  <color id="string" fore="Brown"/>
+	  <color id="textComment" back="Gainsboro" fore="Blue"/>
+	  <style title="Others" index="32" font="base"/>
+	  <style title="Line number" index="33" back="Silver" font="base"/>
+	  <style title="Brace highlight" index="34" bold="true" fore="Blue"/>
+	  <style title="Brace incomplete highlight" index="35" bold="true" fore="Red"/>
+	  <style title="Control characters" index="36"/>
+	  <style title="Indentation guides" index="37" back="White" fore="Silver"/>
+	</defaults>
+	<languages>
+	  <bash>
+		<menu>Bash</menu>
+		<!-- Braces are only matched in operator style -->
+		<braces style="10"/>
+		<comment>
+		  <block>#~</block>
+		</comment>
+		<fileExts>*.sh;*.bsh;configure</fileExts>
+		<defFileExt>sh</defFileExt>
+		<fileFilter>Bash</fileFilter>
+		<keywords index="0">alias ar asa awk banner basename bash bc bdiff break bunzip2 bzip2 cal calendar case cat cc cd chmod cksum clear cmp col comm compress continue cp cpio crypt csplit ctags cut date dc dd declare deroff dev df diff diff3 dircmp dirname do done du echo ed egrep elif else env esac eval ex exec exit expand export expr false fc fgrep fi file find fmt fold for function functions getconf getopt getopts grep gres hash head help history iconv id if in integer jobs join kill local lc let line ln logname look ls m4 mail mailx make man mkdir more mt mv newgrp nl nm nohup ntps od pack paste patch pathchk pax pcat perl pg pr print printf ps pwd read readonly red return rev rm rmdir sed select set sh shift size sleep sort spell split start stop strings strip stty sum suspend sync tail tar tee test then time times touch tr trap true tsort tty type typeset ulimit umask unalias uname uncompress unexpand uniq unpack unset until uudecode uuencode vi vim vpax wait wc whence which while who wpaste wstart xargs zcat chgrp chown chroot dir dircolors factor groups hostid install link md5sum mkfifo mknod nice pinky printenv ptx readlink seq sha1sum shred stat su tac unlink users vdir whoami yes</keywords>
+		<lexer>bash</lexer>
+		<style title="White space" index="0" font="base" fore="Gray"/>
+		<style title="Error" index="1" color="error"/>
+		<style title="Comment" index="2" fore="Green" font=" #codeCommentBox"/>
+		<style title="Numbers" index="3" color="Numbers"/>
+		<style title="Keywords" index="4" bold="true" color="Keywords"/>
+		<style title="Double quoted string" index="5" color="string" font="monospace"/>
+		<style title="Single quoted string" index="6" color="chars" font="monospace"/>
+		<style title="Operators" index="7" bold="true" color="operator"/>
+		<style title="Identifiers (functions, etc.)" index="8" fore="Black"/>
+		<style title="Scalars: $var" index="9" back="MistyRose" fore="Black"/>
+		<style title="Parameter expansion: ${var}" index="10" back="LightYellow" fore="Black"/>
+		<style title="Back Ticks" index="11" back="RosyBrown" fore="Yellow"/>
+		<style title="Here-doc (delimiter)" index="12" back="Gainsboro" fore="Black"/>
+		<style title="Here-doc (single quoted, q)" index="13" back="Gainsboro" eolfilled="true" fore="Purple"/>
+		<wordChars>abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_$@%&amp;</wordChars>
+	  </bash>
+	  <cs>
+		<menu>C#</menu>
+		<fileExts>*.cs</fileExts>
+		<defFileExt>cs</defFileExt>
+		<fileFilter>C#</fileFilter>
+		<keywords index="0">abstract as base bool break byte case catch char checked class const continue decimal default delegate do double else enum event explicit extern false finally fixed float for foreach goto if implicit in int interface internal is lock long namespace new null object operator out override params private protected public readonly ref return sbyte sealed short sizeof stackalloc static string struct switch this throw true try typeof uint ulong unchecked unsafe ushort using virtual void while</keywords>
+		<lexer>cpp</lexer>
+		<wordChars>abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_#</wordChars>
+	  </cs>
+	  <cpp>
+		<menu>C/C++</menu>
+		<!-- Braces are only matched in operator style -->
+		<braces style="10"/>
+		<comment>
+		  <block>//~</block>
+		  <box>
+			<start>/*</start>
+			<end>*/</end>
+			<middle>*</middle>
+		  </box>
+		  <stream>
+			<start>/*</start>
+			<end>*/</end>
+		  </stream>
+		</comment>
+		<!-- comment.block.at.line.start.cpp=1 -->
+		<fileExts>*.c;*.cc;*.cpp;*.cxx;*.h;*.hh;*.hpp;*.hxx;*.sma;*.cs;*.rc;*.rc2;*.dlg;*.mak;make*</fileExts>
+		<defFileExt>cpp</defFileExt>
+		<fileFilter>C/C++</fileFilter>
+		<keywords index="0">and and_eq asm auto bitand bitor bool break case catch char class compl const const_cast continue default delete do double dynamic_cast else enum explicit export extern false float for friend goto if inline int long mutable namespace new not not_eq operator or or_eq private protected public register reinterpret_cast return short signed sizeof static static_cast struct switch template this throw true try typedef typeid typename union unsigned using virtual void volatile wchar_t while xor xor_eq</keywords>
+		<!-- CPP doxygen -->
+		<keywords index="1">
+		  a addindex addtogroup anchor arg attention author b brief bug c class code date def defgroup deprecated dontinclude e em endcode endhtmlonly endif endlatexonly endlink endverbatim enum example exception f$ f[ f] file fn hideinitializer htmlinclude htmlonly if image include ingroup internal invariant interface latexonly li line link mainpage name namespace nosubgrouping note overload p page par param post pre ref relates remarks return retval sa section see showinitializer since skip skipline struct subsection test throw todo typedef union until var verbatim verbinclude version warning weakgroup $ @ \\ &amp; &lt; > # { }
+		</keywords>
+		<lexer>cpp</lexer>
+		<style title="White space" index="0" fore="Gray"/>
+		<style title="Comment: /* */" index="1" color="codeCommentBox" font="codeCommentBox"/>
+		<style title="Comment: //" index="2" color="codeCommentLine" font="codeCommentLine"/>
+		<style title="Doc comment: /** or /*!" index="3" fore="Green" font="codeCommentDoc"/>
+		<style title="Numbers" index="4" color="Numbers"/>
+		<style title="Keywords" index="5" bold="true" color="Keywords"/>
+		<style title="Double quoted string" index="6" color="string"/>
+		<style title="Single quoted string" index="7" fore="Purple"/>
+		<style title="Tripple Double quoted string" index="20" color="string"/>
+		<style title="Tripple Single quoted string" index="21" fore="Purple"/>
+		<style title="UUIDs (only in IDL)" index="8" fore="Purple"/>
+		<style title="Preprocessor" index="9" color="preproc"/>
+		<style title="Operators" index="10" bold="true" color="operator"/>
+		<style title="Identifiers" index="11"/>
+		<style title="Open string at end of line" index="12" back="Thistle" eolfilled="true" font="monospace" fore="Black"/>
+		<style title="Verbatim strings for C#" index="13" back="AliceBlue" eolfilled="true" font="monospace" fore="Green"/>
+		<style title="Doc comment: /// or //!" index="15" fore="Green" font="codeCommentBox"/>
+		<style title="Keywords 2" index="16" fore="FireBrick"/>
+		<style title="Doc keywords" index="17" font="codeCommentBox" fore="Green"/>
+		<style title="Doc keyword errors" index="18" font="codeCommentBox" fore="Green"/>
+		<style title="Other" index="32" font="base"/>
+		<wordChars>abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_#</wordChars>
+	  </cpp>
+	  <flash>
+		<menu>Flash/ActionScript</menu>
+		<fileExts>*.as;*.asc;*.jsfl</fileExts>
+		<defFileExt>as</defFileExt>
+		<fileFilter>Flash</fileFilter>
+		<keywords index="0">add and break case catch class continue default delete do dynamic else eq extends false finally for function ge get gt if implements import in instanceof interface intrinsic le lt ne new not null or private public return set static super switch this throw true try typeof undefined var void while with</keywords>
+		<keywords index="1">Array Arguments Accessibility Boolean Button Camera Color ContextMenu ContextMenuItem Date Error Function Key LoadVars LocalConnection Math Microphone Mouse MovieClip MovieClipLoader NetConnection NetStream Number Object PrintJob Selection SharedObject Sound Stage String StyleSheet System TextField TextFormat TextSnapshot Video Void XML XMLNode XMLSocket _accProps _focusrect _global _highquality _parent _quality _root _soundbuftime arguments asfunction call capabilities chr clearInterval duplicateMovieClip escape eval fscommand getProperty getTimer getURL getVersion gotoAndPlay gotoAndStop ifFrameLoaded Infinity -Infinity int isFinite isNaN length loadMovie loadMovieNum loadVariables loadVariablesNum maxscroll mbchr mblength mbord mbsubstring MMExecute NaN newline nextFrame nextScene on onClipEvent onUpdate ord parseFloat parseInt play prevFrame prevScene print printAsBitmap printAsBitmapNum printNum random removeMovieClip scroll set setInterval setProperty startDrag stop stopAllSounds stopDrag substring targetPath tellTarget toggleHighQuality trace unescape unloadMovie unLoadMovieNum updateAfterEvent</keywords>
+		<lexer>cpp</lexer>
+	  </flash>
+	  <html>
+		<menu>HTML</menu>
+		<fileFilter>HTML</fileFilter>
+		<fileExts>*.html;*.htm;*.asp;*.shtml;*.htd;*.jsp;*.php3;*.phtml;*.php;*.htt;*.cfm;*.tpl;*.dtd;*.hta</fileExts>
+		<defFileExt>html</defFileExt>
+		<keywords index="0">a abbr acronym address applet area b base basefont bdo big blockquote body br button caption center cite code col colgroup dd del dfn dir div dl dt em fieldset font form frame frameset h1 h2 h3 h4 h5 h6 head hr html i iframe img input ins isindex kbd label legend li link map menu meta noframes noscript object ol optgroup option p param pre q s samp script select small span strike strong style sub sup table tbody td textarea tfoot th thead title tr tt u ul var xml xmlns abbr accept-charset accept accesskey action align alink alt archive axis background bgcolor border cellpadding cellspacing char charoff charset checked cite class classid clear codebase codetype color cols colspan compact content coords data datafld dataformatas datapagesize datasrc datetime declare defer dir disabled enctype event face for frame frameborder headers height href hreflang hspace http-equiv id ismap label lang language leftmargin link longdesc marginwidth marginheight maxlength media method multiple name nohref noresize noshade nowrap object onblur onchange onclick ondblclick onfocus onkeydown onkeypress onkeyup onload onmousedown onmousemove onmouseover onmouseout onmouseup onreset onselect onsubmit onunload profile prompt readonly rel rev rows rowspan rules scheme scope selected shape size span src standby start style summary tabindex target text title topmargin type usemap valign value valuetype version vlink vspace width text password checkbox radio submit reset file hidden image article aside calendar canvas card command commandset datagrid datatree footer gauge header m menubar menulabel nav progress section switch tabbox active command contenteditable ping public !doctype</keywords>
+		<!-- JavaScript keywords are possible inside embedded Javascript -->
+		<keywords index="1">abstract boolean break byte case catch char class const continue debugger default delete do double else enum export extends final finally float for function goto if implements import in instanceof int interface long native new package private protected public return short static super switch synchronized this throw throws transient try typeof var void volatile while with</keywords>
+		<!-- VBScript keywords are possible inside embedded VBScript -->
+		<keywords index="2">addressof alias and as attribute base begin binary boolean byref byte byval call case compare const currency date decimal declare defbool defbyte defint deflng defcur defsng defdbl defdec defdate defstr defobj defvar dim do double each else elseif empty end enum eqv erase error event exit explicit false for friend function get gosub goto if imp implements in input integer is len let lib like load lock long loop lset me mid midb mod new next not nothing null object on option optional or paramarray preserve print private property public raiseevent randomize redim rem resume return rset seek select set single static step stop string sub then time to true type typeof unload until variant wend while with withevents xor</keywords>
+		<!-- Python keywords are possible inside embedded Python -->
+		<keywords index="3">and assert break class continue def del elif else except exec finally for from global if import in is lambda None not or pass print raise return try while yield</keywords>
+		<!-- PHP keywords are possible inside embedded PHP -->
+		<keywords index="4">and array as bool boolean break case cfunction class const continue declare default die directory do double echo else elseif empty enddeclare endfor endforeach endif endswitch endwhile eval exit extends false float for foreach function global if include include_once int integer isset list new null object old_function or parent print real require require_once resource return static stdclass string switch true unset use var while xor __class__ __file__ __function__ __line__ __sleep __wakeup</keywords>
+		<!-- SGML / DTD keywords -->
+		<keywords index="5">ELEMENT DOCTYPE ATTLIST ENTITY NOTATION</keywords>
+		<lexer>hypertext</lexer>
+		<wordChars>abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-</wordChars>
+		<comment>
+		  <block>//~</block>
+		  <stream>
+			<end>--></end>
+			<start>&lt;!--</start>
+		  </stream>
+		</comment>
+		<style title="Text" index="0" font="text" fore="Black"/>
+		<style title="Tags" index="1" fore="Navy"/>
+		<style title="Unknown Tags" index="2" fore="Red"/>
+		<style title="Attributes" index="3" fore="Teal"/>
+		<style title="Unknown Attributes" index="4" fore="Red"/>
+		<style title="Numbers" index="5" color="Numbers"/>
+		<style title="Double quoted strings" index="6" color="string"/>
+		<style title="Single quoted strings" index="7" color="string"/>
+		<style title="Other inside tag" index="8" fore="Purple"/>
+		<style title="Comment &lt;!--" index="9" font="textComment" fore="Olive"/>
+		<style title="Entities" index="10" font="text" fore="Purple"/>
+		<style title="XML style tag ends '/>'" index="11" fore="Navy"/>
+		<style title="XML identifier start '&lt;?'" index="12" fore="Blue"/>
+		<style title="XML identifier end '?>'" index="13" fore="Blue"/>
+		<style title="SCRIPT" index="14" fore="Navy"/>
+		<style title="ASP &lt;% ... %>" index="15" back="Yellow"/>
+		<style title="ASP &lt;%@ ... %>" index="16" back="Gold"/>
+		<style title="CDATA" index="17" back="Gold"/>
+		<style title="PHP" index="18" back="Bisque" fore="Blue"/>
+		<style title="Unquoted values" index="19" back="AliceBlue" fore="Fuchsia"/>
+		<style title="JSP Comment &lt;%-- ... --%>" index="20" back="LemonChiffon" fore="Black"/>
+		<style title="SGML tags &lt;! ... >" index="21" back="AliceBlue" fore="Navy"/>
+		<style title="SGML command" index="22" back="AliceBlue" bold="true" fore="Navy"/>
+		<style title="SGML 1st param" index="23" back="AliceBlue" fore="DarkGreen"/>
+		<style title="SGML double string" index="24" back="AliceBlue" fore="Maroon"/>
+		<style title="SGML single string" index="25" back="AliceBlue" fore="SaddleBrown"/>
+		<style title="SGML error" index="26" back="Coral" fore="Maroon"/>
+		<style title="SGML special (#xxxx type)" index="27" back="AliceBlue" fore="RoyalBlue"/>
+		<style title="SGML entity" index="28" back="AliceBlue" fore="DarkSlateGray"/>
+		<style title="SGML comment" index="29" back="AliceBlue" fore="Olive"/>
+		<style title="SGML block" index="31" back="LightGrey" fore="MidnightBlue"/>
+		<style title="Matched Operators" index="34" font="text" fore="Blue"/>
+		<style index="35" font="text" fore="Red"/>
+		<style title="JS Start - allows eol filled background to not start on same line as SCRIPT tag" index="40" fore="Olive"/>
+		<style title="JS Default" index="41" font="js" bold="true" eolfilled="true" fore="Black"/>
+		<style title="JS Comment" index="42" font="js" fore="Green" eolfilled="true"/>
+		<style title="JS Line Comment" index="43" font="js" color="codeCommentLine"/>
+		<style title="JS Doc comment" index="44" font="js" bold="true" color="codeCommentDoc" eolfilled="true"/>
+		<style title="JS Number" index="45" font="js" color="Numbers"/>
+		<style title="JS Word" index="46" font="js" fore="Black"/>
+		<style title="JS Keyword" index="47" font="js" bold="true" color="Keywords"/>
+		<style title="JS Double quoted string" index="48" font="js" color="string"/>
+		<style title="JS Single quoted string" index="49" font="js" color="string"/>
+		<style title="JS Symbols" index="50" font="js" bold="true" color="operator"/>
+		<style title="JavaScript EOL" index="51" back="DarkGray" eolfilled="true"/>
+		<style title="JavaScript RegEx" index="52" back="LightPink"/>
+		<style title="ASP JS Start - allows eol filled background to not start on same line as SCRIPT tag" index="55" fore="Olive"/>
+		<style title="ASP JS Default" index="56" back="Khaki" bold="true" eolfilled="true" font="js" fore="Black"/>
+		<style title="ASP JS Comment" index="57" back="Khaki" eolfilled="true" font="js" fore="Green"/>
+		<style title="ASP JS Line Comment" index="58" back="Khaki" font="js" fore="Green"/>
+		<style title="ASP JS Doc comment" index="59" back="Khaki" bold="true" eolfilled="true" font="js" fore="Gray"/>
+		<style title="ASP JS Number" index="60" back="Khaki" font="js" fore="Teal"/>
+		<style title="ASP JS Word" index="61" back="Khaki" font="js" fore="Black"/>
+		<style title="ASP JS Keyword" index="62" back="Khaki" bold="true" font="js" fore="Navy"/>
+		<style title="ASP JS Double quoted string" index="63" back="Khaki" font="js" fore="Purple"/>
+		<style title="ASP JS Single quoted string" index="64" back="Khaki" font="js" fore="Purple"/>
+		<style title="ASP JS Symbols" index="65" back="Khaki" bold="true" font="js" fore="Black"/>
+		<style title="ASP JavaScript EOL" index="66" back="DarkGray" eolfilled="true"/>
+		<style title="ASP JavaScript RegEx" index="67" back="LightPink"/>
+		<style title="VBS Other" index="71" back="AliceBlue" eolfilled="true" font="vbs" fore="Black"/>
+		<style title="VBS Comment" index="72" back="AliceBlue" eolfilled="true" font="comment" fore="Green"/>
+		<style title="VBS Numbers" index="73" back="AliceBlue" eolfilled="true" font="vbs" fore="Teal"/>
+		<style title="VBS Keywords" index="74" back="AliceBlue" bold="true" eolfilled="true" font="vbs" fore="Navy"/>
+		<style title="VBS String" index="75" back="AliceBlue" eolfilled="true" font="vbs" fore="Purple"/>
+		<style title="VBS Identifiers" index="76" back="AliceBlue" eolfilled="true" font="vbs" fore="Navy"/>
+		<style title="VBS Unterminated string" index="77" back="LightSlateBlue" eolfilled="true" font="vbs" fore="Navy"/>
+		<style title="ASP VBS Other" index="81" back="Gainsboro" eolfilled="true" font="vbs" fore="Black"/>
+		<style title="ASP VBS Comment" index="82" back="Gainsboro" eolfilled="true" font="comment" fore="Green"/>
+		<style title="ASP VBS Numbers" index="83" back="Gainsboro" eolfilled="true" font="vbs" fore="Teal"/>
+		<style title="ASP VBS Keywords" index="84" back="Gainsboro" bold="true" eolfilled="true" font="vbs" fore="Navy"/>
+		<style title="ASP VBS String" index="85" back="Gainsboro" eolfilled="true" font="vbs" fore="Purple"/>
+		<style title="ASP VBS Identifiers" index="86" back="Gainsboro" eolfilled="true" font="vbs" fore="Navy"/>
+		<style title="ASP VBS Unterminated string" index="87" back="MediumPurple" eolfilled="true" font="vbs" fore="Navy"/>
+		<style title="Python Embedded" index="90" fore="Gray"/>
+		<style index="91"  back="HoneyDew" eolfilled="true" fore="Gray"/>
+		<style title="Python Comment" index="92" back="HoneyDew" eolfilled="true" font="comment" fore="Green"/>
+		<style title="Python Numbers" index="93" back="HoneyDew" eolfilled="true" fore="Teal"/>
+		<style title="Python String" index="94" back="HoneyDew" eolfilled="true" font="monospace" fore="Purple"/>
+		<style title="Python Single quoted string" index="95" back="HoneyDew" eolfilled="true" font="monospace" fore="Purple"/>
+		<style title="Python Keywords" index="96" back="HoneyDew" bold="true" eolfilled="true" fore="Navy"/>
+		<style title="Python Triple quotes" index="97" back="HoneyDew" eolfilled="true" fore="Maroon"/>
+		<style title="Python Triple double quotes" index="98" back="HoneyDew" eolfilled="true" fore="Maroon"/>
+		<style title="Python Class name definition" index="99" back="HoneyDew" bold="true" eolfilled="true" fore="Blue"/>
+		<style title="Python Function or method name definition" index="100" back="HoneyDew" bold="true" eolfilled="true" fore="Teal"/>
+		<style title="Python Operators" index="101" back="HoneyDew" bold="true"	eolfilled="true"/>
+		<style title="Python Identifiers" index="102" back="HoneyDew" eolfilled="true"/>
+		<style title="PHP complex variable" index="104" back="Snow" fore="Green" italics="true"/>
+		<style title="ASP Python" index="105" fore="Gray"/>
+		<style index="106" back="Gainsboro" eolfilled="true" fore="Gray"/>
+		<style title="ASP Python Comment" index="107" back="Gainsboro" eolfilled="true" font="comment" fore="Green"/>
+		<style title="ASP Python Numbers" index="108" back="Gainsboro" eolfilled="true" fore="Teal"/>
+		<style title="ASP Python String" index="109" back="Gainsboro" eolfilled="true" font="monospace" fore="Purple"/>
+		<style title="ASP Python Single quoted string" index="110" back="Gainsboro" eolfilled="true" font="monospace" fore="Purple"/>
+		<style title="ASP Python Keywords" index="111" back="Gainsboro" bold="true" eolfilled="true" fore="Navy"/>
+		<style title="ASP Python Triple quotes" index="112" back="Gainsboro" eolfilled="true" fore="Maroon"/>
+		<style title="ASP Python Triple double quotes" index="113" back="Gainsboro" eolfilled="true" fore="Maroon"/>
+		<style title="ASP Python Class name definition" index="114" back="Gainsboro" bold="true" eolfilled="true" fore="Blue"/>
+		<style title="ASP Python Function or method name definition" index="115" back="Gainsboro" bold="true" eolfilled="true" fore="Teal"/>
+		<style title="ASP Python Operators" index="116" back="Gainsboro" bold="true" eolfilled="true"/>
+		<style title="ASP Python Identifiers" index="117" back="Gainsboro" eolfilled="true"/>
+		<style title="PHP Other" index="118" back="Snow" eolfilled="true" fore="Black"/>
+		<style title="PHP Double quoted String" index="119" back="Snow" fore="Green"/>
+		<style title="PHP Single quoted string" index="120" back="Snow" fore="Green"/>
+		<style title="PHP Keywords" index="121" back="Snow" fore="Purple" italics="true"/>
+		<style title="PHP Numbers" index="122" back="Snow" fore="DarkGoldenRod"/>
+		<style title="PHP Variable" index="123" back="Snow" fore="Navy" italics="true"/>
+		<style title="PHP Comment" index="124" back="Snow" font="comment" fore="DarkGray"/>
+		<style title="PHP One line comment" index="125" back="Snow" font="comment" fore="DimGray" italics="true"/>
+		<style title="PHP variable in double quoted string" index="126" back="Snow" fore="Green" italics="true"/>
+		<style title="PHP operator" index="127" back="Snow" fore="Black"/>
+	  </html>
+	  <css>
+		<menu>HTML Style Sheet</menu>
+		<comment>
+		  <stream>
+			<end>*/</end>
+			<start>/*</start>
+		  </stream>
+		</comment>
+		<fileExts>*.css</fileExts>
+		<defFileExt>css</defFileExt>
+		<fileFilter>CSS</fileFilter>
+		<lexer>css</lexer>
+		<style title="White space: Visible only in View Whitespace mode (or if it has a back colour)" index="0" fore="DeepPink"/>
+		<style title="Selector (HTML tag)" index="1" bold="true" color="Keywords"/>
+		<style title="Class selector ([HtmlTag].classSelector)" index="2"/>
+		<style title="Pseudo class (HtmlTag:pseudoClass)" index="3" fore="Maroon"/>
+		<style title="Unknown Pseudo class" index="4" fore="Red"/>
+		<style title="Operator" index="5" color="operator"/>
+		<style title="CSS1 Property" index="6" fore="MediumBlue"/>
+		<style title="Unknown Property" index="7" fore="Red"/>
+		<style title="Value" index="8" color="string"/>
+		<style title="Comment" index="9" color="codeCommentBox" font="codeCommentBox"/>
+		<style title="ID selector (#IdSel)" index="10" color="Numbers" italics="true"/>
+		<style title="Important" index="11" bold="true" fore="Darkorange"/>
+		<style title="At-rule (@)" index="12" bold="true" color="preproc"/>
+		<style title="Double quoted strings" index="13" color="string"/>
+		<style title="Single quoted strings" index="14" color="string"/>
+		<style title="CSS2 Property" index="15" fore="DeepSkyBlue"/>
+		<style title="Attribute selection ([att='val'])" index="16" fore="Maroon"/>
+		<style title="Other" index="32" font="codeBase"/>
+	  </css>
+	  <idl>
+		<menu>IDL</menu>
+		<fileExts>*.idl;*.odl</fileExts>
+		<defFileExt>idl</defFileExt>
+		<fileFilter>IDL</fileFilter>
+		<keywords index="0">aggregatable allocate appobject arrays async async_uuid auto_handle bindable boolean broadcast byte byte_count call_as callback char coclass code comm_status const context_handle context_handle_noserialize context_handle_serialize control cpp_quote custom decode default defaultbind defaultcollelem defaultvalue defaultvtable dispinterface displaybind dllname double dual enable_allocate encode endpoint entry enum error_status_t explicit_handle fault_status first_is float handle_t heap helpcontext helpfile helpstring helpstringcontext helpstringdll hidden hyper id idempotent ignore iid_as iid_is immediatebind implicit_handle import importlib in include in_line int __int64 __int3264 interface last_is lcid length_is library licensed local long max_is maybe message methods midl_pragma midl_user_allocate midl_user_free min_is module ms_union ncacn_at_dsp ncacn_dnet_nsp ncacn_http ncacn_ip_tcp ncacn_nb_ipx ncacn_nb_nb ncacn_nb_tcp ncacn_np ncacn_spx ncacn_vns_spp ncadg_ip_udp ncadg_ipx ncadg_mq ncalrpc nocode nonbrowsable noncreatable nonextensible notify object odl oleautomation optimize optional out out_of_line pipe pointer_default pragma properties propget propput propputref ptr public range readonly ref represent_as requestedit restricted retval shape short signed size_is small source strict_context_handle string struct switch switch_is switch_type transmit_as typedef uidefault union unique unsigned user_marshal usesgetlasterror uuid v1_enum vararg version void wchar_t wire_marshal attribute native noscript scriptable shared wstring inout</keywords>
+		<lexer>cpp</lexer>
+	  </idl>
+	  <java>
+		<menu>Java</menu>
+		<fileExts>*.java</fileExts>
+		<defFileExt>java</defFileExt>
+		<fileFilter>Java</fileFilter>
+		<lexer>cpp</lexer>
+	  </java>
+	  <js>
+		<braces style="10"/>
+		<comment>
+		  <block>//~</block>
+		  <box>
+			<start>/*</start>
+			<end>*/</end>
+			<middle>*</middle>
+		  </box>
+		  <stream>
+			<start>/*</start>
+			<end>*/</end>
+		  </stream>
+		</comment>
+		<menu>JavaScript</menu>
+		<fileExts>*.jsx;*.js;*.jsxinc</fileExts>
+		<defFileExt>jsx</defFileExt>
+		<fileFilter>JavaScript</fileFilter>
+		<lexer>js</lexer>
+		<keywords index="0">abstract boolean break byte case catch char class const continue debugger default delete do double else enum export extends false final finally float for function goto if implements import in instanceof int interface long native new null package private protected public return short static super switch synchronized this throw throws transient true try typeof var void volatile while with</keywords>
+		<keywords index="1">Infinity NaN Array Boolean Date Error Function Math Number Object RegExp String Reflection ReflectionInfo Dictionary File Folder Socket</keywords>
+		<wordChars>abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_$</wordChars>
+		<style title="White space" index="0" fore="Gray"/>
+		<style title="Comment: /* */" index="1" color="codeCommentBox" font="codeCommentBox"/>
+		<style title="Comment: //" index="2" color="codeCommentLine" font="codeCommentLine"/>
+		<style title="Doc comment: /** or /*!" index="3" fore="Green" font="codeCommentDoc"/>
+		<style title="Numbers" index="4" color="Numbers"/>
+		<style title="Keywords" index="5" bold="true" color="Keywords"/>
+		<style title="Double quoted string" index="6" color="string"/>
+		<style title="Single quoted string" index="7" fore="Purple"/>
+		<style title="Tripple Double quoted string" index="20" color="string"/>
+		<style title="Tripple Single quoted string" index="21" fore="Purple"/>
+		<style title="UUIDs (only in IDL)" index="8" fore="Purple"/>
+		<style title="Preprocessor" index="9" color="preproc"/>
+		<style title="Operators" index="10" bold="true" color="operator"/>
+		<style title="Identifiers" index="11"/>
+		<style title="Open string at end of line" index="12" back="Thistle" eolfilled="true" font="monospace" fore="Black"/>
+		<style title="Verbatim strings for C#" index="13" back="AliceBlue" eolfilled="true" font="monospace" fore="Green"/>
+		<style title="Doc comment: /// or //!" index="15" fore="Green" font="codeCommentBox"/>
+		<style title="Keywords 2" index="16" fore="FireBrick"/>
+		<style title="Doc keywords" index="17" font="codeCommentBox" fore="Green"/>
+		<style title="Doc keyword errors" index="18" font="codeCommentBox" fore="Green"/>
+		<style title="Other" index="32" font="base"/>
+	  </js>
+	  <lisp>
+		<menu>LISP</menu>
+		<!-- Braces are only matched in operator style -->
+		<braces style="10"/>
+		<comment>
+		  <block>;</block>
+		  <box>
+			<end>;;</end>
+			<middle>;;</middle>
+			<start>;;</start>
+		  </box>
+		</comment>
+		<fileExts>*.lsp;*.lisp</fileExts>
+		<defFileExt>lsp</defFileExt>
+		<fileFilter>LISP</fileFilter>
+		<!-- lisp build in functions, xlisp dialect -->
+		<keywords index="0">not defun + - * / = &lt; > &lt;= >= princ eval apply funcall quote identity function complement backquote lambda set setq setf defun defmacro gensym make symbol intern symbol name symbol value symbol plist get getf putprop remprop hash make array aref car cdr caar cadr cdar cddr caaar caadr cadar caddr cdaar cdadr cddar cdddr caaaar caaadr caadar caaddr cadaar cadadr caddar cadddr cdaaar cdaadr cdadar cdaddr cddaar cddadr cdddar cddddr cons list append reverse last nth nthcdr member assoc subst sublis nsubst  nsublis remove length list length mapc mapcar mapl maplist mapcan mapcon rplaca rplacd nconc delete atom symbolp numberp boundp null listp consp minusp zerop plusp evenp oddp eq eql equal cond case and or let l if prog prog1 prog2 progn go return do dolist dotimes catch throw error cerror break continue errset baktrace evalhook truncate float rem min max abs sin cos tan expt exp sqrt random logand logior logxor lognot bignums logeqv lognand lognor logorc2 logtest logbitp logcount integer length nil</keywords>
+		<lexer>lisp</lexer>
+		<style title="White space" index="0" fore="Gray"/>
+		<style title="Line Comment" index="1" fore="Green" font="codeCommentBox"/>
+		<style title="Numbers" index="2" color="Numbers"/>
+		<style title="Keywords" index="3" bold="true" color="Keywords"/>
+		<style title="String" index="6" color="string"/>
+		<style title="Open string at end of line" index="8" back="LemonChiffon" eolfilled="true" fore="Black" name="Verdana" size="9"/>
+		<style title="Identifiers" index="9"/>
+		<style title="Operators" index="10" bold="true" color="operator"/>
+		<style title="Regular expressions" index="14" back="Lavender" eolfilled="true" font="monospace" fore="DarkOliveGreen"/>
+		<style title="Other" index="32" font="base"/>
+		<style title="Matched Operators" index="34" bold="true" fore="Blue"/>
+		<style index="35" bold="true" fore="Red"/>
+		<wordChars>abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-&lt;>.#+@$%^&amp;=*!?</wordChars>
+	  </lisp>
+	  <lua>
+		<menu>Lua</menu>
+		<!-- Braces are only matched in operator style -->
+		<braces style="10"/>
+		<comment>
+		  <block>--~</block>
+		  <blockLineStart>1</blockLineStart>
+		</comment>
+		<fileExts>*.lua</fileExts>
+		<defFileExt>lua</defFileExt>
+		<fileFilter>Lua</fileFilter>
+		<keywords index="0">and break do else elseif end false for function if in local nil not or repeat return then true until while</keywords>
+		<keywords index="1">_VERSION assert collectgarbage dofile error gcinfo loadfile loadstring print rawget rawset require tonumber tostring type unpack _ALERT _ERRORMESSAGE _INPUT _PROMPT _OUTPUT _STDERR _STDIN _STDOUT call dostring foreach foreachi getn globals newtype sort tinsert tremove _G getfenv getmetatable ipairs loadlib next pairs pcall rawequal setfenv setmetatable xpcall string table math coroutine io os debug load module select</keywords>
+		<keywords index="2">abs acos asin atan atan2 ceil cos deg exp floor format frexp gsub ldexp log log10 max min mod rad random randomseed sin sqrt strbyte strchar strfind strlen strlower strrep strsub strupper tan string.byte string.char string.dump string.find string.len string.lower string.rep string.sub string.upper string.format string.gfind string.gsub table.concat table.foreach table.foreachi table.getn table.sort table.insert table.remove table.setn math.abs math.acos math.asin math.atan math.atan2 math.ceil math.cos math.deg math.exp math.floor math.frexp math.ldexp math.log math.log10 math.max math.min math.mod math.pi math.pow math.rad math.random math.randomseed math.sin math.sqrt math.tan string.gmatch string.match string.reverse table.maxn math.cosh math.fmod math.modf math.sinh math.tanh math.huge</keywords>
+		<keywords index="3">openfile closefile readfrom writeto appendto remove rename flush seek tmpfile tmpname read write clock date difftime execute exit getenv setlocale time coroutine.create coroutine.resume coroutine.status coroutine.wrap coroutine.yield io.close io.flush io.input io.lines io.open io.output io.read io.tmpfile io.type io.write io.stdin io.stdout io.stderr os.clock os.date os.difftime os.execute os.exit os.getenv os.remove os.rename os.setlocale os.time os.tmpname coroutine.running package.cpath package.loaded package.loadlib package.path package.preload package.seeall io.popen</keywords>
+		<lexer>lua</lexer>
+		<style title="White space: Visible only in View Whitespace mode (or if it has a back colour)" index="0" fore="Red"/>
+		<style title="Block comment (Lua 5.0)" index="1" back="Gainsboro" fore="Green" eolfilled="true" font="codeCommentBox"/>
+		<style title="Line comment" index="2" fore="Green" font="codeCommentLine"/>
+		<style title="Doc comment -- Not used in Lua (yet?)" index="3" color="notused" font="notused"/>
+		<style title="Numbers" index="4" color="Numbers"/>
+		<style title="Keywords" index="5" color="Keywords"/>
+		<style title="(Double quoted) String" index="6" color="string"/>
+		<style title="Character (Single quoted string)" index="7" color="chars"/>
+		<style title="Literal string" index="8" back="LightCyan" color="string" font="codeCommentBox"/>
+		<style title="Preprocessor (obsolete in Lua 4.0 and up)" index="9" color="preproc"/>
+		<style title="Operators" index="10" color="operator"/>
+		<style title="Identifier (everything else...)" index="11"/>
+		<style title="Open string at end of line" index="12" back="Thistle" eolfilled="true"/>:
+		<style title="Other" index="32" font="codeBasee" fore="Black"/>
+		<wordChars>abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789ŠšŒœŸÿÀàÁáÂâÃãÄäÅåÆæÇçÈèÉéÊêËëÌìÍíÎîÏïÐðÑñÒòÓóÔôÕõÖØøÙùÚúÛûÜüÝýÞþßö_%</wordChars>
+	  </lua>
+	  <batch>
+		<menu>Microsoft Batch file</menu>
+		<comment>
+		  <block>REM ~</block>
+		</comment>
+		<fileExts>*.bat;*.cmd;*.nt</fileExts>
+		<defFileExt>bat</defFileExt>
+		<fileFilter>Batch</fileFilter>
+		<keywords index="0">rem set if exist errorlevel for in do break call chcp cd chdir choice cls country ctty date del erase dir echo exit goto loadfix loadhigh mkdir md move path pause prompt rename ren rmdir rd shift time type ver verify vol com con lpt nul color copy defined else not start</keywords>
+		<lexer>batch</lexer>
+		<style title="Other" index="0" fore="Black"/>
+		<style title="Comment (rem or ::)" index="1" font="comment" fore="Green"/>
+		<style title="Keywords" index="2" bold="true" color="Keywords"/>
+		<style title="Label (line beginning with ':')" index="3" back="DimGray" color="string" eolfilled="true" fore="Yellow"/>
+		<style title="Hide command character ('@')" index="4" color="preproc"/>
+		<style title="External commands" index="5" bold="true" font="monospace" fore="DarkCyan"/>
+		<style title="Variable: %%x (x is almost whatever, except space and %), %n (n in [0-9]), %EnvironmentVar%" index="6" fore="Purple"/>
+		<style title="Operator: * ? &lt; > |" index="7" fore="Black"/>
+	  </batch>
+	  <pascal>
+		<menu>Pascal</menu>
+		<!-- Braces are only matched in operator style -->
+		<braces style="10"/>
+		<fileExts>*.dpr;*.dpk;*.pas;*.dfm;*.inc;*.pp</fileExts>
+		<defFileExt>pas</defFileExt>
+		<fileFilter>Pascal</fileFilter>
+		<keywords index="0">and array asm begin case cdecl class const constructor default destructor div do downto else end end. except exit exports external far file finalization finally for function goto if implementation in index inherited initialization inline interface label library message mod near nil not object of on or out overload override packed pascal private procedure program property protected public published raise read record register repeat resourcestring safecall set shl shr stdcall stored string then threadvar to try type unit until uses var virtual while with write xor</keywords>
+		<keywords index="1">write read default public protected private property published stored</keywords>
+		<lexer>pascal</lexer>
+		<style title="White space" index="0" font="pascal" fore="Black"/>
+		<style title="Comment" index="1" font="comment" fore="Green"/>
+		<style title="Line Comment" index="2" font="comment" fore="Green"/>
+		<style title="Doc comment" index="3" fore="Gray"/>
+		<style title="Numbers" index="4" fore="Teal"/>
+		<style title="Keywords" index="5" bold="true" fore="Navy"/>
+		<style title="Double quoted string" index="6" font="comment" fore="Purple" italics="true"/>
+		<style title="Single quoted string" index="7" font="text" fore="Purple" italics="true"/>
+		<style title="Symbols" index="8" fore="Teal"/>
+		<style title="Preprocessor" index="9" fore="Olive"/>
+		<style title="Operators" index="10" fore="Black"/>
+		<style title="Inline Asm" index="14" fore="Teal"/>
+		<style title="Default/Identifiers" index="32" fore="Maroon"/>
+		<style title="Brace highlight" index="34" fore="Blue"/>
+		<style title="Brace incomplete highlight" index="35" fore="Red"/>
+	  </pascal>
+	  <perl>
+		<menu>Perl</menu>
+		<!-- Braces are only matched in operator style -->
+		<braces style="10"/>
+		<comment>
+		  <block>#~</block>
+		</comment>
+		<fileExts>*.pl;*.pm;*.cgi;*.pod</fileExts>
+		<defFileExt>pl</defFileExt>
+		<fileFilter>Perl</fileFilter>
+		<keywords index="0">NULL __FILE__ __LINE__ __PACKAGE__ __DATA__ __END__ AUTOLOAD BEGIN CORE DESTROY END EQ GE GT INIT LE LT NE CHECK abs accept alarm and atan2 bind binmode bless caller chdir chmod chomp chop chown chr chroot close closedir cmp connect continue cos crypt dbmclose dbmopen defined delete die do dump each else elsif endgrent endhostent endnetent endprotoent endpwent endservent eof eq eval exec exists exit exp fcntl fileno flock for foreach fork format formline ge getc getgrent getgrgid getgrnam gethostbyaddr gethostbyname gethostent getlogin getnetbyaddr getnetbyname getnetent getpeername getpgrp getppid getpriority getprotobyname getprotobynumber getprotoent getpwent getpwnam getpwuid getservbyname getservbyport getservent getsockname getsockopt glob gmtime goto grep gt hex if index int ioctl join keys kill last lc lcfirst le length link listen local localtime lock log lstat lt map mkdir msgctl msgget msgrcv msgsnd my ne next no not oct open opendir or ord our pack package pipe pop pos print printf prototype push quotemeta qu rand read readdir readline readlink readpipe recv redo ref rename require reset return reverse rewinddir rindex rmdir scalar seek seekdir select semctl semget semop send setgrent sethostent setnetent setpgrp setpriority setprotoent setpwent setservent setsockopt shift shmctl shmget shmread shmwrite shutdown sin sleep socket socketpair sort splice split sprintf sqrt srand stat study sub substr symlink syscall sysopen sysread sysseek system syswrite tell telldir tie tied time times truncate uc ucfirst umask undef unless unlink unpack unshift untie until use utime values vec wait waitpid wantarray warn while write xor</keywords>
+		<lexer>perl</lexer>
+		<style title="White space" index="0" font="base" fore="Gray"/>
+		<style title="Error" index="1" color="error"/>
+		<style title="Comment" index="2" fore="Green" font="codeCommentBox"/>
+		<style title="POD: = at beginning of line" index="3" back="AliceBlue" eolfilled="true" font="text" fore="DarkGreen"/>
+		<style title="Numbers" index="4" color="Numbers"/>
+		<style title="Keywords" index="5" bold="true" color="Keywords"/>
+		<style title="Double quoted string" index="6" color="string" font="monospace"/>
+		<style title="Single quoted string" index="7" color="chars" font="monospace"/>
+		<style title="Symbols / Punctuation. Currently not used by LexPerl." index="8" color="notused" font="notused"/>
+		<style title="Preprocessor. Currently not used by LexPerl." index="9" color="notused" font="notused"/>
+		<style title="Operators" index="10" bold="true" color="operator"/>
+		<style title="Identifiers (functions, etc.)" index="11" fore="Black"/>
+		<style title="Scalars: $var" index="12" back="MistyRose" fore="Black"/>
+		<style title="Array: @var" index="13" back="LightYellow" fore="Black"/>
+		<style title="Hash: %var" index="14" back="AliceBlue" fore="Black"/>
+		<style title="Symbol table: *var" index="15" back="Gainsboro" fore="Black"/>
+		<style title="Regex: /re/ or m{re}" index="17" back="PaleGreen" fore="Black"/>
+		<style title="Substitution: s/re/ore/" index="18" back="Khaki" fore="Black"/>
+		<style title="Long Quote (qq, qr, qw, qx) -- obsolete: replaced by qq, qx, qr, qw" index="19" back="LightSlateGray" fore="Yellow"/>
+		<style title="Back Ticks" index="20" back="RosyBrown" fore="Yellow"/>
+		<style title="Data Section: __DATA__ or __END__ at beginning of line" index="21" back="PapayaWhip" eolfilled="true" fore="DarkRed"/>
+		<style title="Here-doc (delimiter)" index="22" back="Gainsboro" fore="Black"/>
+		<style title="Here-doc (single quoted, q)" index="23" back="Gainsboro" eolfilled="true" fore="Purple"/>
+		<style title="Here-doc (double quoted, qq)" index="24" back="Gainsboro" bold="true" eolfilled="true" fore="Purple"/>
+		<style title="Here-doc (back ticks, qx)" index="25" back="Gainsboro" eolfilled="true" fore="Purple" italics="true"/>
+		<style title="Single quoted string, generic" index="26" font="monospace" fore="Purple"/>
+		<style title="qq = Double quoted string" index="27" color="string" font="monospace"/>
+		<style title="qx = Back ticks" index="28" back="RosyBrown" fore="Yellow"/>
+		<style title="qr = Regex" index="29" back="PaleGreen" fore="Black"/>
+		<style title="qw = Array" index="30" back="LightYellow" fore="Black"/>
+		<style title="POD: verbatim paragraphs" index="31" back="LightCyan" eolfilled="true" font="monospace" fore="DarkGreen"/>
+		<wordChars>abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_$@%&amp;</wordChars>
+	  </perl>
+	  <ps>
+		<menu>PostScript</menu>
+		<!-- Braces are only matched in procedure parenthesis style -->
+		<braces style="11"/>
+		<comment>
+		  <block>%~</block>
+		</comment>
+		<fileExts>*.ps</fileExts>
+		<defFileExt>ps</defFileExt>
+		<fileFilter>PostScript</fileFilter>
+		<!-- Postscript level 1 operators -->
+		<keywords index="0">$error = == FontDirectory StandardEncoding UserObjects abs add aload anchorsearch and arc arcn arcto array ashow astore atan awidthshow begin bind bitshift bytesavailable cachestatus ceiling charpath clear cleardictstack cleartomark clip clippath closefile closepath concat concatmatrix copy copypage cos count countdictstack countexecstack counttomark currentcmykcolor currentcolorspace currentdash currentdict currentfile currentflat currentfont currentgray currenthsbcolor currentlinecap currentlinejoin currentlinewidth currentmatrix currentmiterlimit currentpagedevice currentpoint currentrgbcolor currentscreen currenttransfer cvi cvlit cvn cvr cvrs cvs cvx def defaultmatrix definefont dict dictstack div dtransform dup echo end eoclip eofill eq erasepage errordict exch exec execstack executeonly executive exit exp false file fill findfont flattenpath floor flush flushfile for forall ge get getinterval grestore grestoreall gsave gt idetmatrix idiv idtransform if ifelse image imagemask index initclip initgraphics initmatrix inustroke invertmatrix itransform known kshow le length lineto ln load log loop lt makefont mark matrix maxlength mod moveto mul ne neg newpath noaccess nor not null nulldevice or pathbbox pathforall pop print prompt pstack put putinterval quit rand rcheck rcurveto read readhexstring readline readonly readstring rectstroke repeat resetfile restore reversepath rlineto rmoveto roll rotate round rrand run save scale scalefont search setblackgeneration setcachedevice setcachelimit setcharwidth setcolorscreen setcolortransfer setdash setflat setfont setgray sethsbcolor setlinecap setlinejoin setlinewidth setmatrix setmiterlimit setpagedevice setrgbcolor setscreen settransfer setvmthreshold show showpage sin sqrt srand stack start status statusdict stop stopped store string stringwidth stroke strokepath sub systemdict token token transform translate true truncate type ueofill undefineresource userdict usertime version vmstatus wcheck where widthshow write writehexstring writestring xcheck xor</keywords>
+		<!-- Postscript level 2 operators -->
+		<keywords index="1">GlobalFontDirectory ISOLatin1Encoding SharedFontDirectory UserObject arct colorimage cshow currentblackgeneration currentcacheparams currentcmykcolor currentcolor currentcolorrendering currentcolorscreen currentcolorspace currentcolortransfer currentdevparams currentglobal currentgstate currenthalftone currentobjectformat currentoverprint currentpacking currentpagedevice currentshared currentstrokeadjust currentsystemparams currentundercolorremoval currentuserparams defineresource defineuserobject deletefile execform execuserobject filenameforall fileposition filter findencoding findresource gcheck globaldict glyphshow gstate ineofill infill instroke inueofill inufill inustroke languagelevel makepattern packedarray printobject product realtime rectclip rectfill rectstroke renamefile resourceforall resourcestatus revision rootfont scheck selectfont serialnumber setbbox setblackgeneration setcachedevice2 setcacheparams setcmykcolor setcolor setcolorrendering setcolorscreen setcolorspace setcolortranfer setdevparams setfileposition setglobal setgstate sethalftone setobjectformat setoverprint setpacking setpagedevice setpattern setshared setstrokeadjust setsystemparams setucacheparams setundercolorremoval setuserparams setvmthreshold shareddict startjob uappend ucache ucachestatus ueofill ufill undef undefinefont undefineresource undefineuserobject upath ustroke ustrokepath vmreclaim writeobject xshow xyshow yshow</keywords>
+		<!-- Postscript level 3 operators -->
+		<keywords index="2">cliprestore clipsave composefont currentsmoothness findcolorrendering setsmoothness shfill</keywords>
+		<!-- RIP-specific operators (Ghostscript) -->
+		<keywords index="3">.begintransparencygroup .begintransparencymask .bytestring .charboxpath .currentaccuratecurves .currentblendmode .currentcurvejoin .currentdashadapt .currentdotlength .currentfilladjust2 .currentlimitclamp .currentopacityalpha .currentoverprintmode .currentrasterop .currentshapealpha .currentsourcetransparent .currenttextknockout .currenttexturetransparent .dashpath .dicttomark .discardtransparencygroup .discardtransparencymask .endtransparencygroup .endtransparencymask .execn .filename .filename .fileposition .forceput .forceundef .forgetsave .getbitsrect .getdevice .inittransparencymask .knownget .locksafe .makeoperator .namestring .oserrno .oserrorstring .peekstring .rectappend .runandhide .setaccuratecurves .setblendmode .setcurvejoin .setdashadapt .setdebug .setdefaultmatrix .setdotlength .setfilladjust2 .setlimitclamp .setmaxlength .setopacityalpha .setoverprintmode .setrasterop .setsafe .setshapealpha .setsourcetransparent .settextknockout .settexturetransparent .stringbreak .stringmatch .tempfile .type1decrypt .type1encrypt .type1execchar .unread arccos arcsin copydevice copyscanlines currentdevice finddevice findlibfile findprotodevice flushpage getdeviceprops getenv makeimagedevice makewordimagedevice max min putdeviceprops setdevice</keywords>
+		<lexer>ps</lexer>
+		<style title="Other" index="0" font="base"/>
+		<style title="Comment" index="1" fore="Green" font="codeCommentLine"/>
+		<style title="DSC comment" index="2" color="codeCommentDoc" font="codeCommentDoc"/>
+		<style title="DSC comment value" index="3" font="codeCommentDoc" fore="SteelBlue"/>
+		<style title="Numbers" index="4" color="Numbers"/>
+		<style title="Name" index="5" color="operator"/>
+		<style title="Keywords" index="6" bold="true" color="Keywords"/>
+		<style title="Literal" index="7" color="preproc"/>
+		<style title="Immediately evaluated literal" index="8" bold="true" color="preproc"/>
+		<style title="Array parenthesis" index="9" color="Keywords"/>
+		<style title="Dictionary parenthesis" index="10" fore="SteelBlue"/>
+		<style title="Procedure parenthesis" index="11" bold="true" color="operator"/>
+		<style title="Text" index="12" color="string" font="text"/>
+		<style title="Hex string" index="13" fore="DarkOliveGreen"/>
+		<style title="Base85 string" index="14" color="string"/>
+		<style title="Bad string character" index="15" color="error"/>
+	  </ps>
+	  <python>
+		<menu>Python</menu>
+		<!-- Braces are only matched in operator style -->
+		<braces style="10"/>
+		<comment>
+		  <block>#~</block>
+		</comment>
+		<fileExts>*.py</fileExts>
+		<defFileExt>py</defFileExt>
+		<fileFilter>Python</fileFilter>
+		<lexer>python</lexer>
+		<keywords index="0">and assert break class continue def del elif else except exec finally for from global if import in is lambda None not or pass print raise return try while yield</keywords>
+		<style title="White space" index="0" fore="Gray"/>
+		<style title="Comment" index="1" font="comment" fore="Green"/>
+		<style title="Numbers" index="2" fore="Teal"/>
+		<style title="String" index="3" font="monospace" fore="Purple"/>
+		<style title="Single quoted string" index="4" font="monospace" fore="Purple"/>
+		<style title="Keywords" index="5" bold="true" fore="Navy"/>
+		<style title="Triple quotes" index="6" fore="Maroon"/>
+		<style title="Triple double quotes" index="7" fore="Maroon"/>
+		<style title="Class name definition" index="8" bold="true" fore="Blue"/>
+		<style title="Function or method name definition" index="9" bold="true" fore="Teal"/>
+		<style title="Operators" index="10" bold="true"/>
+		<style title="Ideintifiers" index="11"/>
+		<style title="Comment-blocks" index="12" fore="Gray"/>
+		<style title="Open string at end of line" index="13" back="Thistle" eolfilled="true" font="monospace" fore="Black"/>
+		<style title="Highlighted identifiers" index="14" fore="SteelBlue"/>
+		<style title="Decorators" index="15" fore="SaddleBrown"/>
+		<style title="Matched Operators" index="34" bold="true" fore="Blue"/>
+		<style index="35" bold="true" fore="Red"/>
+	  </python>
+	  <ruby>
+		<menu>Ruby</menu>
+		<!-- Braces are only matched in operator style -->
+		<braces style="10"/>
+		<comment>
+		  <block>#~</block>
+		</comment>
+		<fileExts>*.rb;*.rbw</fileExts>
+		<defFileExt>rb</defFileExt>
+		<fileFilter>Ruby</fileFilter>
+		<lexer>ruby</lexer>
+		<keywords index="0">__FILE__ and def end in or self unless __LINE__ begin defined? ensure module redo super until BEGIN break do false next rescue then when END case else for nil retry true while alias class elsif if not return undef yield</keywords>
+		<style title="White space" index="0" fore="Gray"/>
+		<style title="Error" index="1" back="Red"/>
+		<style title="Comment line" index="2" font="comment" fore="Green"/>
+		<style title="POD" index="3" back="LightCyan" eolfilled="true" font="monospace" fore="DarkGreen"/>
+		<style title="Numbers" index="4" fore="Teal"/>
+		<style title="Word" index="5" bold="true" fore="Navy"/>
+		<style title="String" index="6" font="monospace" fore="Purple"/>
+		<style title="Character" index="7" font="monospace" fore="Purple"/>
+		<style title="Class name" index="8" bold="true" fore="Blue"/>
+		<style title="Def name" index="9" bold="true" fore="Teal"/>
+		<style title="Operator" index="10" bold="true"/>
+		<style title="Identifiers"  index="11"/>
+		<style title="Regex" index="12" back="PaleGreen" fore="Black"/>
+		<style title="Global" index="13" fore="Purple"/>
+		<style title="Symbol" index="14" fore="GoldenRod"/>
+		<style title="MODULE_NAME" index="15" bold="true" fore="DarkMagenta"/>
+		<style title="INSTANCE_VAR" index="16" fore="MediumVioletRed"/>
+		<style title="CLASS_VAR" index="17" fore="DarkMagenta"/>
+		<style title="BACKTICKS" index="18" back="RosyBrown" fore="Yellow"/>
+		<style title="DATASECTION" index="19" back="PapayaWhip" eolfilled="true" fore="DarkRed"/>
+		<style title="HERE_DELIM" index="20" back="Gainsboro" fore="Black"/>
+		<style title="HERE_Q" index="21" back="Gainsboro" eolfilled="true" fore="Purple"/>
+		<style title="HERE_QQ" index="22" back="Gainsboro" bold="true" eolfilled="true" fore="Purple"/>
+		<style title="HERE_QX" index="23" back="Gainsboro" eolfilled="true" fore="Purple" italics="true"/>
+		<style title="STRING_Q" index="24" font="monospace" fore="Purple"/>
+		<style title="STRING_QQ" index="25" color="string" font="monospace"/>
+		<style title="STRING_QX" index="26" back="RosyBrown" fore="Yellow"/>
+		<style title="STRING_QR" index="27" back="PaleGreen" fore="Black"/>
+		<style title="STRING_QW" index="28" back="LightYellow" fore="Black"/>
+		<style title="Demoted Keyword" index="29" bold="true" fore="Navy"/>
+		<style title="STDIN" index="30" back="LightCoral"/>
+		<style title="STDOUT" index="31" back="LightCoral"/>
+		<style title="Matched Operators" index="34" bold="true" fore="Blue"/>
+		<style index="35" bold="true" fore="Red"/>
+		<style title="STDERR" index="40" back="LightCoral"/>
+	  </ruby>
+	  <sql>
+		<menu>SQL</menu>
+		<!-- Braces are only matched in operator style -->
+		<braces style="10"/>
+		<fileExts>*.sql</fileExts>
+		<defFileExt>sql</defFileExt>
+		<fileFilter>SQL</fileFilter>
+		<keywords index="0">absolute action add admin after aggregate alias all allocate alter and any are array as asc assertion at authorization before begin binary bit blob boolean both breadth by call cascade cascaded case cast catalog char character check class clob close collate collation column commit completion connect connection constraint constraints constructor continue corresponding create cross cube current current_date current_path current_role current_time current_timestamp current_user cursor cycle data date day deallocate dec decimal declare default deferrable deferred delete depth deref desc describe descriptor destroy destructor deterministic dictionary diagnostics disconnect distinct domain double drop dynamic each else end end-exec equals escape every except exception exec execute external false fetch first float for foreign found from free full function general get global go goto grant group grouping having host hour identity if ignore immediate in indicator initialize initially inner inout input insert int integer intersect interval into is isolation iterate join key language large last lateral leading left less level like limit local localtime localtimestamp locator map match minute modifies modify module month names national natural nchar nclob new next no none not null numeric object of off old on only open operation option or order ordinality out outer output pad parameter parameters partial path postfix precision prefix preorder prepare preserve primary prior privileges procedure public read reads real recursive ref references referencing relative restrict result return returns revoke right role rollback rollup routine row rows savepoint schema scroll scope search second section select sequence session session_user set sets size smallint some| space specific specifictype sql sqlexception sqlstate sqlwarning start state statement static structure system_user table temporary terminate than then time timestamp timezone_hour timezone_minute to trailing transaction translation treat trigger true under union unique unknown unnest update usage user using value values varchar variable varying view when whenever where with without work write year zone</keywords>
+		<!-- Keywords for PlDoc comments -->
+		<keywords index="1">param author since return see deprecated todo</keywords>
+		<!-- Keywords for SQL*Plus -->
+		<keywords index="2">acc~ept a~ppend archive log attribute bre~ak bti~tle c~hange cl~ear col~umn comp~ute conn~ect copy def~ine del desc~ribe disc~onnect e~dit exec~ute exit get help ho~st i~nput l~ist passw~ord pau~se pri~nt pro~mpt quit recover rem~ark repf~ooter reph~eader r~un sav~e set sho~w shutdown spo~ol sta~rt startup store timi~ng tti~tle undef~ine var~iable whenever oserror whenever sqlerror </keywords>
+		<!-- Keywords for Standard packages -->
+		<keywords index="3">dbms_output.disable dbms_output.enable dbms_output.get_line dbms_output.get_lines dbms_output.new_line dbms_output.put dbms_output.put_line </keywords>
+		<lexer>sql</lexer>
+		<style title="White space" index="0" fore="Gray"/>
+		<style title="Comment" index="1" font="comment" fore="Green"/>
+		<style title="Line Comment" index="2" font="comment" fore="Green"/>
+		<style title="Doc comment" index="3" fore="Gray"/>
+		<style title="Numbers" index="4" fore="Teal"/>
+		<style title="Keywords" index="5" bold="true" fore="Navy"/>
+		<style title="Double quoted string" index="6" font="monospace" fore="Purple"/>
+		<style title="Single quoted string" index="7" font="monospace" fore="Purple"/>
+		<style title="SQL*Plus" index="8" color="preproc"/>
+		<style title="SQL*Plus PROMPT" index="9" back="AliceBlue" eolfilled="true" font="monospace" fore="Green"/>
+		<style title="Operators" index="10" bold="true"/>
+		<style title="Identifiers"  index="11"/>
+		<style title="Open string at end of line / not used" index="12" back="Thistle" eolfilled="true" font="monospace" fore="Black"/>
+		<style title="SQL*Plus Comment" index="13" font="comment" fore="Green"/>
+		<style title="Hash Line Comment" index="15" font="comment" fore="Green"/>
+		<style title="Keywords2: Database objects" index="16" fore="FireBrick"/>
+		<style title="Comment Doc Keyword" index="17" font="codeCommentDoc" fore="SteelBlue"/>
+		<style title="Comment Doc Keyword Error" index="18" font="codeCommentDoc" fore="SaddleBrown"/>
+		<style title="Keywords5: User Keywords 1" index="19" fore="Indigo"/>
+		<style title="Keywords6: User Keywords 2" index="20" fore="FireBrick"/>
+		<style title="Keywords7: User Keywords 3" index="21" fore="DarkRed"/>
+		<style title="Keywords8: User Keywords 4" index="22" fore="Purple"/>
+	  </sql>
+	  <scheme>
+		<menu>Scheme</menu>
+		<fileExts>*.scm;*.smd;*.ss</fileExts>
+		<defFileExt>scm</defFileExt>
+		<fileFilter>Scheme</fileFilter>
+		<!-- Scheme functions, R5RS -->
+		<keywords index="0">+ - * / = &lt; > &lt;= >= => abs acos and angle append apply asin assoc assoc assq assv atan begin boolean? caar cadr call-with-current-continuation call/cc call-with-input-file call-with-output-file call-with-values car cdr caar cadr cdar cddr caaar caadr cadar caddr cdaar cdadr cddar cdddr caaaar caaadr caadar caaddr cadaar cadadr caddar cadddr cdaaar cdaadr cdadar cdaddr cddaar cddadr cdddar cddddr case ceiling char->integer char-alphabetic? char-ci&lt;=? char-ci&lt;? char-ci=? char-ci>=? char-ci>? char-downcase char-lower-case? char-numeric? char-ready? char-upcase char-upper-case? char-whitespace? char&lt;=? char&lt;? char=? char>=? char>? char? close-input-port close-output-port complex? cond cons cos current-input-port current-output-port define define-syntax delay denominator display do dynamic-wind else eof-object? eq? equal? eqv? eval even? exact->inexact exact? exp expt floor for-each force gcd if imag-part inexact->exact inexact? input-port? integer->char integer? interaction-environment lambda lcm length let let* let-syntax letrec letrec-syntax list list->string list->vector list-ref list-tail list? load log magnitude make-polar make-rectangular make-string make-vector map max member memq memv min modulo negative? newline not null-environment null? number->string number? numerator odd? open-input-file open-output-file or output-port? pair? peek-char input-port? output-port? positive? procedure? quasiquote quote quotient rational? rationalize read read-char real-part real? remainder reverse round scheme-report-environment set! set-car! set-cdr! sin sqrt string string->list string->number string->symbol string-append string-ci&lt;=? string-ci&lt;? string-ci=? string-ci>=? string-ci>? string-copy string-fill! string-length string-ref string-set! string&lt;=? string&lt;? string=? string>=? string>? string? substring symbol->string symbol? syntax-rules transcript-off transcript-on truncate unquote unquote-splicing values vector vector->list vector-fill! vector-length vector-ref vector-set! vector? with-input-from-file with-output-to-file write write-char zero?</keywords>
+		<lexer>lisp</lexer>
+		<wordChars>abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!$%&amp;*/:&lt;=>?^_~+-.@</wordChars>
+	  </scheme>
+	  <tcl>
+		<menu>Tcl</menu>
+		<!-- Braces are only matched in operator style -->
+		<braces style="6"/>
+		<comment>
+		  <block>#~</block>
+		  <box>
+			<end>##</end>
+			<middle>#</middle>
+			<start>##</start>
+		  </box>
+		</comment>
+		<fileExts>*.tcl</fileExts>
+		<defFileExt>tcl</defFileExt>
+		<fileFilter>Tcl</fileFilter>
+		<keywords index="0">after append array auto_execok auto_import auto_load auto_load_index auto_qualify beep bgerror binary break case catch cd clock close concat continue dde default echo else elseif encoding eof error eval exec exit expr fblocked fconfigure fcopy file fileevent flush for foreach format gets glob global history http if incr info interp join lappend lindex linsert list llength load loadTk lrange lreplace lsearch lset lsort memory msgcat namespace open package pid pkg::create pkg_mkIndex Platform-specific proc puts pwd re_syntax read regexp registry regsub rename resource return scan seek set socket source split string subst switch tclLog tclMacPkgSearch tclPkgSetup tclPkgUnknown tell time trace unknown unset update uplevel upvar variable vwait while</keywords>
+		<keywords index="1">bell bind bindtags bitmap button canvas checkbutton clipboard colors console cursors destroy entry event focus font frame grab grid image Inter-client keysyms label labelframe listbox lower menu menubutton message option options pack panedwindow photo place radiobutton raise scale scrollbar selection send spinbox text tk tk_chooseColor tk_chooseDirectory tk_dialog tk_focusNext tk_getOpenFile tk_messageBox tk_optionMenu tk_popup tk_setPalette tkerror tkvars tkwait toplevel winfo wish wm</keywords>
+		<keywords index="2">tk_bisque tk_chooseColor tk_dialog tk_focusFollowsMouse tk_focusNext tk_focusPrev tk_getOpenFile tk_getSaveFile tk_messageBox tk_optionMenu tk_popup tk_setPalette tk_textCopy tk_textCut tk_textPaste tkButtonAutoInvoke tkButtonDown tkButtonEnter tkButtonInvoke tkButtonLeave tkButtonUp tkCancelRepeat tkCheckRadioDown tkCheckRadioEnter tkCheckRadioInvoke tkColorDialog tkColorDialog_BuildDialog tkColorDialog_CancelCmd tkColorDialog_Config tkColorDialog_CreateSelector tkColorDialog_DrawColorScale tkColorDialog_EnterColorBar tkColorDialog_HandleRGBEntry tkColorDialog_HandleSelEntry tkColorDialog_InitValues tkColorDialog_LeaveColorBar tkColorDialog_MoveSelector tkColorDialog_OkCmd tkColorDialog_RedrawColorBars tkColorDialog_RedrawFinalColor tkColorDialog_ReleaseMouse tkColorDialog_ResizeColorBars tkColorDialog_RgbToX tkColorDialog_SetRGBValue tkColorDialog_StartMove tkColorDialog_XToRgb tkConsoleAbout tkConsoleBind tkConsoleExit tkConsoleHistory tkConsoleInit tkConsoleInsert tkConsoleInvoke tkConsoleOutput tkConsolePrompt tkConsoleSource tkDarken tkEntryAutoScan tkEntryBackspace tkEntryButton1 tkEntryClosestGap tkEntryGetSelection tkEntryInsert tkEntryKeySelect tkEntryMouseSelect tkEntryNextWord tkEntryPaste tkEntryPreviousWord tkEntrySeeInsert tkEntrySetCursor tkEntryTranspose tkEventMotifBindings tkFDGetFileTypes tkFirstMenu tkFocusGroup_BindIn tkFocusGroup_BindOut tkFocusGroup_Create tkFocusGroup_Destroy tkFocusGroup_In tkFocusGroup_Out tkFocusOK tkGenerateMenuSelect tkIconList tkIconList_Add tkIconList_Arrange tkIconList_AutoScan tkIconList_Btn1 tkIconList_Config tkIconList_Create tkIconList_CtrlBtn1 tkIconList_Curselection tkIconList_DeleteAll tkIconList_Double1 tkIconList_DrawSelection tkIconList_FocusIn tkIconList_FocusOut tkIconList_Get tkIconList_Goto tkIconList_Index tkIconList_Invoke tkIconList_KeyPress tkIconList_Leave1 tkIconList_LeftRight tkIconList_Motion1 tkIconList_Reset tkIconList_ReturnKey tkIconList_See tkIconList_Select tkIconList_Selection tkIconList_ShiftBtn1 tkIconList_UpDown tkListbox tkListboxAutoScan tkListboxBeginExtend tkListboxBeginSelect tkListboxBeginToggle tkListboxCancel tkListboxDataExtend tkListboxExtendUpDown tkListboxKeyAccel_Goto tkListboxKeyAccel_Key tkListboxKeyAccel_Reset tkListboxKeyAccel_Set tkListboxKeyAccel_Unset tkListboxMotion tkListboxSelectAll tkListboxUpDown tkMbButtonUp tkMbEnter tkMbLeave tkMbMotion tkMbPost tkMenuButtonDown tkMenuDownArrow tkMenuDup tkMenuEscape tkMenuFind tkMenuFindName tkMenuFirstEntry tkMenuInvoke tkMenuLeave tkMenuLeftArrow tkMenuMotion tkMenuNextEntry tkMenuNextMenu tkMenuRightArrow tkMenuUnpost tkMenuUpArrow tkMessageBox tkMotifFDialog tkMotifFDialog_ActivateDList tkMotifFDialog_ActivateFEnt tkMotifFDialog_ActivateFList tkMotifFDialog_ActivateSEnt tkMotifFDialog_BrowseDList tkMotifFDialog_BrowseFList tkMotifFDialog_BuildUI tkMotifFDialog_CancelCmd tkMotifFDialog_Config tkMotifFDialog_Create tkMotifFDialog_FileTypes tkMotifFDialog_FilterCmd tkMotifFDialog_InterpFilter tkMotifFDialog_LoadFiles tkMotifFDialog_MakeSList tkMotifFDialog_OkCmd tkMotifFDialog_SetFilter tkMotifFDialog_SetListMode tkMotifFDialog_Update tkPostOverPoint tkRecolorTree tkRestoreOldGrab tkSaveGrabInfo tkScaleActivate tkScaleButton2Down tkScaleButtonDown tkScaleControlPress tkScaleDrag tkScaleEndDrag tkScaleIncrement tkScreenChanged tkScrollButton2Down tkScrollButtonDown tkScrollButtonDrag tkScrollButtonUp tkScrollByPages tkScrollByUnits tkScrollDrag tkScrollEndDrag tkScrollSelect tkScrollStartDrag tkScrollTopBottom tkScrollToPos tkTabToWindow tkTearOffMenu tkTextAutoScan tkTextButton1 tkTextClosestGap tkTextInsert tkTextKeyExtend tkTextKeySelect tkTextNextPara tkTextNextPos tkTextNextWord tkTextPaste tkTextPrevPara tkTextPrevPos tkTextPrevWord tkTextResetAnchor tkTextScrollPages tkTextSelectTo tkTextSetCursor tkTextTranspose tkTextUpDownLine tkTraverseToMenu tkTraverseWithinMenu</keywords>
+		<keywords index="3">expand</keywords>
+		<lexer>tcl</lexer>
+		<style title="Comment: /* */." index="1" fore="Green" font="codeCommentBox"/>
+		<style title="Line Comment: //." index="2" fore="Green" font="codeCommentLine"/>
+		<style title="Numbers" index="3" color="Numbers"/>
+		<style title="keyword in quote" index="4" back="LightGrey" bold="true" color="string"/>
+		<style title="In quote" index="5" back="WhiteSmoke" color="string"/>
+		<style title="operator" index="6" bold="true" color="operator"/>
+		<style title="Identifiers" index="7" color="Keywords"/>
+		<style title="Substitution" index="8" back="AliceBlue" color="Keywords"/>
+		<style title="Substitution starts with a brace" index="9" back="MistyRose" color="Keywords"/>
+		<style title="Modifier -xxx" index="10" fore="Purple"/>
+		<style title="Expand (what and odd syntax)" index="11" fore="Blue" back="Khaki" bold="true"/>
+		<style title="Keywords" index="12" bold="true" color="Keywords"/>
+		<style index="13" fore="Blue" back="Azure" bold="true"/>
+		<style index="14" fore="Blue" back="LavenderBlush" bold="true"/>
+		<style index="15" fore="Blue" back="AntiqueWhite" bold="true"/>
+		<style title="Other keywords (bozo test colors :-)" index="16" fore="Blue" back="Lavender" bold="true"/>
+		<style index="17" fore="Blue" back="LemonChiffon" bold="true"/>"
+		<style index="18" fore="Blue" back="LightSalmon" bold="true"/>
+		<style index="19" fore="Blue" back="AntiqueWhite"/>
+		<style title="Matched Operators" index="34" back="WhiteSmoke" bold="true" fore="Blue"/>
+		<style index="35" back="Fuchsia" bold="true" fore="Red"/>
+	  </tcl>
+	  <text>
+		<menu>None</menu>
+		<fileExts>*.txt;*.log;*.lst;*.doc;*.diz;*.nfo</fileExts>
+		<defFileExt>txt</defFileExt>
+		<fileFilter>Text</fileFilter>
+		<lexer>text</lexer>
+		<wordChars>abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789ŠšŒœŸÿÀàÁáÂâÃãÄäÅåÆæÇçÈèÉéÊêËëÌìÍíÎîÏïÐðÑñÒòÓóÔôÕõÖØøÙùÚúÛûÜüÝýÞþßö-\'</wordChars>
+		<style title="Text" index="0" font="monospace"/>
+	  </text>
+	  <vxml>
+		<menu>VXML</menu>
+		<fileExts>*.vxml</fileExts>
+		<defFileExt>vxml</defFileExt>
+		<fileFilter>VXML</fileFilter>
+		<keywords index="0">assign audio block break catch choice clear disconnect else elseif emphasis enumerate error exit field filled form goto grammar help if initial link log menu meta noinput nomatch object option p paragraph param phoneme prompt property prosody record reprompt return s say-as script sentence subdialog submit throw transfer value var voice vxml accept age alphabet anchor application base beep bridge category charset classid cond connecttimeout content contour count dest destexpr dtmf dtmfterm duration enctype event eventexpr expr expritem fetchtimeout finalsilence gender http-equiv id level maxage maxstale maxtime message messageexpr method mime modal mode name namelist next nextitem ph pitch range rate scope size sizeexpr skiplist slot src srcexpr sub time timeexpr timeout transferaudio type value variant version volume xml:lang public !doctype</keywords>
+		<keywords index="1">abstract boolean break byte case catch char class const continue debugger default delete do double else enum export extends final finally float for function goto if implements import in instanceof int interface long native new package private protected public return short static super switch synchronized this throw throws transient try typeof var void volatile while with</keywords>
+		<lexer>hypertext</lexer>
+		<wordChars>abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-</wordChars>
+	  </vxml>
+	  <vb>
+		<menu>Visual BASIC/VBScript</menu>
+		<comment>
+		  <block>'~</block>
+		</comment>
+		<!-- PAG: Property Page, DSR: Data Report, DOB: User Document -->
+		<fileExts>*.vb;*.bas;*.frm;*.cls;*.ctl;*.pag;*.dsr;*.dob</fileExts>
+		<defFileExt>vb</defFileExt>
+		<fileFilter>Visual BASIC</fileFilter>
+		<keywords index="0">addressof alias and as attribute base begin binary boolean byref byte byval call case compare const currency date decimal declare defbool defbyte defint deflng defcur defsng defdbl defdec defdate defstr defobj defvar dim do double each else elseif empty end enum eqv erase error event exit explicit false for friend function get gosub goto if imp implements in input integer is len let lib like load lock long loop lset me mid midb mod new next not nothing null object on option optional or paramarray preserve print private property public raiseevent randomize redim rem resume return rset seek select set single static step stop string sub then time to true type typeof unload until variant wend while with withevents xor addhandler andalso as assembly auto catch cbool cbyte cchar cdate cdbl cdec char cint class clng cobj cshort csng cstr ctype default delegate finally gettype handles imports inherits interface mustinherit mustoverride mybase myclass namespace notinheritable notoverridable orelse overloads overridable overrides protected readonly removehandler shadows shared short structure synclock throw try unicode when writeonly</keywords>
+		<keywords index="1">appactivate beep chdir chdrive close filecopy get input kill line unlock mkdir name open print put reset rmdir savepicture savesetting seek sendkeys setattr width write</keywords>
+		<lexer>vb</lexer>
+		<style title="White space" index="0"/>
+		<style title="Comment" index="1" fore="Green" font="codeCommentLine"/>
+		<style title="Numbers" index="2" color="Numbers"/>
+		<style title="Keywords" index="3" color="Keywords"/>
+		<style title="String" index="4" color="string"/>
+		<style title="Preprocessor (directives)" index="5" color="preproc"/>
+		<style title="Operator" index="6" color="operator"/>
+		<style title="Identifiers" index="7"/>
+		<style title="Date" index="8" color="Numbers"/>
+		<style title="Open string at end of line" index="9"	color="Red"/>
+		<style title="Other keywords (bozo test colors :-)" index="10" fore="Olive" back="LightCyan"/>
+		<style index="11" fore="Olive" back="Lavender"/>
+		<style index="12" fore="Olive" back="AntiqueWhite"/>
+		<style title="Other" index="32" font="base"/>
+	  </vb>
+	  <rc>
+		<menu>Windows Resources</menu>
+		<fileExts>*.rc;*.rc2;*.dlg</fileExts>
+		<defFileExt>rc</defFileExt>
+		<fileFilter>RC</fileFilter>
+		<keywords index="0">ACCELERATORS ALT AUTO3STATE AUTOCHECKBOX AUTORADIOBUTTON BEGIN BITMAP BLOCK BUTTON CAPTION CHARACTERISTICS CHECKBOX CLASS COMBOBOX CONTROL CTEXT CURSOR DEFPUSHBUTTON DIALOG DIALOGEX DISCARDABLE EDITTEXT END EXSTYLE FONT GROUPBOX ICON LANGUAGE LISTBOX LTEXT MENU MENUEX MENUITEM MESSAGETABLE POPUP PUSHBUTTON RADIOBUTTON RCDATA RTEXT SCROLLBAR SEPARATOR SHIFT STATE3 STRINGTABLE STYLE TEXTINCLUDE VALUE VERSION VERSIONINFO VIRTKEY</keywords>
+		<lexer>cpp</lexer>
+	  </rc>
+	  <asm>
+		<menu>X86 Assembler</menu>
+		<comment>
+		  <block>;</block>
+		</comment>
+		<!-- Masm files -->
+		<fileExts>*.asm</fileExts>
+		<defFileExt>asm</defFileExt>
+		<fileFilter>Assembler</fileFilter>
+		<keywords index="0">aaa aad aam aas adc add and call cbw clc cld cli cmc cmp cmps cmpsb cmpsw cwd daa das dec div esc hlt idiv imul in inc int into iret ja jae jb jbe jc jcxz je jg jge jl jle jmp jna jnae jnb jnbe jnc jne jng jnge jnl jnle jno jnp jns jnz jo jp jpe jpo js jz lahf lds lea les lods lodsb lodsw loop loope loopew loopne loopnew loopnz loopnzw loopw loopz loopzw mov movs movsb movsw mul neg nop not or out pop popf push pushf rcl rcr ret retf retn rol ror sahf sal sar sbb scas scasb scasw shl shr stc std sti stos stosb stosw sub test wait xchg xlat xlatb xor bound enter ins insb insw leave outs outsb outsw popa pusha pushw arpl lar lsl sgdt sidt sldt smsw str verr verw clts lgdt lidt lldt lmsw ltr bsf bsr bt btc btr bts cdq cmpsd cwde insd iretd iretdf  iretf jecxz lfs lgs lodsd loopd  looped  loopned  loopnzd  loopzd  lss movsd movsx movzx outsd popad popfd pushad pushd  pushfd scasd seta setae setb setbe setc sete setg setge setl setle setna setnae setnb setnbe setnc setne setng setnge setnl setnle setno setnp setns setnz seto setp setpe setpo sets setz shld shrd stosd bswap cmpxchg invd  invlpg  wbinvd  xadd lock rep repe repne repnz repz cflush cpuid emms femms cmovo cmovno cmovb cmovc cmovnae cmovae cmovnb cmovnc cmove cmovz cmovne cmovnz cmovbe cmovna cmova cmovnbe cmovs cmovns cmovp cmovpe cmovnp cmovpo cmovl cmovnge cmovge cmovnl cmovle cmovng cmovg cmovnle cmpxchg486 cmpxchg8b  loadall loadall286 ibts icebp int1 int3 int01 int03 iretw popaw popfw pushaw pushfw rdmsr rdpmc rdshr rdtsc rsdc rsldt rsm rsts salc smi smint smintold svdc svldt svts syscall sysenter sysexit sysret ud0 ud1 ud2 umov xbts wrmsr wrshr</keywords>
+		<keywords index="1">f2xm1 fabs fadd faddp fbld fbstp fchs fclex fcom fcomp fcompp fdecstp fdisi fdiv fdivp fdivr fdivrp feni ffree fiadd ficom ficomp fidiv fidivr fild fimul fincstp finit fist fistp fisub fisubr fld fld1 fldcw fldenv fldenvw fldl2e fldl2t fldlg2 fldln2 fldpi fldz fmul fmulp fnclex fndisi fneni fninit fnop fnsave fnsavew fnstcw fnstenv fnstenvw fnstsw fpatan fprem fptan frndint frstor frstorw fsave fsavew fscale fsqrt fst fstcw fstenv fstenvw fstp fstsw fsub fsubp fsubr fsubrp ftst fwait fxam fxch fxtract fyl2x fyl2xp1 fsetpm fcos fldenvd fnsaved fnstenvd fprem1 frstord fsaved fsin fsincos fstenvd fucom fucomp fucompp fcomi fcomip ffreep fcmovb fcmove fcmovbe fcmovu fcmovnb fcmovne fcmovnbe fcmovnu</keywords>
+		<keywords index="2">ah al ax bh bl bp bx ch cl cr0 cr2 cr3 cr4 cs cx dh di dl dr0 dr1 dr2 dr3 dr6 dr7 ds dx eax ebp ebx ecx edi edx es esi esp fs gs si sp ss st tr3 tr4 tr5 tr6 tr7 st0 st1 st2 st3 st4 st5 st6 st7 mm0 mm1 mm2 mm3 mm4 mm5 mm6 mm7 xmm0 xmm1 xmm2 xmm3 xmm4 xmm5 xmm6 xmm7</keywords>
+		<keywords index="3">.186 .286 .286c .286p .287 .386 .386c .386p .387 .486 .486p .8086 .8087 .alpha .break .code .const .continue .cref .data .data?  .dosseg .else .elseif .endif .endw .err .err1 .err2 .errb .errdef .errdif .errdifi .erre .erridn .erridni .errnb .errndef .errnz .exit .fardata .fardata? .if .lall .lfcond .list .listall .listif .listmacro .listmacroall  .model .no87 .nocref .nolist .nolistif .nolistmacro .radix .repeat .sall .seq .sfcond .stack .startup .tfcond .type .until .untilcxz .while .xall .xcref .xlist alias align assume catstr comm comment db dd df dosseg dq dt dup dw echo else elseif elseif1 elseif2 elseifb elseifdef elseifdif elseifdifi elseife elseifidn elseifidni elseifnb elseifndef end endif endm endp ends eq equ even exitm extern externdef extrn for forc ge goto group gt high highword if if1 if2 ifb ifdef ifdif ifdifi ife  ifidn ifidni ifnb ifndef include includelib instr invoke irp irpc label le length lengthof local low lowword lroffset lt macro mask mod .msfloat name ne offset opattr option org %out page popcontext proc proto ptr public purge pushcontext record repeat rept seg segment short size sizeof sizestr struc struct substr subtitle subttl textequ this title type typedef union while width db dw dd dq dt resb resw resd resq rest incbin equ times %define %idefine %xdefine %xidefine %undef %assign %iassign %strlen %substr %macro %imacro %endmacro %rotate .nolist %if %elif %else %endif %ifdef %ifndef %elifdef %elifndef %ifmacro %ifnmacro %elifmacro %elifnmacro %ifctk %ifnctk %elifctk %elifnctk %ifidn %ifnidn %elifidn %elifnidn %ifidni %ifnidni %elifidni %elifnidni %ifid %ifnid %elifid %elifnid %ifstr %ifnstr %elifstr %elifnstr %ifnum %ifnnum %elifnum %elifnnum %error %rep %endrep %exitrep %include %push %pop %repl struct endstruc istruc at iend align alignb %arg %stacksize %local %line bits use16 use32 section absolute extern global common cpu org section group import export</keywords>
+		<keywords index="4">$ ? @b @f addr basic byte c carry? dword far far16 fortran fword near near16 overflow? parity? pascal qword  real4  real8 real10 sbyte sdword sign? stdcall sword syscall tbyte vararg word zero? flat near32 far32 abs all assumes at casemap common compact cpu dotname emulator epilogue error export expr16 expr32 farstack flat forceframe huge language large listing ljmp loadds m510 medium memory nearstack nodotname noemulator nokeyword noljmp nom510 none nonunique nooldmacros nooldstructs noreadonly noscoped nosignextend nothing notpublic oldmacros oldstructs os_dos para private prologue radix readonly req scoped setif2 smallstack tiny use16 use32 uses  a16 a32 o16 o32 byte word dword nosplit $ $$ seq wrt flat large small .text .data .bss near far %0 %1 %2 %3 %4 %5 %6 %7 %8 %9</keywords>
+		<keywords index="5">addpd addps addsd addss andpd andps andnpd andnps cmpeqpd cmpltpd cmplepd cmpunordpd cmpnepd cmpnltpd cmpnlepd cmpordpd cmpeqps cmpltps cmpleps cmpunordps cmpneps cmpnltps cmpnleps cmpordps cmpeqsd cmpltsd cmplesd cmpunordsd cmpnesd cmpnltsd cmpnlesd cmpordsd cmpeqss cmpltss cmpless cmpunordss cmpness cmpnltss cmpnless cmpordss comisd comiss cvtdq2pd cvtdq2ps cvtpd2dq cvtpd2pi cvtpd2ps cvtpi2pd cvtpi2ps cvtps2dq cvtps2pd cvtps2pi cvtss2sd cvtss2si cvtsd2si cvtsd2ss cvtsi2sd cvtsi2ss cvttpd2dq cvttpd2pi cvttps2dq cvttps2pi cvttsd2si cvttss2si divpd divps divsd divss fxrstor fxsave ldmxscr lfence mfence maskmovdqu maskmovdq maxpd maxps paxsd maxss minpd minps minsd minss movapd movaps movdq2q movdqa movdqu movhlps movhpd movhps movd movq movlhps movlpd movlps movmskpd movmskps movntdq movnti movntpd movntps movntq movq2dq movsd movss movupd movups mulpd mulps mulsd mulss orpd orps packssdw packsswb packuswb paddb paddsb paddw paddsw paddd paddsiw paddq paddusb paddusw pand pandn pause paveb pavgb pavgw pavgusb pdistib pextrw pcmpeqb pcmpeqw pcmpeqd pcmpgtb pcmpgtw pcmpgtd pf2id pf2iw pfacc pfadd pfcmpeq pfcmpge pfcmpgt pfmax pfmin pfmul pmachriw pmaddwd pmagw pmaxsw pmaxub pminsw pminub pmovmskb pmulhrwc pmulhriw pmulhrwa pmulhuw pmulhw pmullw pmuludq pmvzb pmvnzb pmvlzb pmvgezb pfnacc pfpnacc por prefetch prefetchw prefetchnta prefetcht0 prefetcht1 prefetcht2 pfrcp pfrcpit1 pfrcpit2 pfrsqit1 pfrsqrt pfsub pfsubr pi2fd pf2iw pinsrw psadbw pshufd pshufhw pshuflw pshufw psllw pslld psllq pslldq psraw psrad psrlw psrld psrlq psrldq psubb psubw psubd psubq psubsb psubsw psubusb psubusw psubsiw pswapd punpckhbw punpckhwd punpckhdq punpckhqdq punpcklbw punpcklwd punpckldq punpcklqdq pxor rcpps rcpss rsqrtps rsqrtss sfence shufpd shufps sqrtpd sqrtps sqrtsd sqrtss stmxcsr subpd subps subsd subss ucomisd ucomiss unpckhpd unpckhps unpcklpd unpcklps xorpd xorps</keywords>
+		<lexer>asm</lexer>
+		<style title="Other" index="0"/>
+		<style title="Comment" index="1" fore="DarkGray"/>
+		<style title="Numbers" index="2" fore="Red"/>
+		<style title="String" index="3" color="string"/>
+		<style title="Operator" index="4" bold="true" color="operator"/>
+		<style title="Identifiers" index="5"/>
+		<style title="CPU instruction" index="6" bold="true" color="Keywords"/>
+		<style title="FPU instruction" index="7" fore="Blue"/>
+		<style title="Register" index="8" bold="true" fore="LimeGreen"/>
+		<style title="assembler Directive" index="9" fore="Blue"/>
+		<style title="assembler Directive Operand" index="10" fore="Blue"/>
+		<style title="Comment block (GNU as /*...*/ syntax, unimplemented)" index="11" color="codeCommentBox" font="codeCommentBox"/>
+		<style title="Character/String (single quote) (also character prefix in GNU as)" index="12" fore="Purple"/>
+		<style title="Open string at end of line" index="13" back="Thistle" eolfilled="true" fore="Black"/>
+		<style title="Extended instructions" index="14" fore="FireBrick"/>
+		<style title="Assembler Styles" index="32" fore="Gray" name="Verdana" size="8"/>
+	  </asm>
+	  <xml>
+		<menu>XML</menu>
+		<!-- No brace matching in XML -->
+		<braces style="1"/>
+		<fileExts>*.xml;*.xsl;*.svg;*.xul;*.xsd;*.dtd;*.xslt;*.axl;*.xrc;*.rdf</fileExts>
+		<defFileExt>xml</defFileExt>
+		<fileFilter>XML</fileFilter>
+		<!-- No keyword for xml, as it accepts any keyword -->
+		<keywords index="0"/>
+		<!-- SGML / DTD keywords -->
+		<keywords index="1">ELEMENT DOCTYPE ATTLIST ENTITY NOTATION</keywords>
+		<lexer>xml</lexer>
+		<style title="Other" index="0" font="text" fore="Black"/>
+		<style title="Tags" index="1" fore="Navy"/>
+		<style title="Unknown Tags" index="2" fore="Navy"/>
+		<style title="Attributes" index="3" fore="Teal"/>
+		<style title="Unknown Attributes" index="4" fore="Teal"/>
+		<style title="Numbers" index="5" color="Numbers"/>
+		<style title="Double quoted strings" index="6" color="string"/>
+		<style title="Single quoted strings" index="7" color="string"/>
+		<style title="Other inside tag" index="8" fore="Purple"/>
+		<style title="Comment" index="9" fore="Olive"/>
+		<style title="Entities" index="10" font="text" fore="Purple"/>
+		<style title="XML style tag ends '/>'" index="11" fore="Navy"/>
+		<style title="XML identifier start" index="12" bold="true" fore="Purple"/>
+		<style title="XML identifier end" index="13" bold="true" fore="Purple"/>
+		<style title="CDATA" index="17" back="LavenderBlush" eolfilled="true" font="text" fore="Maroon"/>
+		<style title="Question" index="18" fore="Maroon"/>
+		<style title="Unquoted Value" index="19" fore="DimGray"/>
+		<style title="SGML tags &lt;! ... >" index="21" back="AliceBlue" fore="Navy"/>
+		<style title="SGML command" index="22" back="AliceBlue" bold="true" fore="Navy"/>
+		<style title="SGML 1st param" index="23" back="AliceBlue" fore="DarkGreen"/>
+		<style title="SGML double string" index="24" back="AliceBlue" fore="Maroon"/>
+		<style title="SGML single string" index="25" back="AliceBlue" fore="SaddleBrown"/>
+		<style title="SGML error" index="26" back="Coral" fore="Maroon"/>
+		<style title="SGML special (#xxxx type)" index="27" back="AliceBlue" fore="RoyalBlue"/>
+		<style title="SGML entity" index="28" back="AliceBlue" fore="DarkSlateGray"/>
+		<style title="SGML comment" index="29" back="AliceBlue" fore="Olive"/>
+		<style title="SGML block" index="31" back="LightGrey" fore="MidnightBlue"/>
+	  </xml>
+	</languages>
+	</syntaxdefs>
+</defaults>

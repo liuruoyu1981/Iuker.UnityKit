@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 16
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 9636717, guid: ac5f4bfb0f5a3894a80a58e0d2c29aa9, type: 3}
+  m_Name: Hierarchy (MAYA)
+  m_EditorClassIdentifier: 
+  last_scenesV2:
+  - guid: e8a5d03895816ba41ba8c0cae48823ec
+    pin: 0
+  - guid: 4b69cfbfb8fc6ea48819faf48663b680
+    pin: 0
+  - guid: f9c75c323e4e0974f8169b500f85ef38
+    pin: 0
+  - guid: 0674645919279ff4d8b9d57ec7b0787b
+    pin: 0
+  - guid: 8f2a99ac36624694abda7fbf2f9246c6
+    pin: 0
+  - guid: 517485014eb55ab4ba4f196423786576
+    pin: 0
+  - guid: 7178d3749729bce4bad9eb5c821395a0
+    pin: 0
+  - guid: 6f79a578d3180824b88dd9d4b12ddd74
+    pin: 0
+  - guid: 539d0f507da214449a0cf581327c6266
+    pin: 0
+  - guid: f8ae44b1ba3054c4e9b56beb6349dcad
+    pin: 0
+  - guid: 1a58ab6742782594e83952b61b68ce0b
+    pin: 0
+  - guid: b5708e4e81d97474986c02eccf76fd7f
+    pin: 0
+  - guid: a636e792fbdd88f49b793f4d32e6a989
+    pin: 0
+  - guid: a0772493ef5aa7f47a97e9fbfcdfc7a1
+    pin: 0
+  - guid: c562c9cafc0d1194fb882d7efd31452e
+    pin: 0
+  - guid: 06df827754c8a79459bf0d83651f3a14
+    pin: 0
+  - guid: 7ae07e7bfc40bf5479b192d38429ecec
+    pin: 0
+  - guid: 07b17b490bcf70c49bbc7b17b498a69a
+    pin: 0
+  - guid: 5eeef2bdd71292c4ebcbc55afadc1384
+    pin: 0
+  - guid: 249935a14368c5d4cafe158bc955b43a
+    pin: 0
+  last_scenes: []
+  m_hiddenComponents: []
+  modulesParamsType:
+  - EModules.EModulesInternal.Hierarchy+M_SetActive
+  - EModules.EModulesInternal.Hierarchy+M_Colors
+  - EModules.EModulesInternal.Hierarchy+M_Warning
+  - EModules.EModulesInternal.Hierarchy+M_Freeze
+  - EModules.EModulesInternal.Hierarchy+M_PrefabApply
+  - EModules.EModulesInternal.Hierarchy+M_Vertices
+  - EModules.EModulesInternal.Hierarchy+M_Audio
+  - EModules.EModulesInternal.Hierarchy+M_Tag
+  - EModules.EModulesInternal.Hierarchy+M_Layers
+  - EModules.EModulesInternal.Hierarchy+M_CustomIcons
+  - EModules.EModulesInternal.Hierarchy+M_Descript
+  - EModules.EModulesInternal.Hierarchy+M_SpritesOrder
+  - EModules.EModulesInternal.Hierarchy+M_PlayModeKeeper
+  - EModules.EModulesInternal.Hierarchy+M_UserModulesRoot_Slot1
+  - EModules.EModulesInternal.Hierarchy+M_UserModulesRoot_Slot2
+  - EModules.EModulesInternal.Hierarchy+M_UserModulesRoot_Slot3
+  modulesParamsClass:
+  - enable: 1
+    sib: -1
+    width: 16
+  - enable: 1
+    sib: -1
+    width: 16
+  - enable: 1
+    sib: -1
+    width: 16
+  - enable: 0
+    sib: 0
+    width: 16
+  - enable: 0
+    sib: 1
+    width: 16
+  - enable: 1
+    sib: 2
+    width: 70
+  - enable: 1
+    sib: 3
+    width: 30
+  - enable: 0
+    sib: 4
+    width: 48
+  - enable: 0
+    sib: 5
+    width: 48
+  - enable: 1
+    sib: 6
+    width: 48
+  - enable: 1
+    sib: 8
+    width: 39
+  - enable: 0
+    sib: 7
+    width: 68
+  - enable: 1
+    sib: -1
+    width: 16
+  - enable: 0
+    sib: 9
+    width: 68
+  - enable: 0
+    sib: 10
+    width: 68
+  - enable: 0
+    sib: 11
+    width: 68
+  lastIconSelect: []
+  lasHiglightColorSelect: []
+  listKey: []
+  listValue: []
+  listValueNew: []
+  WasCustomNewApply: 1
+  PRESETS_DATA: 
+  PRESETS_SCROLL_CAT: 0
+  PRESETS_SCROLL_PRES: 0
+  PRESETS_SELECT: 0
+  prop_m_DataKeeper_Values: []

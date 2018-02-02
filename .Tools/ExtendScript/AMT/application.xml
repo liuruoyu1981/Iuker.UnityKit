@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+	<Payload adobeCode="{EFBC1075-F890-4293-A0D1-04BE66EE2AB3}">
+		<Data key="defaultAdobeCode">ESTK-Installer-AdobeCode</Data>
+		<Data key="BridgeTalkCode">/adobe/bridgetalk/estoolkit-3.8</Data>
+		<Data key="AMTConfigPath">C:\Program Files (x86)\Adobe\Adobe Utilities - CS6\ExtendScript Toolkit CS6\AMT\application.xml</Data><Data key="DefaultDriverPayload">{E8AD3069-9EB7-4BA8-8BFE-83F4E69355C0}</Data><Data key="InstallDate">1342110934</Data><Data key="driverAMTConfigPath">C:\Program Files (x86)\Common Files\Adobe\Adobe Creative Suite 6 Master Collection\AMT\application.xml</Data><Data key="driverLEID">MasterCollection-CS6-Win-GM</Data><Data key="installedLanguages">zh_TW</Data></Payload>
+	<Other adobeCode="/adobe/bridgetalk/estoolkit-3.8">
+		<Data key="Specifier">estoolkit-3.8</Data>
+		<Data key="DisplayName">ExtendScript Toolkit CS6</Data>
+		<Data key="BridgeTalkVersion">2</Data>
+		<Data key="ExecutableBasename">ExtendScript Toolkit</Data>
+		<Data key="SupportsESTK">true</Data>
+		<Data key="WindowClassName">Estoolkit35</Data>
+	</Other>
+	<Other adobeCode="/adobe/bridgetalk/groups">
+		<Data key="Group001">/adobe/bridgetalk/groups/cs/3/acrobat-8.0</Data>
+		<Data key="Group002">/adobe/bridgetalk/groups/cs/3/aftereffects-8.0</Data>
+		<Data key="Group003">/adobe/bridgetalk/groups/cs/3/soundbooth-1.0</Data>
+		<Data key="Group004">/adobe/bridgetalk/groups/cs/3/bridge-2.0</Data>
+		<Data key="Group005">/adobe/bridgetalk/groups/cs/3/contribute-4.5</Data>
+		<Data key="Group006">/adobe/bridgetalk/groups/cs/3/devicecentral-1.0</Data>
+		<Data key="Group007">/adobe/bridgetalk/groups/cs/3/dreamweaver-9.0</Data>
+		<Data key="Group008">/adobe/bridgetalk/groups/cs/3/encore-3.0</Data>
+		<Data key="Group009">/adobe/bridgetalk/groups/cs/3/estoolkit-2.0</Data>
+		<Data key="Group010">/adobe/bridgetalk/groups/cs/3/fireworks-9.0</Data>
+		<Data key="Group011">/adobe/bridgetalk/groups/cs/3/flash-9.0</Data>
+		<Data key="Group012">/adobe/bridgetalk/groups/cs/3/illustrator-13.0</Data>
+		<Data key="Group013">/adobe/bridgetalk/groups/cs/3/indesign-5.0</Data>
+		<Data key="Group014">/adobe/bridgetalk/groups/cs/3/indesignserver-5.0</Data>
+		<Data key="Group015">/adobe/bridgetalk/groups/cs/3/incopy-5.0</Data>
+		<Data key="Group016">/adobe/bridgetalk/groups/cs/3/photoshop-10.0</Data>
+		<Data key="Group017">/adobe/bridgetalk/groups/cs/3/premiere-3.0</Data>
+		<Data key="Group018">/adobe/bridgetalk/groups/cs/3/stockphotos-1.5</Data>
+		<Data key="Group019">/adobe/bridgetalk/groups/cs/3/audition-3.0</Data>
+		<Data key="Group020"></Data>
+	</Other>
+</Configuration>

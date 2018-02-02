@@ -1,0 +1,793 @@
+message CTS_LHandshakeMQData
+{
+    optional int32 type = 1;
+}
+
+message EconomyInfo
+{
+    optional int64 userId = 1;
+    optional int64 gold = 2;
+    optional int32 diamond = 3;
+    optional int32 payCount = 4;
+    optional int32 payTotal = 5;
+    optional int64 lastPayTime = 6;
+    optional int32 mobileCharge = 7;
+    optional int64 inviteUid = 8;
+    optional int32 lotteryNum = 9;
+    optional int32 inviteNum = 10;
+    optional int32 createTableAndCostNum = 11;
+    optional int32 tableGameNum = 12;
+}
+
+message SocialInfo
+{
+    optional int64 userId = 1;
+    optional string nickname = 2;
+    optional int32 gender = 3;
+    optional string headImg = 4;
+    optional string introduce = 5;
+    optional string mobile = 6;
+    optional string idcard = 7;
+    optional string country = 8;
+    optional string province = 9;
+    optional int32 city = 10;
+    optional string address = 11;
+}
+
+message UserStatus
+{
+    optional int64 userId = 1;
+    optional int32 isOnline = 2;
+    optional string createRoomIds = 3;
+    optional string lastRoomId = 4;
+    optional int32 gameId = 5;
+}
+
+message Log_GameCostMsg
+{
+    optional int64 masterId = 1;
+    repeated int64 joinUsers = 2;
+    optional int64 onTime = 3;
+    optional int32 gameId = 4;
+    optional int64 tableId = 5;
+    optional int32 cost = 6;
+}
+
+message Log_GameFinishMsg
+{
+    optional int64 masterUid = 1;
+    repeated int64 joinUserList = 2;
+    optional int32 handNum = 3;
+}
+
+message Log_inviteMsg
+{
+    optional int64 userId = 1;
+    optional int64 inviteUid = 2;
+    optional int64 times = 3;
+}
+
+message Log_LoginMsg
+{
+    optional int64 userId = 1;
+    optional int64 onTime = 2;
+}
+
+message Log_OnlineMsg
+{
+    optional int64 userId = 1;
+    optional int32 timeLong = 2;
+}
+
+message Log_OnlineCountMsg
+{
+    optional int32 playerNum = 1;
+    optional int64 onTime = 2;
+}
+
+message Log_RegisterMsg
+{
+    optional int64 userId = 1;
+    optional int64 onTime = 2;
+}
+
+message WoLong_PlayerScore
+{
+    optional int32 awardScore = 1;
+    optional int32 gatherScore = 2;
+}
+
+message CTS_EconomyChangeMsg
+{
+    optional int64 userId = 1;
+}
+
+message CTS_GetUserInfoMsg
+{
+    optional int64 userId = 1;
+}
+
+message CTS_LoginMsg
+{
+    optional int64 userId = 1;
+    optional string machineCode = 2;
+    optional string account = 3;
+    optional string password = 4;
+    optional string comeFrom = 5;
+    optional string sessionid = 6;
+    optional int32 regChannel = 7;
+    optional string os = 8;
+    optional string IMEI = 9;
+    optional string loginIp = 10;
+    optional SocialInfo socialInfo = 11;
+    repeated string test = 12;
+}
+
+message CTS_PlatformLoginMsg
+{
+    optional int64 userId = 1;
+    optional string comeFrom = 2;
+    optional string sessionid = 3;
+    optional string refreshToken = 4;
+    optional int32 regChannel = 5;
+    optional string os = 6;
+    optional string IMEI = 7;
+    optional string loginIp = 8;
+}
+
+message STC_EconomyChangeMsg
+{
+    optional int64 userId = 1;
+    optional EconomyInfo economy = 2;
+}
+
+message STC_LoginMsg
+{
+    optional int64 userId = 1;
+    optional string session = 2;
+    optional int32 status = 3;
+    optional string loginIp = 4;
+    optional SocialInfo socialInfo = 5;
+    optional EconomyInfo economyInfo = 6;
+    optional UserStatus userStatus = 7;
+    repeated string test = 8;
+    optional string account = 9;
+    optional string password = 10;
+    optional string gameServerIp = 11;
+    optional string gameServerPort = 12;
+    optional string chatPort = 13;
+}
+
+message STC_PlatformLoginMsg
+{
+    optional int64 userId = 1;
+    optional string refreshToken = 2;
+    optional int32 status = 3;
+    optional string loginIp = 4;
+    optional SocialInfo socialInfo = 5;
+    optional EconomyInfo economyInfo = 6;
+    optional UserStatus userStatus = 7;
+    optional string account = 8;
+    optional string password = 9;
+    optional string session = 10;
+    optional string platformStr = 11;
+    optional string gameServerIp = 12;
+    optional string gameServerPort = 13;
+    optional string chatPort = 14;
+}
+
+message STC_UserInfoMsg
+{
+    optional int64 userId = 1;
+    optional string account = 2;
+    optional int32 regChannel = 3;
+    optional string os = 4;
+    optional string loginIp = 5;
+    optional SocialInfo socialInfo = 6;
+    optional EconomyInfo economyInfo = 7;
+    optional UserStatus userStatus = 8;
+    optional string password = 9;
+}
+
+message STC_UserTableInfoMsg
+{
+    optional string sessionId = 1;
+}
+
+message CTS_Chat_SendMsg
+{
+    optional int32 type = 1;
+    optional int32 index = 2;
+    optional bytes msg = 3;
+    repeated int64 consumeIds = 4;
+}
+
+message STC_Chat_ContentMsg
+{
+    optional int32 type = 1;
+    optional int32 index = 2;
+    optional bytes msg = 3;
+    optional int64 sendId = 4;
+}
+
+message STC_Gdy_SettleMsg
+{
+    optional int64 tableId = 1;
+    optional int32 winPosId = 2;
+    optional bool isSpring = 3;
+    optional int32 boutNum = 4;
+    repeated SettleItem settleLst = 5;
+}
+
+message SettleItem
+{
+    optional int32 posId = 1;
+    optional int32 grade = 2;
+    optional int32 pubMultiple = 3;
+    optional int32 priMultiple = 4;
+    optional int32 surplusCards = 5;
+    optional int32 outCardNum = 6;
+    optional int32 zhadanNum = 7;
+}
+
+message CTS_L_GameConfigMsg
+{
+}
+
+message CTS_L_InviteMsg
+{
+    optional int64 inviteUid = 1;
+}
+
+message CTS_L_LotteryConfigMsg
+{
+    optional int64 userId = 1;
+}
+
+message CTS_L_LotteryOpenMsg
+{
+    optional int64 userId = 1;
+}
+
+message CTS_L_MobileChargeMsg
+{
+    optional int32 value = 1;
+    optional int64 mobile = 2;
+}
+
+message STC_L_GameConfigMsg
+{
+    repeated GameCfgItem list = 1;
+}
+
+message GameCfgItem
+{
+    optional int32 gameId = 1;
+    optional int32 handNum = 2;
+    optional int32 cost = 3;
+}
+
+message STC_L_InviteMsg
+{
+    optional int32 result = 1;
+    optional string resultMsg = 2;
+}
+
+message STC_L_LotteryConfigMsg
+{
+    repeated LotteryConfigItem list = 1;
+    optional int32 lotteryNum = 2;
+    optional int32 inviteProNum = 3;
+    optional int32 inviteProTotal = 4;
+    optional int32 createTableProNum = 5;
+    optional int32 createTableProTotal = 6;
+}
+
+message LotteryConfigItem
+{
+    optional int32 id = 1;
+    optional int32 goodsId = 2;
+    optional string goodsName = 3;
+    optional int32 goodsNum = 4;
+    optional string desc = 5;
+}
+
+message STC_L_LotteryOpenMsg
+{
+    optional int32 resultId = 1;
+    optional string resultMsg = 2;
+    optional int32 lotteryNum = 3;
+    optional int32 inviteProNum = 4;
+    optional int32 inviteProTotal = 5;
+    optional int32 createTableProNum = 6;
+    optional int32 createTableProTotal = 7;
+}
+
+message STC_L_MobileChargeMsg
+{
+    optional int32 value = 1;
+    optional int32 result = 2;
+    optional string resultMsg = 3;
+}
+
+message STC_Pay_SucceedMsg
+{
+    optional string orderId = 1;
+    optional int32 diamond = 2;
+}
+
+message CTS_R_GameRecordMsg
+{
+    optional int64 tableId = 1;
+    optional int32 handId = 2;
+    optional int32 gameId = 3;
+    optional int64 shareId = 4;
+}
+
+message CTS_R_ShareMsg
+{
+    optional int64 tableId = 1;
+    optional int32 handId = 2;
+    optional int32 gameId = 3;
+}
+
+message CTS_R_TableRecordMsg
+{
+    optional int64 tableId = 1;
+    optional int32 gameId = 2;
+}
+
+message CTS_R_UserRecordMsg
+{
+    optional int32 pageNum = 1;
+    optional int32 pageSize = 2;
+}
+
+message STC_R_GameRecordMsg
+{
+    optional int64 tableId = 1;
+    optional int32 handId = 2;
+    optional int32 gameId = 3;
+    optional int64 shareId = 4;
+}
+
+message STC_R_ShareMsg
+{
+    optional int64 shareId = 1;
+}
+
+message STC_R_TableRecordMsg
+{
+    optional int64 tableId = 1;
+    optional int32 gameId = 2;
+    optional int64 masterUserId = 3;
+    repeated RoundRecord roundList = 4;
+}
+
+message RoundRecord
+{
+    optional int64 date = 1;
+    optional int32 handId = 2;
+    repeated SettleResult result = 3;
+}
+
+message SettleResult
+{
+    optional int64 userId = 1;
+    optional int32 posId = 2;
+    optional string nickName = 3;
+    optional int32 score = 4;
+}
+
+message STC_R_UserRecordMsg
+{
+    repeated TableGrade tableGradeList = 1;
+}
+
+message TableGrade
+{
+    optional int64 tableId = 1;
+    optional int32 gameId = 2;
+    optional int64 date = 3;
+    optional int64 masterUserId = 4;
+    repeated GameGrade result = 5;
+}
+
+message GameGrade
+{
+    optional int64 userId = 1;
+    optional int32 posId = 2;
+    optional string nickName = 3;
+    optional int32 score = 4;
+}
+
+message STC_ErrorMsgMsg
+{
+    optional int32 errId = 1;
+    optional string errMsg = 2;
+}
+
+message CTS_WoLong_CoutinueMsg
+{
+    optional int64 tableId = 1;
+}
+
+message CTS_WoLong_HintMsg
+{
+    optional int64 tableId = 1;
+}
+
+message CTS_WoLong_OperateMsg
+{
+    optional int64 tableId = 1;
+    optional int32 actonId = 2;
+    repeated int32 cards = 3;
+}
+
+message CTS_WoLong_ReadyMsg
+{
+    optional int64 tableId = 1;
+    optional int32 value = 2;
+}
+
+message CTS_WoLong_ReconnectMsg
+{
+    optional int64 tableId = 1;
+}
+
+message CTS_WoLong_RecordMsg
+{
+    optional int64 tableId = 1;
+    optional int32 bankId = 2;
+    optional int32 handId = 3;
+    optional int32 gameId = 4;
+}
+
+message STC_WoLong_ContinueMsg
+{
+    optional int64 tableId = 1;
+    optional int64 password = 2;
+    optional string tableName = 3;
+    optional int32 handNum = 4;
+    optional int32 postionNum = 5;
+    optional int32 gameStatus = 6;
+    optional int32 actionId = 7;
+    optional int32 handId = 8;
+    repeated WoLongPlayerInfo playerList = 9;
+    repeated int32 priCards = 10;
+    optional int32 operatePosId = 11;
+    repeated int32 oerateBeCards = 12;
+    optional int32 bePosId = 13;
+    optional int32 sameAward = 14;
+    optional int32 lianAward = 15;
+    optional bool singleAward = 16;
+    optional bool singleDouble = 17;
+}
+
+message WoLongPlayerInfo
+{
+    optional int32 posId = 1;
+    optional int32 cardNum = 2;
+    optional int32 you = 3;
+    optional int32 grade = 4;
+    optional SimplePlayer player = 5;
+    optional int32 awardScore = 6;
+    optional int32 gatherScore = 7;
+}
+
+message SimplePlayer
+{
+    optional int64 userId = 1;
+    optional int32 gender = 2;
+    optional string nickName = 3;
+    optional string headImg = 4;
+    optional int32 posId = 5;
+    optional int32 status = 6;
+    optional string ip = 7;
+    optional int32 gameNum = 8;
+    optional int32 gps_x = 9;
+    optional int32 gps_y = 10;
+    optional string gps_address = 11;
+    optional int32 online = 12;
+}
+
+message STC_WoLong_HintMsg
+{
+    optional int64 tableId = 1;
+    repeated CardGroup cardsList = 2;
+    repeated int32 beCards = 3;
+}
+
+message CardGroup
+{
+    repeated int32 item = 1;
+}
+
+message STC_WoLong_OperateMsg
+{
+    optional int64 tableId = 1;
+    optional int32 posId = 2;
+    optional int32 actonId = 3;
+    repeated int32 cards = 4;
+    optional int32 awardScore = 5;
+    optional int32 sameAward = 6;
+    optional int32 continuousAward = 7;
+    optional int32 gatherScore = 8;
+    optional int32 gatherScoreosId = 9;
+    repeated int32 you = 10;
+}
+
+message STC_WoLong_OperateNoticeMsg
+{
+    optional int64 tableId = 1;
+    optional int32 posId = 2;
+    repeated int32 beCards = 3;
+}
+
+message STC_WoLong_ReadyMsg
+{
+    optional int64 tableId = 1;
+    optional int32 value = 2;
+    optional int32 posId = 3;
+}
+
+message STC_WoLong_ReconnectMsg
+{
+    optional int64 tableId = 1;
+    optional int64 password = 2;
+    optional string tableName = 3;
+    optional int32 handNum = 4;
+    optional int32 postionNum = 5;
+    optional int32 gameStatus = 6;
+    optional int32 actionId = 7;
+    optional int32 handId = 8;
+    repeated WoLongPlayerInfo playerList = 9;
+    repeated int32 priCards = 10;
+    optional int32 operatePosId = 11;
+    repeated int32 oerateBeCards = 12;
+    optional int32 bePosId = 13;
+}
+
+message STC_WoLong_RecordMsg
+{
+    optional int64 tableId = 1;
+    optional int32 bankId = 2;
+    optional int32 handId = 3;
+    repeated PlayerInfo playerList = 4;
+    repeated STC_WoLong_OperateMsg operateHistory = 5;
+}
+
+message PlayerInfo
+{
+    optional int64 userId = 1;
+    optional int32 posId = 2;
+    optional string nickName = 3;
+    repeated int32 priCards = 4;
+}
+
+message STC_WoLong_SettleMsg
+{
+    optional int64 tableId = 1;
+    optional int32 snId = 2;
+    optional int32 handTotal = 3;
+    optional string startTime = 4;
+    optional int32 bankId = 5;
+    repeated EndPokerMsg info = 6;
+    repeated EndRankMsg rank = 7;
+}
+
+message EndRankMsg
+{
+    optional int64 userId = 1;
+    optional int32 totalScore = 2;
+    optional int32 maxBomb = 3;
+    optional int32 bombCount = 4;
+    optional int32 isHost = 5;
+    optional int64 winPlayer = 6;
+}
+
+message EndPokerMsg
+{
+    optional int64 userId = 1;
+    repeated int32 poker = 2;
+    optional int32 bomb = 3;
+    optional int32 score = 4;
+    optional int32 extraScore = 5;
+    optional string nickName = 6;
+    optional int32 win = 7;
+    optional int32 totalScore = 8;
+    optional int32 you = 9;
+    repeated int32 otherPoker = 10;
+    optional int32 baseScore = 11;
+    optional BigBombMsg maxBomb = 12;
+    optional int32 supply = 13;
+    optional int32 unique = 14;
+    optional int32 noAward = 15;
+}
+
+message BigBombMsg
+{
+    optional int32 count = 1;
+    repeated int32 hex = 2;
+    optional string name = 3;
+    optional int32 extraScore = 4;
+}
+
+message STC_WoLong_StartMsg
+{
+    optional int64 tableId = 1;
+    optional int32 bankId = 2;
+    optional int32 handId = 3;
+    repeated int32 priCards = 4;
+}
+
+message CTS_WoLong_TableSettleMsg
+{
+    optional int64 tableId = 1;
+}
+
+message CTS_WoLong_Table_ActExitTableMsg
+{
+    optional int64 tableId = 1;
+}
+
+message CTS_WoLong_Table_ActInTableMsg
+{
+    optional int64 tableId = 1;
+    optional int32 gps_x = 2;
+    optional int32 gps_y = 3;
+    optional string gps_address = 4;
+}
+
+message CTS_WoLong_Table_CreateMsg
+{
+    optional int32 gameId = 1;
+    optional int64 tableId = 2;
+    optional string tableName = 3;
+    optional int32 handTotal = 4;
+    optional int32 playerCount = 5;
+    optional int32 sameAward = 6;
+    optional int32 lianAward = 7;
+    optional bool singleAward = 8;
+    optional bool singleDouble = 9;
+    optional int32 gps_x = 10;
+    optional int32 gps_y = 11;
+    optional string gps_address = 12;
+}
+
+message CTS_WoLong_Table_DissolveRequestMsg
+{
+    optional int64 tableId = 1;
+}
+
+message CTS_WoLong_Table_DissolveVoteMsg
+{
+    optional int64 tableId = 1;
+    optional int32 vote = 2;
+}
+
+message CTS_WoLong_Table_HeartbeatMsg
+{
+    optional int64 tableId = 1;
+}
+
+message STC_WoLong_Table_ActExitTableMsg
+{
+    optional int64 userId = 1;
+    optional int64 tableId = 2;
+}
+
+message STC_WoLong_Table_ActInTableMsg
+{
+    optional int64 tableId = 1;
+    optional int64 password = 2;
+    optional string tableName = 3;
+    optional int32 handNum = 4;
+    optional int32 postionNum = 5;
+    repeated SimplePlayer playerList = 6;
+    optional TeoError error = 7;
+    optional int32 sameAward = 8;
+    optional int32 lianAward = 9;
+    optional bool singleAward = 10;
+    optional bool singleDouble = 11;
+}
+
+message TeoError
+{
+    optional int32 errId = 1;
+    optional string errMsg = 2;
+    optional bool isShow = 3;
+}
+
+message STC_WoLong_Table_ActInTable_PublishMsg
+{
+    optional int64 tableId = 1;
+    optional int32 posId = 2;
+    optional SimplePlayer player = 3;
+}
+
+message STC_WoLong_Table_CreateMsg
+{
+    optional int32 gameId = 1;
+    optional int64 tableId = 2;
+    optional string tableName = 3;
+    optional int32 handTotal = 4;
+    optional int32 playerCount = 5;
+    optional int32 sameAward = 6;
+    optional int32 lianAward = 7;
+    optional bool singleAward = 8;
+    optional bool singleDouble = 9;
+    optional CreateResult createResult = 10;
+    optional TeoError error = 11;
+}
+
+message CreateResult
+{
+    optional int64 masterId = 1;
+    optional int32 password = 2;
+    optional int64 tableId = 3;
+    optional int64 createTime = 4;
+}
+
+message STC_WoLong_Table_DissolveRequestMsg
+{
+    optional int64 tableId = 1;
+    optional int64 userId = 2;
+    optional string nickName = 3;
+    optional TeoError error = 4;
+    optional int32 result = 5;
+}
+
+message STC_WoLong_Table_DissolveResultMsg
+{
+    optional int64 tableId = 1;
+    optional int32 result = 2;
+}
+
+message STC_WoLong_Table_DissolveVoteMsg
+{
+    optional int64 tableId = 1;
+    optional int64 reqUserId = 2;
+    optional string reqNickName = 3;
+}
+
+message STC_WoLong_Table_DissolveVoteResultMsg
+{
+    optional int64 tableId = 1;
+    optional int32 result = 2;
+    optional int64 userId = 3;
+}
+
+message STC_WoLong_Table_HeartbeatMsg
+{
+    optional int64 tableId = 1;
+}
+
+message STC_GetSmsVerifyMsg
+{
+    optional string returnCode = 1;
+}
+
+message CTS_RegisterMsg
+{
+    optional string account = 1;
+    optional string password = 2;
+    optional int32 smsCode = 3;
+    optional string machineCode = 4;
+    optional string comeFrom = 5;
+    optional string sessionid = 6;
+    optional int32 regChannel = 7;
+    optional string os = 8;
+    optional string IMEI = 9;
+    optional string loginIp = 10;
+    optional SocialInfo socialInfo = 11;
+    repeated string test = 12;
+}
+
+message CTS_GetSmsVerifyMsg
+{
+    optional string phone = 1;
+    optional string smsName = 2;
+    optional string sign = 3;
+}
+

@@ -1,0 +1,300 @@
+message LHandshakeMQData
+{
+    optional int32 type = 1;
+}
+
+message JjzdOption
+{
+    optional int32 play = 1;
+    optional int32 bottomPoints = 2;
+    optional int32 buy = 3;
+    optional int32 reportCard = 4;
+    optional bool isAuto = 5;
+}
+
+message SgmjOption
+{
+    optional int32 play = 1;
+    optional int32 bottomPoints = 2;
+    optional int32 playerSize = 3;
+    optional int32 bigOption = 4;
+    optional int32 buyBottom = 5;
+    optional int32 catchBird = 6;
+}
+
+message CTS_Sgmj_ActionMsg
+{
+    optional int64 tableId = 1;
+    optional int32 action = 2;
+    repeated int32 cards = 3;
+}
+
+message CTS_Sgmj_BuyBottomMsg
+{
+    optional int64 tableId = 1;
+    optional int32 buyBottom = 2;
+}
+
+message STC_Sgmj_ActionMsg
+{
+    optional int64 tableId = 1;
+    optional int32 action = 2;
+    repeated int32 cards = 3;
+    optional int32 buCard = 4;
+    optional int32 isWaiting = 5;
+    optional int64 userId = 6;
+}
+
+message STC_Sgmj_BuyBottomMsg
+{
+    optional TeoError error = 1;
+    optional int64 tableId = 2;
+    optional int32 buyBottom = 3;
+}
+
+message TeoError
+{
+    optional int32 errId = 1;
+    optional string errMsg = 2;
+    optional bool isShow = 3;
+}
+
+message STC_Sgmj_MoCardBCMsg
+{
+    optional int64 tableId = 1;
+    optional int64 userId = 2;
+    optional int32 card = 3;
+}
+
+message STC_Sgmj_NoticeActionMsg
+{
+    optional int64 tableId = 1;
+    optional int64 userId = 2;
+    optional int32 action = 3;
+    optional int32 cardHex = 4;
+}
+
+message STC_Sgmj_NoticeBuyBottomBCMsg
+{
+    optional int64 tableId = 1;
+}
+
+message STC_Sgmj_ReadyHandMsg
+{
+    optional int64 tableId = 1;
+    repeated int32 cards = 2;
+}
+
+message STC_Sgmj_SettleBCMsg
+{
+    optional int64 tableId = 1;
+    optional int32 snId = 2;
+    optional int32 handTotal = 3;
+    optional string startTime = 4;
+    optional int32 cardHex = 5;
+    optional int32 huType = 6;
+    repeated EndResultMsg endResultMsgs = 7;
+}
+
+message EndResultMsg
+{
+    optional int64 userId = 1;
+    repeated int32 priCards = 2;
+    repeated MahjongInfos mahjongInfosBuild = 3;
+    optional int32 huType = 4;
+    optional int32 supportWinType = 5;
+    optional int32 behuType = 6;
+    optional int32 birdNum = 7;
+    optional int32 score = 8;
+    optional int32 totalScore = 9;
+}
+
+message MahjongInfos
+{
+    optional int32 action = 1;
+    optional int32 cradHex = 2;
+}
+
+message STC_Sgmj_StartBCMsg
+{
+    optional int64 tableId = 1;
+    optional int32 handId = 2;
+    repeated int32 buyBottom = 3;
+    repeated int32 priCards = 4;
+    optional int64 bankerUserId = 5;
+    optional int32 a = 6;
+    optional int32 b = 7;
+}
+
+message CTS_Table_CreateMsg
+{
+    optional int32 gameId = 1;
+    optional int64 tableId = 2;
+    optional string tableName = 3;
+    optional int32 handTotal = 4;
+    optional int32 gps_x = 5;
+    optional int32 gps_y = 6;
+    optional string gps_address = 7;
+    optional JjzdOption jjzdOption = 8;
+    optional SgmjOption sgmjOption = 9;
+}
+
+message CTS_Table_DissolveVoteMsg
+{
+    optional int64 tableId = 1;
+    optional int32 vote = 2;
+}
+
+message CTS_Table_ExitMsg
+{
+    optional int64 tableId = 1;
+}
+
+message CTS_Table_InMsg
+{
+    optional int64 tableId = 1;
+    optional int32 password = 2;
+    optional int32 gps_x = 3;
+    optional int32 gps_y = 4;
+    optional string gps_address = 5;
+}
+
+message CTS_Table_ReadyMsg
+{
+    optional int64 tableId = 1;
+    optional bool isReady = 2;
+}
+
+message CTS_Table_ReconnectMsg
+{
+    optional int64 tableId = 1;
+}
+
+message CTS_Table_ReqDissolveMsg
+{
+    optional int64 tableId = 1;
+}
+
+message STC_Table_CreateMsg
+{
+    optional TeoError error = 1;
+    optional int32 password = 2;
+    optional int64 tableId = 3;
+    optional int64 createTime = 4;
+    optional int32 gameId = 5;
+    optional string tableName = 6;
+    optional int32 handTotal = 7;
+    optional int32 playerCount = 8;
+}
+
+message STC_Table_DissolveBCMsg
+{
+    optional int64 tableId = 1;
+    optional int32 isSucc = 2;
+    repeated string nickName = 3;
+}
+
+message STC_Table_DissolveVoteMsg
+{
+    optional TeoError error = 1;
+    optional int64 tableId = 2;
+}
+
+message STC_Table_ExitMsg
+{
+    optional TeoError error = 1;
+    optional int64 userId = 2;
+    optional int64 tableId = 3;
+}
+
+message STC_Table_InMsg
+{
+    optional TeoError error = 1;
+    optional int64 tableId = 2;
+    optional int32 pos = 3;
+    optional int64 password = 4;
+    optional string tableName = 5;
+    optional int32 handNum = 6;
+    optional int32 postionNum = 7;
+    repeated SimplePlayer playerList = 8;
+    optional JjzdOption jjzdOption = 9;
+}
+
+message SimplePlayer
+{
+    optional int64 userId = 1;
+    optional int32 gender = 2;
+    optional string nickName = 3;
+    optional string headImg = 4;
+    optional int32 posId = 5;
+    optional int32 status = 6;
+    optional string ip = 7;
+    optional int32 gameNum = 8;
+    optional int32 gps_x = 9;
+    optional int32 gps_y = 10;
+    optional string gps_address = 11;
+    optional int32 online = 12;
+    optional string introduce = 13;
+}
+
+message STC_Table_InBCMsg
+{
+    optional int64 tableId = 1;
+    optional int32 posId = 2;
+    optional SimplePlayer player = 3;
+}
+
+message STC_Table_ReadyBCMsg
+{
+    optional int64 tableId = 1;
+    optional int64 userId = 2;
+    optional bool isReady = 3;
+}
+
+message STC_Table_ReconnectMsg
+{
+    optional int64 tableId = 1;
+    optional int32 tableStatus = 2;
+    optional int32 gameId = 3;
+    optional string tableName = 4;
+    optional int32 handNum = 5;
+    optional int32 postionNum = 6;
+    optional int32 handId = 7;
+    repeated PosInfo playerList = 8;
+    repeated int32 priCards = 9;
+    optional JjzdPlayInfo jjzdPlayInfo = 10;
+}
+
+message JjzdPlayInfo
+{
+    optional int32 gameStatus = 1;
+    optional int32 alonePos = 2;
+    optional int32 operatePosId = 3;
+    repeated int32 oerateBeCards = 4;
+    optional int32 bePosId = 5;
+}
+
+message PosInfo
+{
+    optional int32 posId = 1;
+    optional int32 cardNum = 2;
+    optional int32 grade = 3;
+    optional SimplePlayer player = 4;
+    optional JjzdPosInfo jjzdPosInfo = 5;
+}
+
+message JjzdPosInfo
+{
+    optional int32 you = 1;
+    optional int32 plusBuy = 2;
+    optional int32 colorNum = 3;
+}
+
+message STC_Table_ReqDissolveMsg
+{
+    optional TeoError error = 1;
+    optional int64 tableId = 2;
+    optional int64 userId = 3;
+    optional string nickName = 4;
+}
+

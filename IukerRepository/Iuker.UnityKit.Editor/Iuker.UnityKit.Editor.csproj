@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{76A56B25-E216-4314-B70F-432C65C4BE50}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Iuker.UnityKit.Editor</RootNamespace>
+    <AssemblyName>Iuker.UnityKit.Editor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\Iuker.UnityKit.DllOutPut\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;IukerIl8n_Chinese</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Excel, Version=2.1.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Editor\Dll\Excel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Iuker.Debug">
+      <HintPath>..\Iuker.UnityKit.Run\FrameRequireDll\Iuker.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Editor\Dll\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>..\Iuker.UnityKit.Run\FrameRequireDll\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Editor\Dll\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEditor">
+      <HintPath>..\..\.UnityDll\UnityEditor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions">
+      <HintPath>..\..\.UnityDll\UnityEditor.iOS.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>..\..\.UnityDll\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>..\..\.UnityDll\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>..\..\.UnityDll\UnityEditor.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\.UnityDll\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\.UnityDll\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Editor\Base\Assets\AssetBundleBuilder.cs" />
+    <Compile Include="Editor\Base\Assets\AssetInfoCreater.cs" />
+    <Compile Include="Editor\Base\Assets\AtlasBuildUtil.cs" />
+    <Compile Include="Editor\Base\Assets\AutoUpdateAssetIdAndAssetInfo.cs" />
+    <Compile Include="Editor\Base\Assets\IukAssetDataBase.cs" />
+    <Compile Include="Editor\Base\Assets\AtlasSplittoSpriteEditor.cs" />
+    <Compile Include="Editor\Base\Assets\IukerPostprocessor.cs" />
+    <Compile Include="Editor\Base\Assets\IukPrafabUtility.cs" />
+    <Compile Include="Editor\Base\Assets\SpriteInfoCreater.cs" />
+    <Compile Include="Editor\Base\Coroutine\IukerCoroutine.cs" />
+    <Compile Include="Editor\Base\EditorEventBroadcaster .cs" />
+    <Compile Include="Editor\Base\EditorTime.cs" />
+    <Compile Include="Editor\Base\GraphicUtility.cs" />
+    <Compile Include="Editor\Base\Hierarchy\OrderRenameWindow.cs" />
+    <Compile Include="Editor\Base\SingleScriptableObject.cs" />
+    <Compile Include="Editor\Base\TexturePacker.cs" />
+    <Compile Include="Editor\Base\IukerInitalzeWindow.cs" />
+    <Compile Include="Editor\Base\IukBuildUitlity.cs" />
+    <Compile Include="Editor\Base\Configs\QuickProject.cs" />
+    <Compile Include="Editor\Base\Configs\RootConfigEditor.cs" />
+    <Compile Include="Editor\Excel\ExcelUtil_TypeScript.cs" />
+    <Compile Include="Editor\Base\EditorResources.cs" />
+    <Compile Include="Editor\Base\EditorTextureColor.cs" />
+    <Compile Include="Editor\Base\EditorTextureType.cs" />
+    <Compile Include="Editor\Excel\ExcelUtil_LuaExport.cs" />
+    <Compile Include="Editor\Base\IukerGUISettings.cs" />
+    <Compile Include="Editor\Base\Setting\SkinGuiStyle.cs" />
+    <Compile Include="Editor\MVDA\MVDACreater.cs" />
+    <Compile Include="Editor\MVDA\ScriptCreate\Jint\MVDACreate_Container_Jint.cs" />
+    <Compile Include="Editor\MVDA\ScriptCreate\Jint\MVDACreate_Model_Jint.cs" />
+    <Compile Include="Editor\MVDA\ScriptCreate\Jint\MVDACreate_WidgetAction_Jint.cs" />
+    <Compile Include="Editor\MVDA\ScriptCreate\Jint\MVDACreate_Pipeline_Jint.cs" />
+    <Compile Include="Editor\MVDA\ScriptCreate\Jint\MVDAJintCreateBase.cs" />
+    <Compile Include="Editor\MVDA\ViewReplaceWindow.cs" />
+    <Compile Include="Editor\MyAssetIdCreater.cs" />
+    <Compile Include="Editor\Refactor\ExcelParser.cs" />
+    <Compile Include="Editor\Refactor\MyProtobufCreaterWindow.cs" />
+    <Compile Include="Editor\Ts\ProtobufTypeScriptCreater.cs" />
+    <Compile Include="Editor\Ts\TsUnityInterfaceCreater.cs" />
+    <Compile Include="Editor\Base\Setting\IukerEditorPrefs.cs" />
+    <Compile Include="Editor\Base\Setting\SkinColor.cs" />
+    <Compile Include="Editor\Base\Configs\ProjectConstrutor.cs" />
+    <Compile Include="Editor\Base\Configs\RuntimeConfigEditor.cs" />
+    <Compile Include="Editor\Base\Coroutine\Coroutine.cs" />
+    <Compile Include="Editor\Base\Coroutine\CoroutineWindowExample.cs" />
+    <Compile Include="Editor\Base\Coroutine\EditorCoroutine.cs" />
+    <Compile Include="Editor\Base\Coroutine\EditorCoroutineExtensions.cs" />
+    <Compile Include="Editor\Base\Coroutine\ICoroutineYield.cs" />
+    <Compile Include="Editor\Base\Coroutine\YieldAsync.cs" />
+    <Compile Include="Editor\Base\Coroutine\YieldDefault.cs" />
+    <Compile Include="Editor\Base\Coroutine\YieldWaitForSeconds.cs" />
+    <Compile Include="Editor\Base\Coroutine\YieldWWW.cs" />
+    <Compile Include="Editor\Base\EditorConstant.cs" />
+    <Compile Include="Editor\Excel\ExcelUtil_TxtExport.cs" />
+    <Compile Include="Editor\Excel\ExcelUtil_ScriptExport.cs" />
+    <Compile Include="Editor\Excel\ExcelUtil_Base.cs" />
+    <Compile Include="Editor\Base\Hierarchy\AssistWindow.cs" />
+    <Compile Include="Editor\Base\Hierarchy\BatchAddPrefixWindow.cs" />
+    <Compile Include="Editor\Base\Hierarchy\BatchAddSuffixWindow.cs" />
+    <Compile Include="Editor\Base\Hierarchy\BatchReplacePrefixWindow.cs" />
+    <Compile Include="Editor\Base\Hierarchy\BatchReplaceSuffixWindow.cs" />
+    <Compile Include="Editor\Base\Hierarchy\HirearchyMenu.cs" />
+    <Compile Include="Editor\Base\LocalDataEditor.cs" />
+    <Compile Include="Editor\IukHorizontalLayout.cs" />
+    <Compile Include="Editor\IukVerticalLayout.cs" />
+    <Compile Include="Editor\MVDA\FragmentScriptCreater.cs" />
+    <Compile Include="Editor\MVDA\CreateViewWindow.cs" />
+    <Compile Include="Editor\MVDA\Quick\QuickSelectResponser.cs" />
+    <Compile Include="Editor\MVDA\ViewActionScriptCreater.cs" />
+    <Compile Include="Editor\MVDA\ViewElementScriptCreater.cs" />
+    <Compile Include="Editor\MVDA\ViewScriptCreater.cs" />
+    <Compile Include="Editor\MVDA\WidgetCreateEditor.cs" />
+    <Compile Include="Editor\Base\Setting\IukerSettingStyles.cs" />
+    <Compile Include="Editor\Base\PsdToUGUI\PsdNodeType.cs" />
+    <Compile Include="Editor\Base\PsdToUGUI\AbsPsdWidget.cs" />
+    <Compile Include="Editor\Base\QuickMenu.cs" />
+    <Compile Include="Editor\Protobuf\CommunicationRequesterCreater.cs" />
+    <Compile Include="Editor\Protobuf\CommunicationResponserCreater.cs" />
+    <Compile Include="Editor\Protobuf\LD_protobufsTable.cs" />
+    <Compile Include="Editor\Protobuf\ProtobufDesc.cs" />
+    <Compile Include="Editor\Protobuf\ProtobufEditorWindow.cs" />
+    <Compile Include="Editor\Protobuf\ProtobufFieldDesc.cs" />
+    <Compile Include="Editor\Protobuf\ProtobufFiledType.cs" />
+    <Compile Include="Editor\Protobuf\ProtobufParser.cs" />
+    <Compile Include="Editor\Base\ReactiveDataModel\ReactiveDataModelCreater.cs" />
+    <Compile Include="Editor\Base\Setting\IukerStringSetting.cs" />
+    <Compile Include="Editor\Base\Setting\IukerFloatSetting.cs" />
+    <Compile Include="Editor\Base\Setting\IukerIntSetting.cs" />
+    <Compile Include="Editor\Base\Setting\IukerBoolSetting.cs" />
+    <Compile Include="Editor\Base\Setting\IukerSettingBase.cs" />
+    <Compile Include="Editor\Base\TipWIndow.cs" />
+    <Compile Include="Editor\MVDA\WidgetPathInfo.cs" />
+    <Compile Include="Editor\TempCreateScriptWindow.cs" />
+    <Compile Include="Editor\IdScriptCreater.cs" />
+    <Compile Include="Editor\Utility\IukEditorUtility.cs" />
+    <Compile Include="Editor\TsProj.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Editor\Base\Dll\Excel.dll" />
+    <Content Include="Editor\Base\Dll\Newtonsoft.Json.dll" />
+    <Content Include="Editor\Base\Dll\System.Data.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Iuker.Common\Iuker.Common.csproj">
+      <Project>{f6800a73-73af-4bc8-bab8-cbf8abfe917b}</Project>
+      <Name>Iuker.Common</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Iuker.UnityKit.Run\Iuker.UnityKit.Run.csproj">
+      <Project>{c0129216-bfc9-4da2-a20d-397da36583a5}</Project>
+      <Name>Iuker.UnityKit.Run</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>cd $(ProjectDir)
+rmdir /s/q obj
+rmdir /s/q bin
+rmdir /s/q Properties</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

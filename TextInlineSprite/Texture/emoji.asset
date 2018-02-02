@@ -1,0 +1,417 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5efe682ead7eb154f97508822f9d073c, type: 3}
+  m_Name: emoji
+  m_EditorClassIdentifier: 
+  ID: 0
+  _IsStatic: 1
+  texSource: {fileID: 2800000, guid: 4d583ec90f85e0c45bfe51d798299336, type: 3}
+  listSpriteGroup:
+  - tag: emoji_0
+    listSpriteInfor:
+    - ID: 1
+      name: emoji_0
+      pivot: {x: 75, y: 75}
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 642
+        width: 150
+        height: 150
+      sprite: {fileID: 21300000, guid: 4d583ec90f85e0c45bfe51d798299336, type: 3}
+      tag: emoji_0
+      uv:
+      - {x: 0.05078125, y: 0.94736844}
+      - {x: 0.19726562, y: 0.94736844}
+      - {x: 0.19726562, y: 0.7679426}
+      - {x: 0.05078125, y: 0.7679426}
+    width: 1
+    size: 24
+  - tag: emoji_1
+    listSpriteInfor:
+    - ID: 2
+      name: emoji_1
+      pivot: {x: 75, y: 75}
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 642
+        width: 150
+        height: 150
+      sprite: {fileID: 21300002, guid: 4d583ec90f85e0c45bfe51d798299336, type: 3}
+      tag: emoji_1
+      uv:
+      - {x: 0.23046875, y: 0.94736844}
+      - {x: 0.37695312, y: 0.94736844}
+      - {x: 0.37695312, y: 0.7679426}
+      - {x: 0.23046875, y: 0.7679426}
+    width: 1
+    size: 24
+  - tag: emoji_2
+    listSpriteInfor:
+    - ID: 3
+      name: emoji_2
+      pivot: {x: 77, y: 82.5}
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 633
+        width: 154
+        height: 165
+      sprite: {fileID: 21300004, guid: 4d583ec90f85e0c45bfe51d798299336, type: 3}
+      tag: emoji_2
+      uv:
+      - {x: 0.45507812, y: 0.95454544}
+      - {x: 0.60546875, y: 0.95454544}
+      - {x: 0.60546875, y: 0.75717705}
+      - {x: 0.45507812, y: 0.75717705}
+    width: 1
+    size: 24
+  - tag: emoji_3
+    listSpriteInfor:
+    - ID: 4
+      name: emoji_3
+      pivot: {x: 74.5, y: 80.5}
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 637
+        width: 149
+        height: 161
+      sprite: {fileID: 21300006, guid: 4d583ec90f85e0c45bfe51d798299336, type: 3}
+      tag: emoji_3
+      uv:
+      - {x: 0.6376953, y: 0.95454544}
+      - {x: 0.7832031, y: 0.95454544}
+      - {x: 0.7832031, y: 0.7619617}
+      - {x: 0.6376953, y: 0.7619617}
+    width: 1
+    size: 24
+  - tag: emoji_4
+    listSpriteInfor:
+    - ID: 5
+      name: emoji_4
+      pivot: {x: 77.5, y: 81}
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 635
+        width: 155
+        height: 162
+      sprite: {fileID: 21300008, guid: 4d583ec90f85e0c45bfe51d798299336, type: 3}
+      tag: emoji_4
+      uv:
+      - {x: 0.8251953, y: 0.9533493}
+      - {x: 0.9765625, y: 0.9533493}
+      - {x: 0.9765625, y: 0.7595694}
+      - {x: 0.8251953, y: 0.7595694}
+    width: 1
+    size: 24
+  - tag: emoji_5
+    listSpriteInfor:
+    - ID: 6
+      name: emoji_5
+      pivot: {x: 72, y: 77}
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 461
+        width: 144
+        height: 154
+      sprite: {fileID: 21300010, guid: 4d583ec90f85e0c45bfe51d798299336, type: 3}
+      tag: emoji_5
+      uv:
+      - {x: 0.040039062, y: 0.73564595}
+      - {x: 0.18066406, y: 0.73564595}
+      - {x: 0.18066406, y: 0.5514354}
+      - {x: 0.040039062, y: 0.5514354}
+    width: 1
+    size: 24
+  - tag: emoji_6
+    listSpriteInfor:
+    - ID: 7
+      name: emoji_6
+      pivot: {x: 76.5, y: 76.5}
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 457
+        width: 153
+        height: 153
+      sprite: {fileID: 21300012, guid: 4d583ec90f85e0c45bfe51d798299336, type: 3}
+      tag: emoji_6
+      uv:
+      - {x: 0.22460938, y: 0.7296651}
+      - {x: 0.37402344, y: 0.7296651}
+      - {x: 0.37402344, y: 0.5466507}
+      - {x: 0.22460938, y: 0.5466507}
+    width: 1
+    size: 24
+  - tag: emoji_7
+    listSpriteInfor:
+    - ID: 8
+      name: emoji_7
+      pivot: {x: 72.5, y: 79.5}
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 451
+        width: 145
+        height: 159
+      sprite: {fileID: 21300014, guid: 4d583ec90f85e0c45bfe51d798299336, type: 3}
+      tag: emoji_7
+      uv:
+      - {x: 0.45898438, y: 0.7296651}
+      - {x: 0.60058594, y: 0.7296651}
+      - {x: 0.60058594, y: 0.5394737}
+      - {x: 0.45898438, y: 0.5394737}
+    width: 1
+    size: 24
+  - tag: emoji_8
+    listSpriteInfor:
+    - ID: 9
+      name: emoji_8
+      pivot: {x: 78.5, y: 80.5}
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 449
+        width: 157
+        height: 161
+      sprite: {fileID: 21300016, guid: 4d583ec90f85e0c45bfe51d798299336, type: 3}
+      tag: emoji_8
+      uv:
+      - {x: 0.640625, y: 0.7296651}
+      - {x: 0.7939453, y: 0.7296651}
+      - {x: 0.7939453, y: 0.53708136}
+      - {x: 0.640625, y: 0.53708136}
+    width: 1
+    size: 24
+  - tag: emoji_9
+    listSpriteInfor:
+    - ID: 10
+      name: emoji_9
+      pivot: {x: 75.5, y: 77}
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 456
+        width: 151
+        height: 154
+      sprite: {fileID: 21300018, guid: 4d583ec90f85e0c45bfe51d798299336, type: 3}
+      tag: emoji_9
+      uv:
+      - {x: 0.8222656, y: 0.7296651}
+      - {x: 0.96972656, y: 0.7296651}
+      - {x: 0.96972656, y: 0.54545456}
+      - {x: 0.8222656, y: 0.54545456}
+    width: 1
+    size: 24
+  - tag: emoji_10
+    listSpriteInfor:
+    - ID: 11
+      name: emoji_10
+      pivot: {x: 68.5, y: 79}
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 276
+        width: 137
+        height: 158
+      sprite: {fileID: 21300020, guid: 4d583ec90f85e0c45bfe51d798299336, type: 3}
+      tag: emoji_10
+      uv:
+      - {x: 0.053710938, y: 0.51913875}
+      - {x: 0.1875, y: 0.51913875}
+      - {x: 0.1875, y: 0.33014354}
+      - {x: 0.053710938, y: 0.33014354}
+    width: 1
+    size: 24
+  - tag: emoji_11
+    listSpriteInfor:
+    - ID: 12
+      name: emoji_11
+      pivot: {x: 65, y: 77}
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 278
+        width: 130
+        height: 154
+      sprite: {fileID: 21300022, guid: 4d583ec90f85e0c45bfe51d798299336, type: 3}
+      tag: emoji_11
+      uv:
+      - {x: 0.23925781, y: 0.5167464}
+      - {x: 0.36621094, y: 0.5167464}
+      - {x: 0.36621094, y: 0.3325359}
+      - {x: 0.23925781, y: 0.3325359}
+    width: 1
+    size: 24
+  - tag: emoji_12
+    listSpriteInfor:
+    - ID: 13
+      name: emoji_12
+      pivot: {x: 71, y: 85}
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 262
+        width: 142
+        height: 170
+      sprite: {fileID: 21300024, guid: 4d583ec90f85e0c45bfe51d798299336, type: 3}
+      tag: emoji_12
+      uv:
+      - {x: 0.45703125, y: 0.5167464}
+      - {x: 0.5957031, y: 0.5167464}
+      - {x: 0.5957031, y: 0.31339714}
+      - {x: 0.45703125, y: 0.31339714}
+    width: 1
+    size: 24
+  - tag: emoji_13
+    listSpriteInfor:
+    - ID: 14
+      name: emoji_13
+      pivot: {x: 76.5, y: 84.5}
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 267
+        width: 153
+        height: 169
+      sprite: {fileID: 21300026, guid: 4d583ec90f85e0c45bfe51d798299336, type: 3}
+      tag: emoji_13
+      uv:
+      - {x: 0.6386719, y: 0.5215311}
+      - {x: 0.78808594, y: 0.5215311}
+      - {x: 0.78808594, y: 0.319378}
+      - {x: 0.6386719, y: 0.319378}
+    width: 1
+    size: 24
+  - tag: emoji_14
+    listSpriteInfor:
+    - ID: 15
+      name: emoji_14
+      pivot: {x: 65.5, y: 85.5}
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 263
+        width: 131
+        height: 171
+      sprite: {fileID: 21300028, guid: 4d583ec90f85e0c45bfe51d798299336, type: 3}
+      tag: emoji_14
+      uv:
+      - {x: 0.83203125, y: 0.51913875}
+      - {x: 0.95996094, y: 0.51913875}
+      - {x: 0.95996094, y: 0.31459332}
+      - {x: 0.83203125, y: 0.31459332}
+    width: 1
+    size: 24
+  - tag: emoji_15
+    listSpriteInfor:
+    - ID: 16
+      name: emoji_15
+      pivot: {x: 70.5, y: 75.5}
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 80
+        width: 141
+        height: 151
+      sprite: {fileID: 21300030, guid: 4d583ec90f85e0c45bfe51d798299336, type: 3}
+      tag: emoji_15
+      uv:
+      - {x: 0.064453125, y: 0.27631578}
+      - {x: 0.20214844, y: 0.27631578}
+      - {x: 0.20214844, y: 0.09569378}
+      - {x: 0.064453125, y: 0.09569378}
+    width: 1
+    size: 24
+  - tag: emoji_16
+    listSpriteInfor:
+    - ID: 17
+      name: emoji_16
+      pivot: {x: 67, y: 77.5}
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 82
+        width: 134
+        height: 155
+      sprite: {fileID: 21300032, guid: 4d583ec90f85e0c45bfe51d798299336, type: 3}
+      tag: emoji_16
+      uv:
+      - {x: 0.2548828, y: 0.28349283}
+      - {x: 0.3857422, y: 0.28349283}
+      - {x: 0.3857422, y: 0.098086126}
+      - {x: 0.2548828, y: 0.098086126}
+    width: 1
+    size: 24
+  - tag: emoji_17
+    listSpriteInfor:
+    - ID: 18
+      name: emoji_17
+      pivot: {x: 74.5, y: 84.5}
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 61
+        width: 149
+        height: 169
+      sprite: {fileID: 21300034, guid: 4d583ec90f85e0c45bfe51d798299336, type: 3}
+      tag: emoji_17
+      uv:
+      - {x: 0.45507812, y: 0.2751196}
+      - {x: 0.60058594, y: 0.2751196}
+      - {x: 0.60058594, y: 0.07296651}
+      - {x: 0.45507812, y: 0.07296651}
+    width: 1
+    size: 24
+  - tag: emoji_18
+    listSpriteInfor:
+    - ID: 19
+      name: emoji_18
+      pivot: {x: 71, y: 83}
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 67
+        width: 142
+        height: 166
+      sprite: {fileID: 21300036, guid: 4d583ec90f85e0c45bfe51d798299336, type: 3}
+      tag: emoji_18
+      uv:
+      - {x: 0.6455078, y: 0.27870813}
+      - {x: 0.7841797, y: 0.27870813}
+      - {x: 0.7841797, y: 0.08014354}
+      - {x: 0.6455078, y: 0.08014354}
+    width: 1
+    size: 24
+  - tag: emoji_19
+    listSpriteInfor:
+    - ID: 20
+      name: emoji_19
+      pivot: {x: 75.5, y: 81.5}
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 68
+        width: 151
+        height: 163
+      sprite: {fileID: 21300038, guid: 4d583ec90f85e0c45bfe51d798299336, type: 3}
+      tag: emoji_19
+      uv:
+      - {x: 0.8232422, y: 0.27631578}
+      - {x: 0.9707031, y: 0.27631578}
+      - {x: 0.9707031, y: 0.08133971}
+      - {x: 0.8232422, y: 0.08133971}
+    width: 1
+    size: 24

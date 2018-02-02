@@ -1,0 +1,648 @@
+message LHandshakeMQData
+{
+    optional int32 type = 1;
+}
+
+message EconomyInfo
+{
+    optional int64 userId = 1;
+    optional int64 gold = 2;
+    optional int32 diamond = 3;
+    optional int32 payCount = 4;
+    optional int32 payTotal = 5;
+    optional int64 lastPayTime = 6;
+    optional int32 mobileCharge = 7;
+    optional int64 inviteUid = 8;
+    optional int32 lotteryNum = 9;
+    optional int32 inviteNum = 10;
+    optional int32 createTableAndCostNum = 11;
+    optional int32 tableGameNum = 12;
+}
+
+message SocialInfo
+{
+    optional int64 userId = 1;
+    optional string nickname = 2;
+    optional int32 gender = 3;
+    optional string headImg = 4;
+    optional string introduce = 5;
+    optional string mobile = 6;
+    optional string idcard = 7;
+    optional string country = 8;
+    optional string province = 9;
+    optional int32 city = 10;
+    optional string address = 11;
+    optional int32 userType = 12;
+}
+
+message UserStatus
+{
+    optional int64 userId = 1;
+    optional int32 isOnline = 2;
+    optional string createRoomIds = 3;
+    optional string lastRoomId = 4;
+    optional int32 gameId = 5;
+}
+
+message CTS_AgencyCheckMsg
+{
+    optional int64 userId = 1;
+    optional string token = 2;
+}
+
+message CTS_EconomyChangeMsg
+{
+    optional int64 userId = 1;
+}
+
+message CTS_GetSmsVerifyMsg
+{
+    optional string phone = 1;
+    optional string smsName = 2;
+    optional string sign = 3;
+}
+
+message CTS_GetUserInfoMsg
+{
+    optional int64 userId = 1;
+}
+
+message CTS_LoginMsg
+{
+    optional int64 userId = 1;
+    optional string machineCode = 2;
+    optional string account = 3;
+    optional string password = 4;
+    optional string comeFrom = 5;
+    optional string sessionid = 6;
+    optional int32 regChannel = 7;
+    optional string os = 8;
+    optional string IMEI = 9;
+    optional string loginIp = 10;
+    optional SocialInfo socialInfo = 11;
+    repeated string test = 12;
+}
+
+message CTS_ModifySelfInfoMsg
+{
+    optional int64 userId = 1;
+    optional string introduce = 2;
+}
+
+message CTS_PlatformLoginMsg
+{
+    optional int64 userId = 1;
+    optional string comeFrom = 2;
+    optional string sessionid = 3;
+    optional string refreshToken = 4;
+    optional int32 regChannel = 5;
+    optional string os = 6;
+    optional string IMEI = 7;
+    optional string loginIp = 8;
+}
+
+message CTS_RegisterMsg
+{
+    optional string account = 1;
+    optional string password = 2;
+    optional int32 smsCode = 3;
+    optional string machineCode = 4;
+    optional string comeFrom = 5;
+    optional string sessionid = 6;
+    optional int32 regChannel = 7;
+    optional string os = 8;
+    optional string IMEI = 9;
+    optional string loginIp = 10;
+    optional SocialInfo socialInfo = 11;
+    repeated string test = 12;
+}
+
+message STC_AgencyCheckMsg
+{
+    optional int64 userId = 1;
+    optional int32 result = 2;
+    optional string resultMsg = 3;
+}
+
+message STC_EconomyChangeMsg
+{
+    optional int64 userId = 1;
+    optional EconomyInfo economy = 2;
+}
+
+message STC_GetSmsVerifyMsg
+{
+    optional string returnCode = 1;
+}
+
+message STC_LoginMsg
+{
+    optional int64 userId = 1;
+    optional string session = 2;
+    optional int32 status = 3;
+    optional string loginIp = 4;
+    optional SocialInfo socialInfo = 5;
+    optional EconomyInfo economyInfo = 6;
+    optional UserStatus userStatus = 7;
+    repeated string test = 8;
+    optional string account = 9;
+    optional string password = 10;
+    optional string gameServerIp = 11;
+    optional string gameServerPort = 12;
+    optional string chatPort = 13;
+}
+
+message STC_ModifySelfInfoMsg
+{
+    optional int64 userId = 1;
+    optional string introduce = 2;
+    optional int32 result = 3;
+    optional string resultMsg = 4;
+}
+
+message STC_PlatformLoginMsg
+{
+    optional int64 userId = 1;
+    optional string refreshToken = 2;
+    optional int32 status = 3;
+    optional string loginIp = 4;
+    optional SocialInfo socialInfo = 5;
+    optional EconomyInfo economyInfo = 6;
+    optional UserStatus userStatus = 7;
+    optional string account = 8;
+    optional string password = 9;
+    optional string session = 10;
+    optional string platformStr = 11;
+    optional string gameServerIp = 12;
+    optional string gameServerPort = 13;
+    optional string chatPort = 14;
+}
+
+message STC_UserInfoMsg
+{
+    optional int64 userId = 1;
+    optional string account = 2;
+    optional int32 regChannel = 3;
+    optional string os = 4;
+    optional string loginIp = 5;
+    optional SocialInfo socialInfo = 6;
+    optional EconomyInfo economyInfo = 7;
+    optional UserStatus userStatus = 8;
+    optional string password = 9;
+}
+
+message STC_UserTableInfoMsg
+{
+    optional string sessionId = 1;
+}
+
+message CTS_Chat_SendMsg
+{
+    optional int32 type = 1;
+    optional int32 index = 2;
+    optional bytes msg = 3;
+    repeated int64 consumeIds = 4;
+}
+
+message STC_Chat_ContentMsg
+{
+    optional int32 type = 1;
+    optional int32 index = 2;
+    optional bytes msg = 3;
+    optional int64 sendId = 4;
+}
+
+message CTS_Club_AllInfoMsg
+{
+    optional int64 clubId = 1;
+}
+
+message CTS_Club_ChatMsg
+{
+    optional int64 clubId = 1;
+    optional int32 type = 2;
+    optional int32 index = 3;
+    optional bytes msg = 4;
+    optional int64 senderUserId = 5;
+}
+
+message CTS_Club_CreateMsg
+{
+    optional int64 clubId = 1;
+    optional string clubName = 2;
+}
+
+message CTS_Club_ExitMsg
+{
+    optional int64 clubId = 1;
+    optional int64 userId = 2;
+}
+
+message CTS_Club_InfoMsg
+{
+    optional int64 clubId = 1;
+}
+
+message CTS_Club_InviteMsg
+{
+    optional int64 clubId = 1;
+    optional int64 beUserId = 2;
+}
+
+message CTS_Club_JoinMsg
+{
+    optional int64 clubId = 1;
+}
+
+message CTS_Club_JoinCheckMsg
+{
+    optional int64 clubId = 1;
+    optional int64 userId = 2;
+    optional int32 result = 3;
+    optional string resultMsg = 4;
+}
+
+message CTS_Club_KickMsg
+{
+    optional int64 clubId = 1;
+    optional int64 userId = 2;
+}
+
+message CTS_Club_NoticesBoardMsg
+{
+    optional int64 clubId = 1;
+    optional string notices = 2;
+}
+
+message CTS_Club_TableGradeMsg
+{
+    optional int64 clubId = 1;
+}
+
+message CTS_Club_TableGradeDelMsg
+{
+    optional int64 clubId = 1;
+    optional int64 tableId = 2;
+}
+
+message CTS_Club_TransferMsg
+{
+    optional int64 clubId = 1;
+    optional int64 userId = 2;
+}
+
+message STC_Club_AllInfoMsg
+{
+    optional int64 clubId = 1;
+    repeated ClubSimple selfCreate = 2;
+    repeated ClubSimple joinList = 3;
+}
+
+message ClubSimple
+{
+    optional int64 clubId = 1;
+    optional string clubName = 2;
+    optional int64 masterId = 3;
+    optional string masterName = 4;
+}
+
+message STC_Club_ChatMsg
+{
+    optional int64 clubId = 1;
+    optional int32 type = 2;
+    optional int32 index = 3;
+    optional bytes msg = 4;
+    optional int64 senderUserId = 5;
+}
+
+message STC_Club_CreateMsg
+{
+    optional int64 clubId = 1;
+    optional string clubName = 2;
+    optional int32 result = 3;
+    optional string resultMsg = 4;
+}
+
+message STC_Club_ExitMsg
+{
+    optional int64 clubId = 1;
+    optional int64 userId = 2;
+    optional string nickName = 3;
+    optional string headImg = 4;
+    optional int32 gender = 5;
+    optional int32 result = 6;
+    optional string resultMsg = 7;
+}
+
+message STC_Club_InfoMsg
+{
+    optional int64 clubId = 1;
+    optional string clubName = 2;
+    optional int64 masterUid = 3;
+    optional string masterNickName = 4;
+    repeated SimplePlayer memberList = 5;
+    repeated ClubTableObj clubTableList = 6;
+    repeated SimplePlayer reqJoin = 7;
+    optional string notices = 8;
+    optional bool isReadNotice = 9;
+    optional int32 conmose = 10;
+}
+
+message ClubTableObj
+{
+    optional int64 tableId = 1;
+    optional int64 password = 2;
+    optional int32 gameId = 3;
+    optional string opertion = 4;
+    optional int32 currPlayerNum = 5;
+    optional int32 maxPlayerNum = 6;
+}
+
+message SimplePlayer
+{
+    optional int64 userId = 1;
+    optional int32 gender = 2;
+    optional string nickName = 3;
+    optional string headImg = 4;
+    optional int32 posId = 5;
+    optional int32 status = 6;
+    optional string ip = 7;
+    optional int32 gameNum = 8;
+    optional int32 gps_x = 9;
+    optional int32 gps_y = 10;
+    optional string gps_address = 11;
+    optional int32 online = 12;
+    optional string introduce = 13;
+}
+
+message STC_Club_InviteMsg
+{
+    optional int64 clubId = 1;
+    optional int32 result = 2;
+    optional string resultMsg = 3;
+}
+
+message STC_Club_JoinMsg
+{
+    optional int64 clubId = 1;
+    optional int32 result = 2;
+    optional string resMsg = 3;
+}
+
+message STC_Club_JoinCheckMsg
+{
+    optional int64 clubId = 1;
+    optional int32 result = 2;
+    optional string resultMsg = 3;
+}
+
+message STC_Club_JoinScuessMsg
+{
+    optional int64 clubId = 1;
+    optional int32 type = 2;
+    optional int64 lubMasterUId = 3;
+    optional string clubMasterName = 4;
+}
+
+message STC_Club_KickMsg
+{
+    optional int64 clubId = 1;
+    optional int64 userId = 2;
+    optional int32 result = 3;
+    optional string resultMsg = 4;
+}
+
+message STC_Club_NoticesBoardMsg
+{
+    optional int64 clubId = 1;
+    optional string notices = 2;
+    optional int32 result = 3;
+    optional string resultMsg = 4;
+}
+
+message STC_Club_TableGradeMsg
+{
+    optional int64 clubId = 1;
+    repeated TableRecord list = 2;
+}
+
+message TableRecord
+{
+    optional int64 tableId = 1;
+    repeated UserGrade gradeList = 2;
+    optional int64 date = 3;
+    optional int32 gameId = 4;
+    optional int64 masterId = 5;
+    optional int32 handNum = 6;
+}
+
+message UserGrade
+{
+    optional int64 userId = 1;
+    optional int32 gender = 2;
+    optional string nickName = 3;
+    optional int32 grade = 4;
+    optional int32 posId = 5;
+}
+
+message STC_Club_TableGradeDelMsg
+{
+    optional int64 clubId = 1;
+    optional int32 result = 2;
+    optional string resultMsg = 3;
+    repeated TableRecord list = 4;
+}
+
+message STC_Club_TransferMsg
+{
+    optional int64 clubId = 1;
+    optional int64 userId = 2;
+    optional int32 result = 3;
+    optional string resultMsg = 4;
+}
+
+message CTS_L_GameConfigMsg
+{
+}
+
+message CTS_L_InTableMsg
+{
+    optional int64 password = 1;
+    optional int32 gps_x = 2;
+    optional int32 gps_y = 3;
+    optional string gps_address = 4;
+}
+
+message CTS_L_InviteMsg
+{
+    optional int64 inviteUid = 1;
+}
+
+message CTS_L_LotteryConfigMsg
+{
+    optional int64 userId = 1;
+}
+
+message CTS_L_LotteryOpenMsg
+{
+    optional int64 userId = 1;
+}
+
+message CTS_L_MobileChargeMsg
+{
+    optional int32 value = 1;
+    optional int64 mobile = 2;
+}
+
+message STC_L_GameConfigMsg
+{
+    repeated GameCfgItem list = 1;
+}
+
+message GameCfgItem
+{
+    optional int32 gameId = 1;
+    optional int32 handNum = 2;
+    optional int32 cost = 3;
+}
+
+message STC_L_InviteMsg
+{
+    optional int32 result = 1;
+    optional string resultMsg = 2;
+}
+
+message STC_L_LotteryConfigMsg
+{
+    repeated LotteryConfigItem list = 1;
+    optional int32 lotteryNum = 2;
+    optional int32 inviteProNum = 3;
+    optional int32 inviteProTotal = 4;
+    optional int32 createTableProNum = 5;
+    optional int32 createTableProTotal = 6;
+}
+
+message LotteryConfigItem
+{
+    optional int32 id = 1;
+    optional int32 goodsId = 2;
+    optional string goodsName = 3;
+    optional int32 goodsNum = 4;
+    optional string desc = 5;
+}
+
+message STC_L_LotteryOpenMsg
+{
+    optional int32 resultId = 1;
+    optional string resultMsg = 2;
+    optional int32 lotteryNum = 3;
+    optional int32 inviteProNum = 4;
+    optional int32 inviteProTotal = 5;
+    optional int32 createTableProNum = 6;
+    optional int32 createTableProTotal = 7;
+}
+
+message STC_L_MobileChargeMsg
+{
+    optional int32 value = 1;
+    optional int32 result = 2;
+    optional string resultMsg = 3;
+}
+
+message STC_Pay_SucceedMsg
+{
+    optional string orderId = 1;
+    optional int32 diamond = 2;
+}
+
+message CTS_R_GameRecordMsg
+{
+    optional int64 tableId = 1;
+    optional int32 handId = 2;
+    optional int32 gameId = 3;
+    optional int64 shareId = 4;
+}
+
+message CTS_R_ShareMsg
+{
+    optional int64 tableId = 1;
+    optional int32 handId = 2;
+    optional int32 gameId = 3;
+}
+
+message CTS_R_TableRecordMsg
+{
+    optional int64 tableId = 1;
+    optional int32 gameId = 2;
+}
+
+message CTS_R_UserRecordMsg
+{
+    optional int32 pageNum = 1;
+    optional int32 pageSize = 2;
+}
+
+message STC_R_GameRecordMsg
+{
+    optional int64 tableId = 1;
+    optional int32 handId = 2;
+    optional int32 gameId = 3;
+    optional int64 shareId = 4;
+}
+
+message STC_R_ShareMsg
+{
+    optional int64 shareId = 1;
+}
+
+message STC_R_TableRecordMsg
+{
+    optional int64 tableId = 1;
+    optional int32 gameId = 2;
+    optional int64 masterUserId = 3;
+    repeated RoundRecord roundList = 4;
+}
+
+message RoundRecord
+{
+    optional int64 date = 1;
+    optional int32 handId = 2;
+    repeated SettleResult result = 3;
+}
+
+message SettleResult
+{
+    optional int64 userId = 1;
+    optional int32 posId = 2;
+    optional string nickName = 3;
+    optional int32 score = 4;
+}
+
+message STC_R_UserRecordMsg
+{
+    repeated TableGrade tableGradeList = 1;
+}
+
+message TableGrade
+{
+    optional int64 tableId = 1;
+    optional int32 gameId = 2;
+    optional int64 date = 3;
+    optional int64 masterUserId = 4;
+    repeated GameGrade result = 5;
+}
+
+message GameGrade
+{
+    optional int64 userId = 1;
+    optional int32 posId = 2;
+    optional string nickName = 3;
+    optional int32 score = 4;
+}
+
+message STC_ErrorMsgMsg
+{
+    optional int32 errId = 1;
+    optional string errMsg = 2;
+}
+

@@ -1,0 +1,269 @@
+message JjzdOption
+{
+    optional int32 play = 1;
+    optional int32 bottomPoints = 2;
+    optional int32 buy = 3;
+    optional int32 reportCard = 4;
+    optional bool isAuto = 5;
+}
+
+message CTS_Jjzd_ChooseCardMsg
+{
+    optional int32 card = 1;
+}
+
+message CTS_Jjzd_IsOnlyMsg
+{
+    optional int64 tableId = 1;
+    optional int32 isOnly = 2;
+}
+
+message CTS_Jjzd_OperateMsg
+{
+    optional int64 tableId = 1;
+    optional int32 actonId = 2;
+    repeated int32 cards = 3;
+}
+
+message CTS_Jjzd_PlusBuyMsg
+{
+    optional int32 buy = 1;
+}
+
+message CTS_Jjzd_ReconnectMsg
+{
+    optional int64 tableId = 1;
+}
+
+message CTS_Jjzd_RecordMsg
+{
+    optional int64 tableId = 1;
+    optional int32 bankId = 2;
+    optional int32 handId = 3;
+    optional int32 gameId = 4;
+}
+
+message STC_Jjzd_ChooseCardMsg
+{
+    optional TeoError error = 1;
+    optional int32 card = 2;
+}
+
+message TeoError
+{
+    optional int32 errId = 1;
+}
+
+message STC_Jjzd_FirstPlayCardBCMsg
+{
+    optional int32 bankPosId = 1;
+}
+
+message STC_Jjzd_IsOnlyMsg
+{
+    optional TeoError error = 1;
+}
+
+message STC_Jjzd_isPlusBuyBCMsg
+{
+    optional int32 maxBuy = 1;
+}
+
+message STC_Jjzd_OperateBCMsg
+{
+    optional int64 userId = 1;
+    optional int32 posId = 2;
+    optional int32 actonId = 3;
+    repeated int32 cards = 4;
+    optional int32 colorNum = 5;
+    optional int32 isFinish = 6;
+    optional int32 nextPosId = 7;
+    repeated int32 you = 8;
+}
+
+message STC_Jjzd_PlusBuyMsg
+{
+    optional TeoError error = 1;
+    optional int32 buy = 2;
+}
+
+message STC_Jjzd_ReconnectMsg
+{
+    optional int64 tableId = 1;
+    optional string tableName = 2;
+    optional int32 handNum = 3;
+    optional int32 postionNum = 4;
+    optional int32 gameStatus = 5;
+    optional int32 actionId = 6;
+    optional int32 handId = 7;
+    repeated JjzdPlayerInfo playerList = 8;
+    repeated int32 priCards = 9;
+    optional int32 operatePosId = 10;
+    repeated int32 oerateBeCards = 11;
+    optional int32 bePosId = 12;
+}
+
+message JjzdPlayerInfo
+{
+    optional int32 posId = 1;
+}
+
+message SimplePlayer
+{
+    optional int64 userId = 1;
+}
+
+message STC_Jjzd_RecordMsg
+{
+    optional int64 tableId = 1;
+    optional int32 bankId = 2;
+    optional int32 handId = 3;
+    repeated PlayerInfo playerList = 4;
+    repeated STC_Jjzd_OperateBCMsg operateHistory = 5;
+}
+
+message PlayerInfo
+{
+    optional int64 userId = 1;
+}
+
+message STC_Jjzd_SelectOnlyBCMsg
+{
+    optional int32 selectOnlyPosId = 1;
+}
+
+message STC_Jjzd_SettleBCMsg
+{
+    optional int64 tableId = 1;
+    optional int32 snId = 2;
+    optional int32 handTotal = 3;
+    optional string startTime = 4;
+    repeated EndResultMsg info = 5;
+}
+
+message EndResultMsg
+{
+    optional int64 userId = 1;
+}
+
+message STC_Jjzd_StartBCMsg
+{
+    optional int64 tableId = 1;
+    optional int32 handId = 2;
+    optional int32 selectOnlyPosId = 3;
+    repeated int32 plusBuy = 4;
+    repeated int32 priCards = 5;
+}
+
+message STC_Jjzd_WhoOnlyBCMsg
+{
+    optional int32 bankPosId = 1;
+    optional int32 isOnly = 2;
+    optional bool isStartBid = 3;
+}
+
+message CTS_Table_CreateMsg
+{
+    optional int32 gameId = 1;
+    optional int64 tableId = 2;
+    optional string tableName = 3;
+    optional int32 handTotal = 4;
+    optional int32 gps_x = 5;
+    optional int32 gps_y = 6;
+    optional string gps_address = 7;
+    optional JjzdOption jjzdOption = 8;
+}
+
+message CTS_Table_DissolveVoteMsg
+{
+    optional int64 tableId = 1;
+    optional int32 vote = 2;
+}
+
+message CTS_Table_ExitMsg
+{
+    optional int64 tableId = 1;
+}
+
+message CTS_Table_InMsg
+{
+    optional int32 password = 1;
+    optional int32 gps_x = 2;
+    optional int32 gps_y = 3;
+    optional string gps_address = 4;
+}
+
+message CTS_Table_ReadyMsg
+{
+    optional bool isReady = 1;
+}
+
+message CTS_Table_ReqDissolveMsg
+{
+    optional int64 tableId = 1;
+}
+
+message STC_Table_CreateMsg
+{
+    optional TeoError error = 1;
+    optional int32 password = 2;
+    optional int64 tableId = 3;
+    optional int64 createTime = 4;
+    optional int32 gameId = 5;
+    optional string tableName = 6;
+    optional int32 handTotal = 7;
+    optional int32 playerCount = 8;
+}
+
+message STC_Table_DissolveBCMsg
+{
+    optional int64 tableId = 1;
+    optional int32 isSucc = 2;
+    repeated string nickName = 3;
+}
+
+message STC_Table_DissolveVoteMsg
+{
+    optional TeoError error = 1;
+}
+
+message STC_Table_ExitMsg
+{
+    optional TeoError error = 1;
+    optional int64 userId = 2;
+    optional int64 tableId = 3;
+}
+
+message STC_Table_InMsg
+{
+    optional TeoError error = 1;
+    optional int64 tableId = 2;
+    optional int64 password = 3;
+    optional string tableName = 4;
+    optional int32 handNum = 5;
+    optional int32 postionNum = 6;
+    repeated SimplePlayer playerList = 7;
+    optional JjzdOption jjzdOption = 8;
+}
+
+message STC_Table_InBCMsg
+{
+    optional int64 tableId = 1;
+    optional int32 posId = 2;
+    optional SimplePlayer player = 3;
+}
+
+message STC_Table_ReadyBCMsg
+{
+    optional int64 userId = 1;
+    optional bool isReady = 2;
+}
+
+message STC_Table_ReqDissolveMsg
+{
+    optional TeoError error = 1;
+    optional int64 tableId = 2;
+    optional int64 userId = 3;
+    optional string nickName = 4;
+}
+

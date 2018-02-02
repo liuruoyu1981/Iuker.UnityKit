@@ -1,0 +1,3 @@
+﻿interface IJintText {
+    Text: string;
+}

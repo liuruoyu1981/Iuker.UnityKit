@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- 
+***************************************************************************
+*
+*  @@@BUILDINFO@@@ Spruce-2.ws 3.0.0.14  27-February-2008
+*  Copyright 2007 Adobe Systems Incorporated
+*  All Rights Reserved.
+*
+* NOTICE:  All information contained herein is, and remains the property of
+* Adobe Systems Incorporated  and its suppliers,  if any.  The intellectual
+* and technical concepts contained herein are proprietary to  Adobe Systems
+* Incorporated  and its suppliers  and may be  covered by U.S.  and Foreign
+* Patents,patents in process,and are protected by trade secret or copyright
+* law.  Dissemination of this  information or reproduction of this material
+* is strictly  forbidden  unless prior written permission is  obtained from
+* Adobe Systems Incorporated.
+***************************************************************************
+-->
+
+<workspace version="1">
+  <Palettes>
+    <console>
+      <visible>true</visible>
+      <posx>969.000000</posx>
+      <posy>1277.000000</posy>
+      <width>308.000000</width>
+      <height>165.000000</height>
+      <minimized>false</minimized>
+      <parentName>WS_TabGroup0</parentName>
+    </console>
+    <breakpoints>
+      <visible>true</visible>
+      <posx>969.000000</posx>
+      <posy>1277.000000</posy>
+      <width>308.000000</width>
+      <height>191.000000</height>
+      <minimized>false</minimized>
+      <parentName>WS_TabGroup1</parentName>
+    </breakpoints>
+    <callstack>
+      <visible>true</visible>
+      <posx>969.000000</posx>
+      <posy>1277.000000</posy>
+      <width>308.000000</width>
+      <height>191.000000</height>
+      <minimized>false</minimized>
+      <parentName>WS_TabGroup2</parentName>
+    </callstack>
+    <scripts>
+      <visible>true</visible>
+      <posx>969.000000</posx>
+      <posy>1277.000000</posy>
+      <width>308.000000</width>
+      <height>191.000000</height>
+      <minimized>false</minimized>
+      <parentName>WS_TabGroup3</parentName>
+    </scripts>
+    <functionlist>
+      <visible>true</visible>
+      <posx>968.000000</posx>
+      <posy>1268.000000</posy>
+      <width>300.000000</width>
+      <height>300.000000</height>
+      <minimized>false</minimized>
+      <parentName>WS_TabGroup43</parentName>
+    </functionlist>
+    <databrowser>
+      <visible>true</visible>
+      <posx>969.000000</posx>
+      <posy>1277.000000</posy>
+      <width>308.000000</width>
+      <height>71.000000</height>
+      <minimized>false</minimized>
+      <parentName>WS_TabGroup4</parentName>
+    </databrowser>
+    <findresults>
+      <visible>true</visible>
+      <posx>192.000000</posx>
+      <posy>798.000000</posy>
+      <width>606.000000</width>
+      <height>168.000000</height>
+      <minimized>false</minimized>
+      <parentName>WS_TabGroup6</parentName>
+      <ancestorName>findAndReplace</ancestorName>
+    </findresults>
+    <findAndReplace>
+      <visible>true</visible>
+      <posx>192.000000</posx>
+      <posy>595.000000</posy>
+      <width>403.000000</width>
+      <height>168.000000</height>
+      <minimized>false</minimized>
+      <parentName>WS_TabGroup6</parentName>
+      <descendantName>findresults</descendantName>
+    </findAndReplace>
+  </Palettes>
+  <TabGroups>
+    <WS_TabGroup43>
+      <parentName>WS_Tabpane0</parentName>
+      <visible>true</visible>
+      <ancestorName>WS_TabGroup3</ancestorName>
+      <activeChild>functionlist</activeChild>
+    </WS_TabGroup43>
+    <WS_TabGroup0>
+      <parentName>WS_Tabpane0</parentName>
+      <visible>true</visible>
+      <descendantName>WS_TabGroup4</descendantName>
+      <activeChild>console</activeChild>
+    </WS_TabGroup0>
+    <WS_TabGroup1>
+      <parentName>WS_Tabpane0</parentName>
+      <visible>true</visible>
+      <ancestorName>WS_TabGroup4</ancestorName>
+      <descendantName>WS_TabGroup2</descendantName>
+      <activeChild>breakpoints</activeChild>
+    </WS_TabGroup1>
+    <WS_TabGroup2>
+      <parentName>WS_Tabpane0</parentName>
+      <visible>true</visible>
+      <ancestorName>WS_TabGroup1</ancestorName>
+      <descendantName>WS_TabGroup3</descendantName>
+      <activeChild>callstack</activeChild>
+    </WS_TabGroup2>
+    <WS_TabGroup3>
+      <parentName>WS_Tabpane0</parentName>
+      <visible>true</visible>
+      <ancestorName>WS_TabGroup2</ancestorName>
+      <descendantName>WS_TabGroup43</descendantName>
+      <activeChild>scripts</activeChild>
+    </WS_TabGroup3>
+    <WS_TabGroup4>
+      <parentName>WS_Tabpane0</parentName>
+      <visible>true</visible>
+      <ancestorName>WS_TabGroup0</ancestorName>
+      <descendantName>WS_TabGroup1</descendantName>
+      <activeChild>databrowser</activeChild>
+    </WS_TabGroup4>
+    <WS_TabGroup6>
+      <parentName>WS_Tabpane6</parentName>
+      <visible>true</visible>
+      <activeChild>findAndReplace</activeChild>
+    </WS_TabGroup6>
+  </TabGroups>
+  <TabPane>
+    <WS_Tabpane0>
+      <parentName>DockRight</parentName>
+      <panemode>2</panemode>
+      <width>188.000000</width>
+    </WS_Tabpane0>
+    <WS_Tabpane6>
+      <parentName>DockLeft</parentName>
+      <panemode>2</panemode>
+      <width>35.000000</width>
+    </WS_Tabpane6>
+  </TabPane>
+  <Docks>
+  </Docks>
+</workspace>

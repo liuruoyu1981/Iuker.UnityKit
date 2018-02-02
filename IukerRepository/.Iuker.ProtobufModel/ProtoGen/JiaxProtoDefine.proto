@@ -1,0 +1,85 @@
+message CTS_Ssz_ContinueMsg
+{
+    optional int64 tableId = 1;
+}
+
+message CTS_Ssz_OperateMsg
+{
+    optional int64 tableId = 1;
+    repeated int32 cards = 2;
+}
+
+message CTS_Ssz_ReadyMsg
+{
+    optional int64 tableId = 1;
+    optional int32 value = 2;
+}
+
+message STC_Ssz_ContinueMsg
+{
+    optional int64 tableId = 1;
+    optional int64 password = 2;
+    optional string tableName = 3;
+    optional int32 handNum = 4;
+    optional int32 postionNum = 5;
+    optional int32 gameStatus = 6;
+    optional int32 actionId = 7;
+    optional int32 handId = 8;
+    repeated SimplePlayer playerList = 9;
+    repeated int32 playerCardNum = 10;
+    repeated int32 priCards = 11;
+    repeated SszSettleItem settleLst = 12;
+}
+
+message SimplePlayer
+{
+    optional int64 userId = 1;
+    optional int32 gender = 2;
+    optional string nickName = 3;
+    optional string headImg = 4;
+    optional int32 posId = 5;
+    optional int32 status = 6;
+}
+
+message SszSettleItem
+{
+    optional int32 posId = 1;
+    repeated int32 gradeList = 2;
+    repeated int32 shootGradeList = 3;
+}
+
+message STC_Ssz_OperateMsg
+{
+    optional int64 tableId = 1;
+    optional bool succeed = 2;
+}
+
+message STC_Ssz_OperateNoticeMsg
+{
+    optional int64 tableId = 1;
+    optional int32 posId = 2;
+    repeated int32 beCards = 3;
+}
+
+message STC_Ssz_ReadyMsg
+{
+    optional int64 tableId = 1;
+    optional int32 value = 2;
+    optional int32 posId = 3;
+}
+
+message STC_Ssz_SettleMsg
+{
+    optional int64 tableId = 1;
+    optional int32 winPosId = 2;
+    repeated SszSettleItem settleLst = 3;
+}
+
+message STC_Ssz_StartMsg
+{
+    optional int64 tableId = 1;
+    optional int32 bankId = 2;
+    optional int32 handId = 3;
+    repeated int32 priCards = 4;
+}
+

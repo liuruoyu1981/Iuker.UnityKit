@@ -1,0 +1,322 @@
+message LHandshakeMQData
+{
+    optional int32 type = 1;
+}
+
+message EconomyInfo
+{
+    optional int64 userId = 1;
+    optional int64 gold = 2;
+    optional int32 diamond = 3;
+    optional int32 payCount = 4;
+    optional int32 payTotal = 5;
+    optional int64 lastPayTime = 6;
+}
+
+message SocialInfo
+{
+    optional int64 userId = 1;
+    optional string nickname = 2;
+    optional int32 gender = 3;
+    optional string headImg = 4;
+    optional string introduce = 5;
+    optional string mobile = 6;
+    optional string idcard = 7;
+    optional string country = 8;
+    optional string province = 9;
+    optional int32 city = 10;
+    optional string address = 11;
+}
+
+message UserStatus
+{
+    optional int64 userId = 1;
+    optional int32 isOnline = 2;
+    optional string createRoomIds = 3;
+    optional string lastRoomId = 4;
+    optional int32 gameId = 5;
+}
+
+message CTS_GetUserInfoMsg
+{
+    optional int64 userId = 1;
+}
+
+message CTS_Lobby_HeartbeatMsg
+{
+    optional int64 id = 1;
+}
+
+message CTS_LoginMsg
+{
+    optional int64 userId = 1;
+    optional string machineCode = 2;
+    optional string account = 3;
+    optional string password = 4;
+    optional string comeFrom = 5;
+    optional string sessionid = 6;
+    optional int32 regChannel = 7;
+    optional string os = 8;
+    optional string IMEI = 9;
+    optional string loginIp = 10;
+    optional SocialInfo socialInfo = 11;
+}
+
+message CTS_PlatformLoginMsg
+{
+    optional int64 userId = 1;
+    optional string comeFrom = 2;
+    optional string sessionid = 3;
+    optional string refreshToken = 4;
+    optional int32 regChannel = 5;
+    optional string os = 6;
+    optional string IMEI = 7;
+    optional string loginIp = 8;
+}
+
+message STC_Lobby_HeartbeatMsg
+{
+    optional int64 id = 1;
+}
+
+message STC_LoginMsg
+{
+    optional int64 userId = 1;
+    optional string session = 2;
+    optional int32 status = 3;
+    optional string loginIp = 4;
+    optional SocialInfo socialInfo = 5;
+    optional EconomyInfo economyInfo = 6;
+    optional UserStatus userStatus = 7;
+    optional string account = 8;
+    optional string password = 9;
+    optional string gameServerIp = 10;
+    optional string gameServerPort = 11;
+    optional string chatPort = 12;
+}
+
+message STC_PlatformLoginMsg
+{
+    optional int64 userId = 1;
+    optional string refreshToken = 2;
+    optional int32 status = 3;
+    optional string loginIp = 4;
+    optional SocialInfo socialInfo = 5;
+    optional EconomyInfo economyInfo = 6;
+    optional UserStatus userStatus = 7;
+    optional string account = 8;
+    optional string password = 9;
+    optional string session = 10;
+    optional string platformStr = 11;
+    optional string gameServerIp = 12;
+    optional string gameServerPort = 13;
+    optional string chatPort = 14;
+}
+
+message STC_UserInfoMsg
+{
+    optional int64 userId = 1;
+    optional string account = 2;
+    optional int32 regChannel = 3;
+    optional string os = 4;
+    optional string loginIp = 5;
+    optional SocialInfo socialInfo = 6;
+    optional EconomyInfo economyInfo = 7;
+    optional UserStatus userStatus = 8;
+    optional string password = 9;
+}
+
+message STC_UserTableInfoMsg
+{
+    optional int64 userId = 1;
+    repeated UserTableItem tableList = 2;
+    optional string sessionId = 3;
+}
+
+message UserTableItem
+{
+    optional int64 tableId = 1;
+    optional int32 gameId = 2;
+    optional bool isLastTable = 3;
+}
+
+message CTS_Chat_SendMsg
+{
+    optional bytes msg = 1;
+    repeated int64 consumeIds = 2;
+}
+
+message STC_Chat_ContentMsg
+{
+    optional bytes msg = 1;
+    optional int64 sendId = 2;
+}
+
+message STC_Pay_SucceedMsg
+{
+    optional string orderId = 1;
+    optional int32 diamond = 2;
+}
+
+message STC_ErrorMsgMsg
+{
+    optional int32 errId = 1;
+    optional string errMsg = 2;
+}
+
+message CTS_TableSettleMsg
+{
+    optional int64 tableId = 1;
+}
+
+message CTS_Table_ActExitTableMsg
+{
+    optional int64 tableId = 1;
+}
+
+message CTS_Table_ActInTableMsg
+{
+    optional int64 tableId = 1;
+}
+
+message CTS_Table_CreateMsg
+{
+    optional int32 gameId = 1;
+    optional int64 tableId = 2;
+    optional string tableName = 3;
+    optional int32 handNum = 4;
+    optional int32 postionNum = 5;
+}
+
+message CTS_Table_DissolveRequestMsg
+{
+    optional int64 tableId = 1;
+}
+
+message CTS_Table_DissolveVoteMsg
+{
+    optional int64 tableId = 1;
+    optional int32 vote = 2;
+}
+
+message CTS_Table_HeartbeatMsg
+{
+    optional int64 tableId = 1;
+}
+
+message STC_TableSettleMsg
+{
+    optional int64 tableId = 1;
+    optional string tableName = 2;
+    optional int32 handTotal = 3;
+    optional int64 createTime = 4;
+    optional int64 finishTime = 5;
+    optional string masterUserHeadImg = 6;
+    optional int32 seatNum = 7;
+    repeated PlayerGrade gradeList = 8;
+}
+
+message PlayerGrade
+{
+    optional int32 posId = 1;
+    optional int32 winCount = 2;
+    optional int32 zhadanCount = 3;
+    optional int32 handMaxGrade = 4;
+    optional int32 gradeCount = 5;
+}
+
+message STC_Table_ActExitTableMsg
+{
+    optional int64 userId = 1;
+    optional int64 tableId = 2;
+}
+
+message STC_Table_ActInTableMsg
+{
+    optional int64 tableId = 1;
+    optional int64 password = 2;
+    optional string tableName = 3;
+    optional int32 handNum = 4;
+    optional int32 postionNum = 5;
+    repeated SimplePlayer playerList = 6;
+    optional TeoError error = 7;
+}
+
+message SimplePlayer
+{
+    optional int64 userId = 1;
+    optional int32 gender = 2;
+    optional string nickName = 3;
+    optional string headImg = 4;
+    optional int32 posId = 5;
+    optional int32 status = 6;
+    optional int32 online = 7;
+}
+
+message TeoError
+{
+    optional int32 errId = 1;
+    optional string errMsg = 2;
+    optional bool isShow = 3;
+}
+
+message STC_Table_ActInTable_PublishMsg
+{
+    optional int64 tableId = 1;
+    optional int32 posId = 2;
+    optional SimplePlayer player = 3;
+}
+
+message STC_Table_CreateMsg
+{
+    optional int32 gameId = 1;
+    optional int64 tableId = 2;
+    optional string tableName = 3;
+    optional int32 handNum = 4;
+    optional int32 postionNum = 5;
+    optional CreateResult createResult = 6;
+    optional TeoError error = 7;
+}
+
+message CreateResult
+{
+    optional int64 masterId = 1;
+    optional int32 password = 2;
+    optional int64 tableId = 3;
+    optional int64 createTime = 4;
+}
+
+message STC_Table_DissolveRequestMsg
+{
+    optional int64 tableId = 1;
+    optional int64 userId = 2;
+    optional string nickName = 3;
+    optional TeoError error = 4;
+    optional int32 result = 5;
+}
+
+message STC_Table_DissolveResultMsg
+{
+    optional int64 tableId = 1;
+    optional int32 result = 2;
+}
+
+message STC_Table_DissolveVoteMsg
+{
+    optional int64 tableId = 1;
+    optional int64 reqUserId = 2;
+    optional string reqNickName = 3;
+}
+
+message STC_Table_DissolveVoteResultMsg
+{
+    optional int64 tableId = 1;
+    optional int32 result = 2;
+    optional int64 userId = 3;
+}
+
+message STC_Table_HeartbeatMsg
+{
+    optional int64 tableId = 1;
+}
+

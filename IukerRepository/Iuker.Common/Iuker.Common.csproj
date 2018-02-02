@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F6800A73-73AF-4BC8-BAB8-CBF8ABFE917B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Iuker.Common</RootNamespace>
+    <AssemblyName>Iuker.Common</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\Iuker.UnityKit.DllOutPut\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Iuker.Debug">
+      <HintPath>..\Iuker.UnityKit.Run\FrameRequireDll\Iuker.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionWorkflow\IActionRequest.cs" />
+    <Compile Include="ActionWorkflow\IActionRequester.cs" />
+    <Compile Include="ActionWorkflow\IActionResponser.cs" />
+    <Compile Include="Base\Attributes\ClassCreateDescAttribute.cs" />
+    <Compile Include="Base\Attributes\DataIdDefineAttribute.cs" />
+    <Compile Include="Base\Attributes\EmumPurposeDescAttribute.cs" />
+    <Compile Include="Base\Attributes\SelfDescAttribute.cs" />
+    <Compile Include="Base\Attributes\MethodPurposeDescAttribute.cs" />
+    <Compile Include="Base\BaseFrame.cs" />
+    <Compile Include="Base\BasePrefs.cs" />
+    <Compile Include="Base\Config\Server.cs" />
+    <Compile Include="Base\DataTypes\ReactData.cs" />
+    <Compile Include="Base\DataTypes\XmlDictionary.cs" />
+    <Compile Include="Base\Debuger.cs" />
+    <Compile Include="Base\Enums\EnumByte.cs" />
+    <Compile Include="Base\Enums\AppEventType.cs" />
+    <Compile Include="Base\Enums\LogType.cs" />
+    <Compile Include="Base\Enums\ModuleType.cs" />
+    <Compile Include="Base\Enums\NationalityType.cs" />
+    <Compile Include="Base\Il8nString.cs" />
+    <Compile Include="Base\Interfaces\IApp.cs" />
+    <Compile Include="Base\Interfaces\ICalculate .cs" />
+    <Compile Include="Base\Interfaces\IFactory.cs" />
+    <Compile Include="Base\Interfaces\Il8nType.cs" />
+    <Compile Include="Base\Il8nVersion.cs" />
+    <Compile Include="Base\Interfaces\IFrame.cs" />
+    <Compile Include="Base\Interfaces\ILoopUpdate.cs" />
+    <Compile Include="Base\Interfaces\IObjectFactory.cs" />
+    <Compile Include="Base\Interfaces\IObjectPool.cs" />
+    <Compile Include="Base\Interfaces\IReactiveClass.cs" />
+    <Compile Include="Base\DataTypes\ReactiveClass.cs" />
+    <Compile Include="Base\Attributes\SelfDescClassModifyAttribute.cs" />
+    <Compile Include="Base\Attributes\ClassPurposeDescAttribute.cs" />
+    <Compile Include="Base\Attributes\FieldPurposeDescAttribute.cs" />
+    <Compile Include="Base\Attributes\InterfaceDescAttribute.cs" />
+    <Compile Include="Base\DataTypes\Collections\ObservableListEventInfo.cs" />
+    <Compile Include="Base\DataTypes\Collections\ListEventType.cs" />
+    <Compile Include="Base\DataTypes\Collections\ObservableList.cs" />
+    <Compile Include="Base\DataTypes\Collections\ObservableListWrapper.cs" />
+    <Compile Include="Base\DataTypes\ReactiveDatas\IReactiveStruct.cs" />
+    <Compile Include="Base\DataTypes\ReactiveDatas\ReactiveFloat.cs" />
+    <Compile Include="Base\DataTypes\ReactiveDatas\ReactiveBool.cs" />
+    <Compile Include="Base\DataTypes\ReactiveDatas\ReactiveIong.cs" />
+    <Compile Include="Base\DataTypes\ReactiveDatas\ReactiveInt32.cs" />
+    <Compile Include="Base\DataTypes\ReactiveDatas\ReactiveString.cs" />
+    <Compile Include="Base\DataBinding\IBindingDataSource.cs" />
+    <Compile Include="Base\DataBinding\IBindingWidget.cs" />
+    <Compile Include="Base\Interfaces\ISubscibe .cs" />
+    <Compile Include="Base\CsharpScriptAppender.cs" />
+    <Compile Include="Base\LoopArray.cs" />
+    <Compile Include="Base\SettingsDictionarys.cs" />
+    <Compile Include="Base\TimeUtility.cs" />
+    <Compile Include="Module\Communication\ByteBuf.cs" />
+    <Compile Include="Module\Communication\Http\Enums\ContentReadAction.cs" />
+    <Compile Include="Module\Communication\Http\Enums\HttpActionType.cs" />
+    <Compile Include="Module\Communication\Http\Enums\HttpCompletionOption.cs" />
+    <Compile Include="Module\Communication\Http\HttpAction\HttpBase.cs" />
+    <Compile Include="Module\Communication\Http\HttpContent\ByteArrayContent.cs" />
+    <Compile Include="Module\Communication\Http\HttpContent\IHttpContent.cs" />
+    <Compile Include="Module\Communication\Http\HttpContent\MultipartContent.cs" />
+    <Compile Include="Module\Communication\Http\Message\HttpResponseMessage.cs" />
+    <Compile Include="Module\Communication\Http\Message\UploadStatusMessage.cs" />
+    <Compile Include="Module\Communication\IByteBuf.cs" />
+    <Compile Include="Module\Communication\ICommunicationDispatcher.cs" />
+    <Compile Include="Module\Communication\ICommunicationRequester.cs" />
+    <Compile Include="Module\Communication\IEncoder.cs" />
+    <Compile Include="Module\Communication\MessageBase.cs" />
+    <Compile Include="Module\Communication\ProtoType.cs" />
+    <Compile Include="Module\Communication\ServerList.cs" />
+    <Compile Include="Module\Communication\Socket\NetPeer.cs" />
+    <Compile Include="Module\Debugger\LogInfo.cs" />
+    <Compile Include="Module\Error\IErrorSolver.cs" />
+    <Compile Include="Module\Event\EventModuleProxy.cs" />
+    <Compile Include="Module\Event\EventCacheInfo.cs" />
+    <Compile Include="Module\Event\EventCodeInfo.cs" />
+    <Compile Include="Module\Event\EventHandleUnit.cs" />
+    <Compile Include="Module\Communication\ICommunicationResponser.cs" />
+    <Compile Include="Module\Communication\Socket\IProtoIdResolver.cs" />
+    <Compile Include="Base\Interfaces\ITester.cs" />
+    <Compile Include="Base\Interfaces\IukEnum.cs" />
+    <Compile Include="Base\Enums\EnumUshort.cs" />
+    <Compile Include="Base\Attributes\IsEnumAttribute.cs" />
+    <Compile Include="Base\Attributes\EnumExplainAttribute.cs" />
+    <Compile Include="Module\Data\ActiveDataWrapper.cs" />
+    <Compile Include="Module\Data\IDataChainOperateNull.cs" />
+    <Compile Include="Module\Data\IDataModule.cs" />
+    <Compile Include="Module\Event\EventCode.cs" />
+    <Compile Include="Module\AbsModule.cs" />
+    <Compile Include="Module\Event\IEventModule.cs" />
+    <Compile Include="Module\Net\Http\AbsProtocol.cs" />
+    <Compile Include="Module\Net\Http\DefualtHttpModelEncoder.cs" />
+    <Compile Include="Module\Net\Enums\StateCode.cs" />
+    <Compile Include="Module\Net\Enums\LogicCode.cs" />
+    <Compile Include="Module\Net\Enums\ModuleCode.cs" />
+    <Compile Include="Module\Net\Http\IProtocol.cs" />
+    <Compile Include="Module\Net\Http\ProtocolSendType.cs" />
+    <Compile Include="Module\Communication\Socket\Binaryer.cs" />
+    <Compile Include="Module\Communication\Socket\Concurrent\ConcurrentInteger.cs" />
+    <Compile Include="Module\Communication\Socket\Concurrent\ConcurrentList.cs" />
+    <Compile Include="Module\Communication\Socket\ISocketHandler.cs" />
+    <Compile Include="Module\Communication\Socket\SocketServer.cs" />
+    <Compile Include="Module\Communication\CommunicationModel.cs" />
+    <Compile Include="Module\Communication\Socket\SocketStatus.cs" />
+    <Compile Include="Module\Communication\Socket\TcpPeer.cs" />
+    <Compile Include="Base\Constant.cs" />
+    <Compile Include="Base\Enums\EnumInt.cs" />
+    <Compile Include="Base\Attributes\EnumTypeNameAttribute.cs" />
+    <Compile Include="Module\Event\TallyEventHandlerCaller.cs" />
+    <Compile Include="Module\Event\IEventHandler.cs" />
+    <Compile Include="Module\Event\ITallyEventHandlerCaller.cs" />
+    <Compile Include="Module\Event\ITallyEventHandler.cs" />
+    <Compile Include="Module\Event\TallyEventHandler.cs" />
+    <Compile Include="Base\Extensions.cs" />
+    <Compile Include="Module\IModule.cs" />
+    <Compile Include="Module\Debugger\ILoger.cs" />
+    <Compile Include="Module\Profiler\IProfilerModule.cs" />
+    <Compile Include="Module\Timer\ITimer.cs" />
+    <Compile Include="Module\LocalData\IDeepCopy.cs" />
+    <Compile Include="Module\LocalData\IDeepCopyLocalData.cs" />
+    <Compile Include="Module\LocalData\ILocalDataEntity.cs" />
+    <Compile Include="Module\Net\Http\IHttpModelEncoder.cs" />
+    <Compile Include="Module\Net\Http\IHttpReq.cs" />
+    <Compile Include="Module\Net\Http\IHttpResp.cs" />
+    <Compile Include="Module\Net\INetModel.cs" />
+    <Compile Include="Module\Net\AbsNetModel.cs" />
+    <Compile Include="Module\Net\Http\HttpReq.cs" />
+    <Compile Include="Module\Net\Http\HttpResp.cs" />
+    <Compile Include="Base\Interfaces\ISerializer.cs" />
+    <Compile Include="Utility\CmdUtility.cs" />
+    <Compile Include="Utility\DownloadUtil.cs" />
+    <Compile Include="Utility\FileUtility.cs" />
+    <Compile Include="Utility\MailUitlity.cs" />
+    <Compile Include="Utility\Md5Uitlity.cs" />
+    <Compile Include="Utility\ReflectionUitlity.cs" />
+    <Compile Include="Utility\SerializeUitlity.cs" />
+    <Compile Include="Utility\VerifyUitlity.cs" />
+    <Compile Include="Utility\EncryptUitlity.cs" />
+    <Compile Include="Base\ObjectPool.cs" />
+    <Compile Include="Utility\LdUitlity.cs" />
+    <Compile Include="Utility\ScriptCreateUitlity.cs" />
+    <Compile Include="Utility\XmlUitlity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>cd $(ProjectDir)
+rmdir /s/q obj
+rmdir /s/q bin
+rmdir /s/q Properties</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

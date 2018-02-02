@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{286408F0-E683-4468-BE47-6BCCCF200850}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Iuker.YourSharp</RootNamespace>
+    <AssemblyName>Iuker.YourSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Asts\Semantic\ArgumentsContext.cs" />
+    <Compile Include="Asts\Semantic\GlobalDefineContext.cs" />
+    <Compile Include="Native\YsInt32.cs" />
+    <Compile Include="Parser\Ast\AssignmentExpression.cs" />
+    <Compile Include="Parser\Ast\AssignmentOperatorType.cs" />
+    <Compile Include="Parser\Ast\BinaryOperatorType.cs" />
+    <Compile Include="Parser\Ast\BinaryExpression.cs" />
+    <Compile Include="Parser\Ast\BreakStatement.cs" />
+    <Compile Include="Parser\Ast\CallExpression.cs" />
+    <Compile Include="Parser\Ast\ConditionalExpression.cs" />
+    <Compile Include="Parser\Ast\ContinueStatement.cs" />
+    <Compile Include="Parser\Ast\EmptyStatement.cs" />
+    <Compile Include="Parser\Ast\Expression.cs" />
+    <Compile Include="Parser\Ast\Identifier.cs" />
+    <Compile Include="Parser\Ast\IPropertyKeyExpression.cs" />
+    <Compile Include="Parser\Ast\Statement.cs" />
+    <Compile Include="Parser\Ast\SyntaxNode.cs" />
+    <Compile Include="Parser\Ast\SyntaxNodeType.cs" />
+    <Compile Include="Parser\Ast\UnaryExpression.cs" />
+    <Compile Include="Parser\Ast\UnaryOperatorType.cs" />
+    <Compile Include="Parser\Location.cs" />
+    <Compile Include="Parser\Position.cs" />
+    <Compile Include="Runtime\YsInt32Stack.cs" />
+    <Compile Include="SyntaxCheckers\ClassBodyCheckers\ClassBody_ReturnType.cs" />
+    <Compile Include="SyntaxCheckers\ClassBodyCheckers\ClassBody_ReturnType_Identifier.cs" />
+    <Compile Include="SyntaxCheckers\ClassBodyCheckers\ClassBody_ReturnType_Identifier_Assignment.cs" />
+    <Compile Include="SyntaxCheckers\ClassBodyCheckers\ClassBody_ReturnType_Identifier_LeftBracket.cs" />
+    <Compile Include="SyntaxCheckers\ClassBodyCheckers\ClassBody_ReturnType_Identifier_LeftBracket_ArgumentType.cs" />
+    <Compile Include="SyntaxCheckers\ClassBodyCheckers\ClassBody_ReturnType_Identifier_LeftBracket_ArgumentType_ArgumentIdentifier.cs" />
+    <Compile Include="SyntaxCheckers\ClassHead\ClassHead_Access.cs" />
+    <Compile Include="SyntaxCheckers\ClassHead\ClassHead_Class.cs" />
+    <Compile Include="SyntaxCheckers\NameSpaceChecker.cs" />
+    <Compile Include="SyntaxCheckers\Namespaces\OnImport.cs" />
+    <Compile Include="SyntaxCheckers\Namespaces\OnImport_Dot.cs" />
+    <Compile Include="Asts\SyntaxNodes\ClassFieldNode.cs" />
+    <Compile Include="Asts\SyntaxNodes\Expressions\ExpressionChecker.cs" />
+    <Compile Include="Asts\Semantic\FunctionBody\IfElseContext.cs" />
+    <Compile Include="Asts\Semantic\ISemanticContext.cs" />
+    <Compile Include="Asts\Semantic\OperatorPriority\OperatorPriorityUtil.cs" />
+    <Compile Include="Asts\SyntaxAnalyzeType.cs" />
+    <Compile Include="SyntaxCheckers\ReturnTypeOrMemberDefine.cs" />
+    <Compile Include="Asts\SyntaxNodes\AccessDefineNode.cs" />
+    <Compile Include="Asts\SyntaxNodes\ArgumentNode.cs" />
+    <Compile Include="Asts\SyntaxNodes\Expressions\ArrayExpression.cs" />
+    <Compile Include="Asts\SyntaxNodes\Expressions\AssignmentExpression.cs" />
+    <Compile Include="Asts\SyntaxNodes\Expressions\BinaryExpression.cs" />
+    <Compile Include="Asts\SyntaxNodes\Expressions\CallExpression.cs" />
+    <Compile Include="Asts\SyntaxNodes\Statements\BlockStatement.cs" />
+    <Compile Include="Asts\SyntaxNodes\Expressions\Expression.cs" />
+    <Compile Include="Asts\SyntaxNodes\FunctionFiledNode.cs" />
+    <Compile Include="Asts\SyntaxNodes\FunctionNameNode.cs" />
+    <Compile Include="Asts\SyntaxNodes\ReturnTypeNode.cs" />
+    <Compile Include="Asts\SyntaxNodes\SyntaxNode.cs" />
+    <Compile Include="Asts\SyntaxNodes\SyntaxNodeType.cs" />
+    <Compile Include="Asts\Semantic\ClassDefineContext.cs" />
+    <Compile Include="Asts\Semantic\FunctionDefineContext.cs" />
+    <Compile Include="Asts\Semantic\SemanticAnalyzer.cs" />
+    <Compile Include="Asts\Semantic\SemanticContext.cs" />
+    <Compile Include="Asts\SyntaxAnalyzer.cs" />
+    <Compile Include="SyntaxCheckers\AbsSyntaxChecker.cs" />
+    <Compile Include="SyntaxCheckers\AccessDefine_Static.cs" />
+    <Compile Include="SyntaxCheckers\AccessDefine_Static_ReturnType.cs" />
+    <Compile Include="SyntaxCheckers\ArgumentIdentifier.cs" />
+    <Compile Include="SyntaxCheckers\ArgumentSplitComma.cs" />
+    <Compile Include="SyntaxCheckers\ArgumentTypeOrRightBracket.cs" />
+    <Compile Include="SyntaxCheckers\Argument_Default_Assignment.cs" />
+    <Compile Include="SyntaxCheckers\Argument_Default_String.cs" />
+    <Compile Include="SyntaxCheckers\Argument_Defualt_Quate_Or_BaseValue.cs" />
+    <Compile Include="SyntaxCheckers\FunctionDefine_LeftBracket.cs" />
+    <Compile Include="SyntaxCheckers\ISyntaxChecker.cs" />
+    <Compile Include="SyntaxCheckers\AccessDefine.cs" />
+    <Compile Include="SyntaxCheckers\SyntaxAnalyzerResult.cs" />
+    <Compile Include="SyntaxCheckers\SyntaxSituation.cs" />
+    <Compile Include="Common\DataTypes\BinaryTree.cs" />
+    <Compile Include="Common\Extensions.cs" />
+    <Compile Include="Common\Location.cs" />
+    <Compile Include="Common\Types\AccessType.cs" />
+    <Compile Include="Common\Utils\ReflectionUtil.cs" />
+    <Compile Include="ErrorProcess\SyntaxException.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Runtime\DataTypes\YourSharpDataType.cs" />
+    <Compile Include="Runtime\DataTypes\YourSharpObject.cs" />
+    <Compile Include="Runtime\DataTypes\YourSharp_byte.cs" />
+    <Compile Include="Runtime\DataTypes\YourSharp_Int32.cs" />
+    <Compile Include="Runtime\DataTypes\YourSharpValue.cs" />
+    <Compile Include="Runtime\MetaDatas\ArgumentMetaData.cs" />
+    <Compile Include="Runtime\MetaDatas\AttributeMetaData.cs" />
+    <Compile Include="Runtime\MetaDatas\ClassMetaData.cs" />
+    <Compile Include="Runtime\MetaDatas\FunctionMetaData.cs" />
+    <Compile Include="Runtime\MetaDatas\InterfaceMetaData.cs" />
+    <Compile Include="SimpleVm.cs" />
+    <Compile Include="TestCode.cs" />
+    <Compile Include="CsExecuter.cs" />
+    <Compile Include="YourSharpEngine.cs" />
+    <Compile Include="Parser\Lexer.cs" />
+    <Compile Include="Parser\SourceCode.cs" />
+    <Compile Include="Parser\TokenSet.cs" />
+    <Compile Include="Parser\TokenType.cs" />
+    <Compile Include="Parser\Token.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

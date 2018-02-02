@@ -1,0 +1,42 @@
+version: 2
+importPivots: 1
+tpsheetFileNames:
+- Assets/_DongY/DongY_Common/AssetDatabase/Ab_Single_DongY_Common_Atlas/atlas_dongy_common_common.tpsheet
+- Assets/_DongY/DongY_JjBomb/Resources/Ab_Single_DongY_JjBomb_Atlas/atlas_dongy_jjbomb_createroom.tpsheet
+- Assets/_DongY/DongY_JjBomb/Resources/Ab_Single_DongY_JjBomb_Atlas/atlas_dongy_jjbomb_end.tpsheet
+- Assets/_DongY/DongY_SrMahjong/AssetDatabase/Ab_Single_DongY_SrMahjong_Atlas/atlas_dongy_srmahjong_chat.tpsheet
+- Assets/_DongY/DongY_SrMahjong/AssetDatabase/Ab_Single_DongY_SrMahjong_Atlas/atlas_dongy_srmahjong_common.tpsheet
+- Assets/_DongY/DongY_SrMahjong/AssetDatabase/Ab_Single_DongY_SrMahjong_Atlas/atlas_dongy_srmahjong_createroomsr.tpsheet
+- Assets/_DongY/DongY_SrMahjong/AssetDatabase/Ab_Single_DongY_SrMahjong_Atlas/atlas_dongy_srmahjong_gameroom.tpsheet
+- Assets/_DongY/DongY_SrMahjong/AssetDatabase/Ab_Single_DongY_SrMahjong_Atlas/atlas_dongy_srmahjong_mahjong.tpsheet
+- Assets/_DongY/DongY_SrMahjong/AssetDatabase/Ab_Single_DongY_SrMahjong_Atlas/atlas_dongy_srmahjong_settle.tpsheet
+- Assets/_MyTest/MyTest_MySon/AssetDatabase/Ab_Single_MyTest_MySon_Atlas/atlas_mytest_myson_common.tpsheet
+- Assets/1_Iuker.UnityKit/Extensions/Free/Editor/TexturePackerImporter/Example/SpriteSheet/sprites.tpsheet
+- Assets/Standard Assets/1_Iuker.UnityKit/Extensions/Free/Editor/TexturePackerImporter/Example/SpriteSheet/sprites.tpsheet
+textureFileNames:
+- Assets/_DongY/DongY_Common/AssetDatabase/Ab_Single_DongY_Common_Atlas/atlas_dongy_common_common.png
+- Assets/_DongY/DongY_JjBomb/Resources/Ab_Single_DongY_JjBomb_Atlas/atlas_dongy_jjbomb_createroom.png
+- Assets/_DongY/DongY_JjBomb/Resources/Ab_Single_DongY_JjBomb_Atlas/atlas_dongy_jjbomb_end.png
+- Assets/_DongY/DongY_SrMahjong/AssetDatabase/Ab_Single_DongY_SrMahjong_Atlas/atlas_dongy_srmahjong_chat.png
+- Assets/_DongY/DongY_SrMahjong/AssetDatabase/Ab_Single_DongY_SrMahjong_Atlas/atlas_dongy_srmahjong_common.png
+- Assets/_DongY/DongY_SrMahjong/AssetDatabase/Ab_Single_DongY_SrMahjong_Atlas/atlas_dongy_srmahjong_createroomsr.png
+- Assets/_DongY/DongY_SrMahjong/AssetDatabase/Ab_Single_DongY_SrMahjong_Atlas/atlas_dongy_srmahjong_gameroom.png
+- Assets/_DongY/DongY_SrMahjong/AssetDatabase/Ab_Single_DongY_SrMahjong_Atlas/atlas_dongy_srmahjong_mahjong.png
+- Assets/_DongY/DongY_SrMahjong/AssetDatabase/Ab_Single_DongY_SrMahjong_Atlas/atlas_dongy_srmahjong_settle.png
+- Assets/_MyTest/MyTest_MySon/AssetDatabase/Ab_Single_MyTest_MySon_Atlas/atlas_mytest_myson_common.png
+- Assets/1_Iuker.UnityKit/Extensions/Free/Editor/TexturePackerImporter/Example/SpriteSheet/sprites.png
+- Assets/Standard Assets/1_Iuker.UnityKit/Extensions/Free/Editor/TexturePackerImporter/Example/SpriteSheet/sprites.png
+normalmapFileNames:
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- Assets/1_Iuker.UnityKit/Extensions/Free/Editor/TexturePackerImporter/Example/SpriteSheet/sprites_n.png
+- Assets/Standard Assets/1_Iuker.UnityKit/Extensions/Free/Editor/TexturePackerImporter/Example/SpriteSheet/sprites_n.png
+enableDebugOutput: 0

@@ -1,0 +1,10 @@
+message IukMessageBase
+{
+    optional int32 type = 1;
+    optional string mainId = 2;
+    optional string subId = 3;
+    optional bytes dataContent = 4;
+    optional string key = 5;
+    optional int64 userId = 6;
+    optional int32 cmdId = 7;
+}

@@ -1,0 +1,12 @@
+{
+  "name": "ts",
+  "version": "0.0.0",
+  "description": "Ts",
+  "main": "app.js",
+  "author": {
+    "name": "liuru"
+  },
+  "devDependencies": {
+    "@types/node": "^6.0.87"
+  }
+}
