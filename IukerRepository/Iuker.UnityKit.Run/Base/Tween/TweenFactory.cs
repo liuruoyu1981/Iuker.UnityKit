@@ -17,6 +17,7 @@ CreateNote:
 
 using System;
 using Iuker.Common;
+using Iuker.Common.Base;
 using Iuker.Common.Base.Interfaces;
 
 namespace Iuker.UnityKit.Run.Tween
@@ -27,12 +28,12 @@ namespace Iuker.UnityKit.Run.Tween
     public static class TweenFactory
     {
         private const int tweenCount = 100;
-        private static readonly ObjectPool<Vector3Tween> v3TweenPool = new ObjectPool<Vector3Tween>(new Vector3TweenFactory(), tweenCount);
-        private static readonly ObjectPool<Vector2Tween> v2TweenPool = new ObjectPool<Vector2Tween>(new Vector2TweenFactory(), tweenCount);
-        private static readonly ObjectPool<FloatTween> floatTweenPool = new ObjectPool<FloatTween>(new FloatTweenFactory(), tweenCount);
-        private static readonly ObjectPool<Vector4Tween> v4TweenPool = new ObjectPool<Vector4Tween>(new Vector4TweenFactory(), tweenCount);
-        private static readonly ObjectPool<ColorTween> colorTweenPool = new ObjectPool<ColorTween>(new ColorTweenFactory(), tweenCount);
-        private static readonly ObjectPool<QuaternionTween> quaTweenPool = new ObjectPool<QuaternionTween>(new QuaternionTweenFactory(), tweenCount);
+        private static readonly ObjectPoolByStack<Vector3Tween> v3TweenPool = new ObjectPoolByStack<Vector3Tween>(new Vector3TweenFactory(), tweenCount);
+        private static readonly ObjectPoolByStack<Vector2Tween> v2TweenPool = new ObjectPoolByStack<Vector2Tween>(new Vector2TweenFactory(), tweenCount);
+        private static readonly ObjectPoolByStack<FloatTween> floatTweenPool = new ObjectPoolByStack<FloatTween>(new FloatTweenFactory(), tweenCount);
+        private static readonly ObjectPoolByStack<Vector4Tween> v4TweenPool = new ObjectPoolByStack<Vector4Tween>(new Vector4TweenFactory(), tweenCount);
+        private static readonly ObjectPoolByStack<ColorTween> colorTweenPool = new ObjectPoolByStack<ColorTween>(new ColorTweenFactory(), tweenCount);
+        private static readonly ObjectPoolByStack<QuaternionTween> quaTweenPool = new ObjectPoolByStack<QuaternionTween>(new QuaternionTweenFactory(), tweenCount);
         private class Vector3TweenFactory : IObjectFactory<Vector3Tween>
         {
             public Vector3Tween CreateObject()

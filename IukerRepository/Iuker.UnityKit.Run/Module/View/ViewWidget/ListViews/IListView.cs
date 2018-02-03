@@ -23,10 +23,9 @@ namespace Iuker.UnityKit.Run.Module.View.ViewWidget
         /// <param name="datas">列表数据集合</param>
         /// <param name="updateItem">列表项更新绘制委托</param>
         /// <param name="itemName">可选的指定模板名</param>
-        /// <param name="monoInit"></param>
         /// <param name="pollDownAction">下拉更新委托。</param>
         void SetItemTemplate(List<object> datas, Action<GameObject, int> updateItem = null,
-           string itemName = "liveviewitem", Action<GameObject> monoInit = null, Action pollDownAction = null);
+           string itemName = "liveviewitem", Action pollDownAction = null);
 
         /// <summary>
         /// 添加当前数据索引数据
@@ -39,6 +38,15 @@ namespace Iuker.UnityKit.Run.Module.View.ViewWidget
         /// </summary>
         /// <param name="dataIndex"></param>
         void DeleteItem(int dataIndex);
+
+        /// <summary>
+        /// 增加一个数据到数据列表末尾。
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="datas"></param>
+        void AddDataToEnd<T>(params T[] datas);
+
+        void AddDataToHead<T>(params T[] datas);
 
     }
 }

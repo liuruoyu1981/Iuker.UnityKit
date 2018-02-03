@@ -92,6 +92,7 @@
     <Compile Include="Base\Interfaces\ISubscibe .cs" />
     <Compile Include="Base\CsharpScriptAppender.cs" />
     <Compile Include="Base\LoopArray.cs" />
+    <Compile Include="Base\ObjectPoolByStack.cs" />
     <Compile Include="Base\SettingsDictionarys.cs" />
     <Compile Include="Base\TimeUtility.cs" />
     <Compile Include="Module\Communication\ByteBuf.cs" />

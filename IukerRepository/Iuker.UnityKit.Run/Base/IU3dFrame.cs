@@ -108,6 +108,13 @@ namespace Iuker.UnityKit.Run.Base
         IU3dFrame BindingEncoder(IEncoder encoder);
 
         /// <summary>
+        /// 设置当前运行的子项目的名字。
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        IU3dFrame SetCurrentSonProject(string name);
+
+        /// <summary>
         /// 添加一个框架启动完成回调委托
         /// </summary>
         /// <param name="action"></param>

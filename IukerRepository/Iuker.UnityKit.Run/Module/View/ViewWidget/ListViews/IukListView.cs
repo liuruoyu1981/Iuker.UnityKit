@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Iuker.UnityKit.Run.Base;
 using Iuker.UnityKit.Run.Module.View.MVDA;
+using Iuker.UnityKit.Run.ViewWidget;
 using UnityEngine.UI;
 
 namespace Iuker.UnityKit.Run.Module.View.ViewWidget
@@ -112,7 +113,7 @@ namespace Iuker.UnityKit.Run.Module.View.ViewWidget
         /// <summary>
         /// 列表持有的滚动物体组件
         /// </summary>
-        private ScrollRect mScrollRect;
+        private IukScrollRect mScrollRect;
 
         /// <summary>
         /// 列表子项所在的容器（展示内容的上级物体）物体。
@@ -151,116 +152,8 @@ namespace Iuker.UnityKit.Run.Module.View.ViewWidget
 
         #endregion
 
-        #region Public Method
 
-        /// <summary>
-        /// 初始化列表
-        /// </summary>
-        /// <param name="u3DFrame">框架实例</param>
-        /// <param name="view">列表将要被置入其下的视图实例</param>
-        /// <param name="fragment">列表将要被置入其下的视图碎片实例</param>
-        /// <returns></returns>
-        public IukViewWidget Init(IU3dFrame u3DFrame, IView view, IFragment fragment = null)
-        {
-            mFrame = u3DFrame;
-            AttachView = view;
-
-            return this;
-        }
-
-        /// <summary>
-        /// mono组件初始化委托。
-        /// </summary>
-        private Action<GameObject> m_MonoInit;
-
-        /// <summary>
-        /// 设置滚动列表子项模板
-        /// </summary>
-        /// <param name="datas"></param>
-        /// <param name="updateItem"></param>
-        /// <param name="itemName">可选的指定模板名</param>
-        /// <param name="monoInitAction">mono组件初始化委托。</param>
-        /// <param name="pollDownAction">下拉更新委托</param>
-        public void SetItemTemplate(List<object> datas, Action<GameObject, int> updateItem = null,
-            string itemName = "liveviewitem", Action<GameObject> monoInitAction = null, Action pollDownAction = null)
-        {
-            InitContext();
-            mContent.gameObject.DeleteAllChild();
-
-            if (datas == null || datas.Count == 0) return;
-
-            m_MonoInit = monoInitAction;
-            m_PoollDownAction = pollDownAction;
-            Datas = datas;
-            mUpdateItem = updateItem;
-            mItemName = itemName;
-            SetDataCount(datas.Count);
-            mScrollRect.onValueChanged.RemoveAllListeners();
-            mScrollRect.onValueChanged.AddListener(OnValueChanged);
-
-            mUnUseItems.Clear();
-            mListItems.Clear();
-
-            UpdateActivedItem(0);
-            InitMonos();
-        }
-
-        /// <summary>
-        /// 初始化列表子项上可能存在的mono组件。
-        /// </summary>
-        private void InitMonos()
-        {
-            if (m_MonoInit == null) return;
-
-            for (var i = 0; i < mContent.childCount; i++)
-            {
-                var child = mContent.GetChild(i);
-                m_MonoInit(child.gameObject);
-            }
-        }
-
-        private void OnValueChanged(Vector2 vt2)
-        {
-            CheckPollDownUpdate();
-
-            switch (Arrangement)
-            {
-                case Arrangement.Vertical:
-                    var y = vt2.y;
-                    if (y >= 1.0f || y <= 0.0f)
-                    {
-                        return;
-                    }
-                    break;
-                case Arrangement.Horizontal:
-                    var x = vt2.x;
-                    if (x <= 0.0f || x >= 1.0f)
-                    {
-                        return;
-                    }
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException();
-            }
-            var _curScrollPerLineIndex = GetCurrentIndex();
-            if (_curScrollPerLineIndex == curScrollPerLineIndex)
-            {
-                return;
-            }
-            UpdateActivedItem(_curScrollPerLineIndex);
-        }
-
-        private void CheckPollDownUpdate()
-        {
-            if (Arrangement != Arrangement.Vertical) return;
-            if (!(mContent.localPosition.y < pollDownUpdate)) return;
-
-            Debug.Log("下拉刷新！");
-            if (m_PoollDownAction != null)
-            {
-                m_PoollDownAction();
-            }
-        }
+        #region Private Method
 
         private bool mIsInited;
 
@@ -276,108 +169,17 @@ namespace Iuker.UnityKit.Run.Module.View.ViewWidget
             }
 
             mCellPrefab = transform.Find("ListViewItemTemplate").gameObject;
+            m_Loading = transform.Find("container_loading").gameObject;
             mCellPrefab.SetActive(false);
             var itemSize = mCellPrefab.GetComponent<RectTransform>().sizeDelta;
             ItemWidth = itemSize.x;
             ItemHeight = itemSize.y;
-            mScrollRect = transform.Find("Scroll View").GetComponent<ScrollRect>();
+            mScrollRect = transform.Find("Scroll View").GetComponent<IukScrollRect>();
             mContent = transform.Find("Scroll View/Viewport/Content").GetComponent<RectTransform>();
 
             mCellPrefab.SetActive(false);
             mIsInited = true;
         }
-
-        /// <summary>
-        /// 添加当前数据索引数据
-        /// </summary>
-        /// <param name="dataIndex"></param>
-        public void AddItem(int dataIndex)
-        {
-            if (dataIndex < 0 || dataIndex > mDataCount)
-            {
-                return;
-            }
-            //检测是否需添加gameObject
-            var isNeedAdd = false;
-            for (var i = mListItems.Count - 1; i >= 0; i--)
-            {
-                var item = mListItems[i];
-                if (item.DataIndex < mDataCount - 1) continue;
-                isNeedAdd = true;
-                break;
-            }
-            SetDataCount(mDataCount + 1);
-
-            if (isNeedAdd)
-            {
-                foreach (var item in mListItems)
-                {
-                    var oldIndex = item.DataIndex;
-                    if (oldIndex >= dataIndex)
-                    {
-                        UpdateItemPosition(oldIndex + 1, item);
-                    }
-                }
-                UpdateActivedItem(GetCurrentIndex());
-            }
-            else
-            {
-                //重新刷新数据
-                foreach (var item in mListItems)
-                {
-                    var oldIndex = item.DataIndex;
-                    if (oldIndex >= dataIndex)
-                    {
-                        UpdateItemPosition(oldIndex, item);
-                    }
-                }
-            }
-        }
-
-        /// <summary>
-        /// 删除当前数据索引下的数据
-        /// </summary>
-        /// <param name="dataIndex"></param>
-        public void DeleteItem(int dataIndex)
-        {
-            if (dataIndex < 0 || dataIndex >= mDataCount) return;
-
-            //删除item逻辑三种情况
-            //1.只更新数据，不销毁gameObject,也不移除gameobject
-            //2.更新数据，且移除gameObject,不销毁gameObject
-            //3.更新数据，销毁gameObject
-
-            var isNeedDestroyGameObject = mListItems.Count >= mDataCount;
-            SetDataCount(mDataCount - 1);
-
-            for (var i = mListItems.Count - 1; i >= 0; i--)
-            {
-                var item = mListItems[i];
-                var oldIndex = item.DataIndex;
-                if (oldIndex == dataIndex)
-                {
-                    mListItems.Remove(item);
-                    if (isNeedDestroyGameObject)
-                    {
-                        Destroy(item.gameObject);
-                    }
-                    else
-                    {
-                        UpdateItemPosition(-1, item);
-                        mUnUseItems.Enqueue(item);
-                    }
-                }
-                if (oldIndex > dataIndex)
-                {
-                    UpdateItemPosition(oldIndex - 1, item);
-                }
-            }
-            UpdateActivedItem(GetCurrentIndex());
-        }
-
-        #endregion
-
-        #region Private Method
 
         private void UpdateItemPosition(int index, IukListViewItem item)
         {
@@ -514,6 +316,233 @@ namespace Iuker.UnityKit.Run.Module.View.ViewWidget
 
 
         #endregion
+
+        #region Public Method
+
+        /// <summary>
+        /// 初始化列表
+        /// </summary>
+        /// <param name="u3DFrame">框架实例</param>
+        /// <param name="view">列表将要被置入其下的视图实例</param>
+        /// <param name="fragment">列表将要被置入其下的视图碎片实例</param>
+        /// <returns></returns>
+        public IukViewWidget Init(IU3dFrame u3DFrame, IView view, IFragment fragment = null)
+        {
+            mFrame = u3DFrame;
+            AttachView = view;
+            Datas = new List<object>();
+
+            return this;
+        }
+
+        /// <summary>
+        /// 设置滚动列表子项模板
+        /// </summary>
+        /// <param name="datas"></param>
+        /// <param name="updateItem"></param>
+        /// <param name="itemName">可选的指定模板名</param>
+        /// <param name="pollDownAction">下拉更新委托</param>
+        public void SetItemTemplate(List<object> datas, Action<GameObject, int> updateItem = null,
+            string itemName = "liveviewitem", Action pollDownAction = null)
+        {
+            InitContext();
+            mContent.gameObject.DeleteAllChild();
+
+            if (datas == null || datas.Count == 0) return;
+
+            m_PoollDownAction = pollDownAction;
+            Datas.Clear();
+            Datas.AddRange(datas);
+            mUpdateItem = updateItem;
+            mItemName = itemName;
+            SetDataCount(datas.Count);
+            RegisterValueChange();
+            mUnUseItems.Clear();
+            mListItems.Clear();
+            UpdateActivedItem(0);
+        }
+
+        private void RegisterValueChange()
+        {
+            mScrollRect.onValueChanged.RemoveAllListeners();
+            mScrollRect.onValueChanged.AddListener(OnValueChanged);
+        }
+
+        private void RemoveValueChange()
+        {
+            mScrollRect.onValueChanged.RemoveAllListeners();
+        }
+
+        private GameObject m_Loading;
+
+        private void ShowLoading()
+        {
+            m_Loading.SetActive(true);
+        }
+
+        private void CloseLoading()
+        {
+            m_Loading.SetActive(false);
+        }
+
+        private void OnValueChanged(Vector2 vt2)
+        {
+            if (CheckPollDownUpdate()) return;
+
+            switch (Arrangement)
+            {
+                case Arrangement.Vertical:
+                    var y = vt2.y;
+                    if (y >= 1.0f || y <= 0.0f)
+                    {
+                        return;
+                    }
+                    break;
+                case Arrangement.Horizontal:
+                    var x = vt2.x;
+                    if (x <= 0.0f || x >= 1.0f)
+                    {
+                        return;
+                    }
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
+            var _curScrollPerLineIndex = GetCurrentIndex();
+            if (_curScrollPerLineIndex == curScrollPerLineIndex)
+            {
+                return;
+            }
+            UpdateActivedItem(_curScrollPerLineIndex);
+        }
+
+        private bool CheckPollDownUpdate()
+        {
+            if (Arrangement != Arrangement.Vertical) return false;
+            if (!(mContent.localPosition.y < pollDownUpdate)) return false;
+
+            if (m_PoollDownAction == null) return false;
+
+            StopScroll();
+            ShowLoading();
+            m_PoollDownAction();
+            return true;
+        }
+
+        /// <summary>
+        /// 添加当前数据索引数据
+        /// </summary>
+        /// <param name="dataIndex"></param>
+        public void AddItem(int dataIndex)
+        {
+            if (dataIndex < 0 || dataIndex > mDataCount)
+            {
+                return;
+            }
+
+            //检测是否需添加gameObject
+            var isNeedAdd = false;
+            for (var i = mListItems.Count - 1; i >= 0; i--)
+            {
+                var item = mListItems[i];
+                if (item.DataIndex < mDataCount - 1) continue;
+                isNeedAdd = true;
+                break;
+            }
+            SetDataCount(mDataCount + 1);
+
+            if (isNeedAdd)
+            {
+                foreach (var item in mListItems)
+                {
+                    var oldIndex = item.DataIndex;
+                    if (oldIndex >= dataIndex)
+                    {
+                        UpdateItemPosition(oldIndex + 1, item);
+                    }
+                }
+                UpdateActivedItem(GetCurrentIndex());
+            }
+            else
+            {
+                //重新刷新数据
+                foreach (var item in mListItems)
+                {
+                    var oldIndex = item.DataIndex;
+                    if (oldIndex >= dataIndex)
+                    {
+                        UpdateItemPosition(oldIndex, item);
+                    }
+                }
+            }
+        }
+
+        public void AddDataToEnd<T>(params T[] datas)
+        {
+            Datas.Add(datas);
+        }
+
+        public void AddDataToHead<T>(params T[] datas)
+        {
+            foreach (var data in datas)
+            {
+                Datas.Insert(0, data);
+            }
+        }
+
+        /// <summary>
+        /// 删除当前数据索引下的数据
+        /// </summary>
+        /// <param name="dataIndex"></param>
+        public void DeleteItem(int dataIndex)
+        {
+            if (dataIndex < 0 || dataIndex >= mDataCount) return;
+
+            //删除item逻辑三种情况
+            //1.只更新数据，不销毁gameObject,也不移除gameobject
+            //2.更新数据，且移除gameObject,不销毁gameObject
+            //3.更新数据，销毁gameObject
+
+            var isNeedDestroyGameObject = mListItems.Count >= mDataCount;
+            SetDataCount(mDataCount - 1);
+
+            for (var i = mListItems.Count - 1; i >= 0; i--)
+            {
+                var item = mListItems[i];
+                var oldIndex = item.DataIndex;
+                if (oldIndex == dataIndex)
+                {
+                    mListItems.Remove(item);
+                    if (isNeedDestroyGameObject)
+                    {
+                        Destroy(item.gameObject);
+                    }
+                    else
+                    {
+                        UpdateItemPosition(-1, item);
+                        mUnUseItems.Enqueue(item);
+                    }
+                }
+                if (oldIndex > dataIndex)
+                {
+                    UpdateItemPosition(oldIndex - 1, item);
+                }
+            }
+            UpdateActivedItem(GetCurrentIndex());
+        }
+
+        public void StopScroll()
+        {
+            mScrollRect.StopScroll();
+        }
+
+        public void StartScroll()
+        {
+            mScrollRect.StartScroll();
+        }
+
+        #endregion
+
 
 
 

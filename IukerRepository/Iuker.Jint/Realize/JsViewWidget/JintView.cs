@@ -33,7 +33,8 @@ namespace Iuker.Jint.JsViewWidget
         {
             if (!JsModule.Exist(jintId)) return;
 
-            var code = string.Format("Iuker.ViewModule.PipelineProcessers.{0} = new Iuker_Project.{0}();", jintId);
+            var code = string.Format("Iuker.ViewModule.PipelineProcessers.{0} = new {1}.{0}();", jintId
+                , U3DFrame.AppContext.CurrentSonProject);
             JsModule.DoString(code);
             var jsIuker = mJsModule.GetGlobalValue("Iuker").As<JsValue>();
             var jsViewModule = jsIuker.GetJsValue("ViewModule");

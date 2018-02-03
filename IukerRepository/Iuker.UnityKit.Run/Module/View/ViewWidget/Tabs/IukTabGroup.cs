@@ -52,7 +52,7 @@ namespace Iuker.UnityKit.Run.ViewWidget
             var sons = gameObject.GetAllChild();
             mTabs = sons.Select(s => s.GetComponent<IukTab>()).ToList();
             mTabs.ForEach(tab => tab.Init(mU3DFrame, AttachView));
-            for (int i = 0; i < mTabs.Count; i++)
+            for (var i = 0; i < mTabs.Count; i++)
             {
                 mTabs[i].SetTabIndex(this, i);
             }

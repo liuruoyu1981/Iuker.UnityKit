@@ -730,6 +730,24 @@ namespace DongY_Common_ProtoDefine
       { return global::ProtoBuf.Extensible.GetExtensionObject(ref extensionObject, createIfMissing); }
   }
   
+  [global::System.Serializable, global::ProtoBuf.ProtoContract(Name=@"STC_DisconnectMsg")]
+  public partial class STC_DisconnectMsg : global::ProtoBuf.IExtensible
+  {
+    public STC_DisconnectMsg() {}
+    
+    private long _userId = default(long);
+    [global::ProtoBuf.ProtoMember(1, IsRequired = false, Name=@"userId", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    [global::System.ComponentModel.DefaultValue(default(long))]
+    public long userId
+    {
+      get { return _userId; }
+      set { _userId = value; }
+    }
+    private global::ProtoBuf.IExtension extensionObject;
+    global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+      { return global::ProtoBuf.Extensible.GetExtensionObject(ref extensionObject, createIfMissing); }
+  }
+  
   [global::System.Serializable, global::ProtoBuf.ProtoContract(Name=@"STC_EconomyChangeMsg")]
   public partial class STC_EconomyChangeMsg : global::ProtoBuf.IExtensible
   {
@@ -1302,6 +1320,40 @@ namespace DongY_Common_ProtoDefine
       { return global::ProtoBuf.Extensible.GetExtensionObject(ref extensionObject, createIfMissing); }
   }
   
+  [global::System.Serializable, global::ProtoBuf.ProtoContract(Name=@"CTS_Club_ChatHistoryMsg")]
+  public partial class CTS_Club_ChatHistoryMsg : global::ProtoBuf.IExtensible
+  {
+    public CTS_Club_ChatHistoryMsg() {}
+    
+    private long _clubId = default(long);
+    [global::ProtoBuf.ProtoMember(1, IsRequired = false, Name=@"clubId", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    [global::System.ComponentModel.DefaultValue(default(long))]
+    public long clubId
+    {
+      get { return _clubId; }
+      set { _clubId = value; }
+    }
+    private int _pageSize = default(int);
+    [global::ProtoBuf.ProtoMember(2, IsRequired = false, Name=@"pageSize", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    [global::System.ComponentModel.DefaultValue(default(int))]
+    public int pageSize
+    {
+      get { return _pageSize; }
+      set { _pageSize = value; }
+    }
+    private int _pageNum = default(int);
+    [global::ProtoBuf.ProtoMember(3, IsRequired = false, Name=@"pageNum", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    [global::System.ComponentModel.DefaultValue(default(int))]
+    public int pageNum
+    {
+      get { return _pageNum; }
+      set { _pageNum = value; }
+    }
+    private global::ProtoBuf.IExtension extensionObject;
+    global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+      { return global::ProtoBuf.Extensible.GetExtensionObject(ref extensionObject, createIfMissing); }
+  }
+  
   [global::System.Serializable, global::ProtoBuf.ProtoContract(Name=@"CTS_Club_CreateMsg")]
   public partial class CTS_Club_CreateMsg : global::ProtoBuf.IExtensible
   {
@@ -1699,6 +1751,63 @@ namespace DongY_Common_ProtoDefine
       get { return _senderUserId; }
       set { _senderUserId = value; }
     }
+    private global::ProtoBuf.IExtension extensionObject;
+    global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+      { return global::ProtoBuf.Extensible.GetExtensionObject(ref extensionObject, createIfMissing); }
+  }
+  
+  [global::System.Serializable, global::ProtoBuf.ProtoContract(Name=@"STC_Club_ChatHistoryMsg")]
+  public partial class STC_Club_ChatHistoryMsg : global::ProtoBuf.IExtensible
+  {
+    public STC_Club_ChatHistoryMsg() {}
+    
+    private long _clubId = default(long);
+    [global::ProtoBuf.ProtoMember(1, IsRequired = false, Name=@"clubId", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    [global::System.ComponentModel.DefaultValue(default(long))]
+    public long clubId
+    {
+      get { return _clubId; }
+      set { _clubId = value; }
+    }
+    private int _pageSize = default(int);
+    [global::ProtoBuf.ProtoMember(2, IsRequired = false, Name=@"pageSize", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    [global::System.ComponentModel.DefaultValue(default(int))]
+    public int pageSize
+    {
+      get { return _pageSize; }
+      set { _pageSize = value; }
+    }
+    private int _pageNum = default(int);
+    [global::ProtoBuf.ProtoMember(3, IsRequired = false, Name=@"pageNum", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    [global::System.ComponentModel.DefaultValue(default(int))]
+    public int pageNum
+    {
+      get { return _pageNum; }
+      set { _pageNum = value; }
+    }
+    private int _recordTotal = default(int);
+    [global::ProtoBuf.ProtoMember(4, IsRequired = false, Name=@"recordTotal", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    [global::System.ComponentModel.DefaultValue(default(int))]
+    public int recordTotal
+    {
+      get { return _recordTotal; }
+      set { _recordTotal = value; }
+    }
+    private int _pageCount = default(int);
+    [global::ProtoBuf.ProtoMember(5, IsRequired = false, Name=@"pageCount", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    [global::System.ComponentModel.DefaultValue(default(int))]
+    public int pageCount
+    {
+      get { return _pageCount; }
+      set { _pageCount = value; }
+    }
+    private readonly global::System.Collections.Generic.List<STC_Club_ChatMsg> _list = new global::System.Collections.Generic.List<STC_Club_ChatMsg>();
+    [global::ProtoBuf.ProtoMember(6, Name=@"list", DataFormat = global::ProtoBuf.DataFormat.Default)]
+    public global::System.Collections.Generic.List<STC_Club_ChatMsg> list
+    {
+      get { return _list; }
+    }
+  
     private global::ProtoBuf.IExtension extensionObject;
     global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
       { return global::ProtoBuf.Extensible.GetExtensionObject(ref extensionObject, createIfMissing); }
@@ -2375,6 +2484,22 @@ namespace DongY_Common_ProtoDefine
     {
       get { return _handNum; }
       set { _handNum = value; }
+    }
+    private long _password = default(long);
+    [global::ProtoBuf.ProtoMember(7, IsRequired = false, Name=@"password", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    [global::System.ComponentModel.DefaultValue(default(long))]
+    public long password
+    {
+      get { return _password; }
+      set { _password = value; }
+    }
+    private int _gameType = default(int);
+    [global::ProtoBuf.ProtoMember(8, IsRequired = false, Name=@"gameType", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    [global::System.ComponentModel.DefaultValue(default(int))]
+    public int gameType
+    {
+      get { return _gameType; }
+      set { _gameType = value; }
     }
     private global::ProtoBuf.IExtension extensionObject;
     global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
@@ -3290,16 +3415,32 @@ namespace DongY_Common_ProtoDefine
       get { return _tableId; }
       set { _tableId = value; }
     }
+    private long _password = default(long);
+    [global::ProtoBuf.ProtoMember(2, IsRequired = false, Name=@"password", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    [global::System.ComponentModel.DefaultValue(default(long))]
+    public long password
+    {
+      get { return _password; }
+      set { _password = value; }
+    }
     private int _gameId = default(int);
-    [global::ProtoBuf.ProtoMember(2, IsRequired = false, Name=@"gameId", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    [global::ProtoBuf.ProtoMember(3, IsRequired = false, Name=@"gameId", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
     [global::System.ComponentModel.DefaultValue(default(int))]
     public int gameId
     {
       get { return _gameId; }
       set { _gameId = value; }
     }
+    private int _gameType = default(int);
+    [global::ProtoBuf.ProtoMember(4, IsRequired = false, Name=@"gameType", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    [global::System.ComponentModel.DefaultValue(default(int))]
+    public int gameType
+    {
+      get { return _gameType; }
+      set { _gameType = value; }
+    }
     private long _date = default(long);
-    [global::ProtoBuf.ProtoMember(3, IsRequired = false, Name=@"date", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    [global::ProtoBuf.ProtoMember(5, IsRequired = false, Name=@"date", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
     [global::System.ComponentModel.DefaultValue(default(long))]
     public long date
     {
@@ -3307,7 +3448,7 @@ namespace DongY_Common_ProtoDefine
       set { _date = value; }
     }
     private long _masterUserId = default(long);
-    [global::ProtoBuf.ProtoMember(4, IsRequired = false, Name=@"masterUserId", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    [global::ProtoBuf.ProtoMember(6, IsRequired = false, Name=@"masterUserId", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
     [global::System.ComponentModel.DefaultValue(default(long))]
     public long masterUserId
     {
@@ -3315,7 +3456,7 @@ namespace DongY_Common_ProtoDefine
       set { _masterUserId = value; }
     }
     private readonly global::System.Collections.Generic.List<GameGrade> _result = new global::System.Collections.Generic.List<GameGrade>();
-    [global::ProtoBuf.ProtoMember(5, Name=@"result", DataFormat = global::ProtoBuf.DataFormat.Default)]
+    [global::ProtoBuf.ProtoMember(7, Name=@"result", DataFormat = global::ProtoBuf.DataFormat.Default)]
     public global::System.Collections.Generic.List<GameGrade> result
     {
       get { return _result; }

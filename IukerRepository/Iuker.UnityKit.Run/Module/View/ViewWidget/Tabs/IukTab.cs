@@ -20,8 +20,13 @@ namespace Iuker.UnityKit.Run.ViewWidget
 
         public override IukViewWidget Init(IU3dFrame u3DFrame, IView view, IFragment fragment = null)
         {
-            base.Init(u3DFrame, view);
-            mTabControlTarget = transform.Find("tab_control_target").gameObject;
+            base.Init(u3DFrame, view, fragment);
+
+            var controlTargetTrm = transform.Find("tab_control_target");
+            if (controlTargetTrm != null)
+            {
+                mTabControlTarget = transform.Find("tab_control_target").gameObject;
+            }
 
             return this;
         }
@@ -51,6 +56,7 @@ namespace Iuker.UnityKit.Run.ViewWidget
 
         public void SetShow(bool status)
         {
+            if (mTabControlTarget == null) return;
             mTabControlTarget.SetActive(status);
         }
 

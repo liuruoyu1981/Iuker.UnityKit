@@ -89,7 +89,6 @@ namespace Iuker.UnityKit.Run
             InvokeBeforeActions();
 
             UnityAppConfig = new RuntimeConfig();
-            AppContext = new UnityAppContext();
 
             InitLog();
             Application.runInBackground = true;
@@ -327,6 +326,17 @@ namespace Iuker.UnityKit.Run
         public IU3dFrame BindingEncoder(IEncoder encoder)
         {
             Encoder = encoder;
+            return this;
+        }
+
+        public IU3dFrame SetCurrentSonProject(string name)
+        {
+            if (AppContext == null)
+            {
+                AppContext = new UnityAppContext();
+            }
+
+            AppContext.CurrentSonProject = name;
             return this;
         }
 

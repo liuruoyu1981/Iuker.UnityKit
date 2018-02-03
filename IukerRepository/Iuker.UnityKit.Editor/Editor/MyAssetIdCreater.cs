@@ -161,7 +161,7 @@ namespace Iuker.UnityKit.Editor
         {
             mCsSb.AppendCsahrpFileInfo(EditorConstant.HostClientName, EditorConstant.HostClientEmail, "资源Id脚本，请勿修改该脚本！");
             mTsSb.AppendCsahrpFileInfo(EditorConstant.HostClientName, EditorConstant.HostClientEmail, "资源Id脚本，请勿修改该脚本！");
-            mTsSb.AppendLine("namespace Iuker_Project " + "{");
+            mTsSb.AppendLine(string.Format("namespace {0} ", mSon.CompexName) + "{");
 
             foreach (var valuePair in mTypeAssets)
             {

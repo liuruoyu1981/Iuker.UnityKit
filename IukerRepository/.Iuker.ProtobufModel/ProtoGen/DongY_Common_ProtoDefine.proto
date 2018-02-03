@@ -124,6 +124,11 @@ message STC_AgencyCheckMsg
     optional string resultMsg = 3;
 }
 
+message STC_DisconnectMsg
+{
+    optional int64 userId = 1;
+}
+
 message STC_EconomyChangeMsg
 {
     optional int64 userId = 1;
@@ -226,6 +231,13 @@ message CTS_Club_ChatMsg
     optional int64 senderUserId = 5;
 }
 
+message CTS_Club_ChatHistoryMsg
+{
+    optional int64 clubId = 1;
+    optional int32 pageSize = 2;
+    optional int32 pageNum = 3;
+}
+
 message CTS_Club_CreateMsg
 {
     optional int64 clubId = 1;
@@ -313,6 +325,16 @@ message STC_Club_ChatMsg
     optional int32 index = 3;
     optional bytes msg = 4;
     optional int64 senderUserId = 5;
+}
+
+message STC_Club_ChatHistoryMsg
+{
+    optional int64 clubId = 1;
+    optional int32 pageSize = 2;
+    optional int32 pageNum = 3;
+    optional int32 recordTotal = 4;
+    optional int32 pageCount = 5;
+    repeated STC_Club_ChatMsg list = 6;
 }
 
 message STC_Club_CreateMsg
@@ -434,6 +456,8 @@ message TableRecord
     optional int32 gameId = 4;
     optional int64 masterId = 5;
     optional int32 handNum = 6;
+    optional int64 password = 7;
+    optional int32 gameType = 8;
 }
 
 message UserGrade
@@ -626,10 +650,12 @@ message STC_R_UserRecordMsg
 message TableGrade
 {
     optional int64 tableId = 1;
-    optional int32 gameId = 2;
-    optional int64 date = 3;
-    optional int64 masterUserId = 4;
-    repeated GameGrade result = 5;
+    optional int64 password = 2;
+    optional int32 gameId = 3;
+    optional int32 gameType = 4;
+    optional int64 date = 5;
+    optional int64 masterUserId = 6;
+    repeated GameGrade result = 7;
 }
 
 message GameGrade

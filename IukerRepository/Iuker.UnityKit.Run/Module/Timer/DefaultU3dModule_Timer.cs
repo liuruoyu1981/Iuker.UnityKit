@@ -17,6 +17,7 @@ CreateNote:
 
 using System;
 using Iuker.Common;
+using Iuker.Common.Base;
 using Iuker.Common.Base.Enums;
 using Iuker.Common.Base.Interfaces;
 using Iuker.Common.Module.Timer;
@@ -37,24 +38,15 @@ namespace Iuker.UnityKit.Run.Module.Timer
         /// <summary>
         /// 计时器模块内部维护的计时器对象池
         /// </summary>
-        private ObjectPool<ITimer> mTimerPool;
+        private IObjectPool<ITimer> mTimerPool;
 
         public override void Init(IFrame frame)
         {
             base.Init(frame);
 
-            mTimerPool = new ObjectPool<ITimer>(new DefaultU3dTimerFactory(), 50,
-                U3dConstants.Profiler_DefaultU3dTimerModule
+            mTimerPool = new ObjectPoolByStack<ITimer>(new DefaultU3dTimerFactory(), 50
             );
         }
-
-        protected override void onFrameInited()
-        {
-            base.onFrameInited();
-
-            mTimerPool.SetProfilerModule(U3DFrame.ProfilerModule);
-        }
-
 
         #region MyRegion
 
@@ -96,8 +88,7 @@ namespace Iuker.UnityKit.Run.Module.Timer
         public ITimer CreateRepeatTimer(Action<ITimer> onTick, float frequency, float delay = 0, Func<int, bool> isContineFunc = null, object data = null,
             Action<ITimer> onClose = null)
         {
-            //            var timer = mTimerPool.Take();
-            var timer = new U3dTimer();
+            var timer = mTimerPool.Take();
             var u3dTimer = (U3dTimer)timer;
             u3dTimer.Init(U3DFrame, this);
             timer.Init(onTick, frequency, delay, isContineFunc, data, onClose);
